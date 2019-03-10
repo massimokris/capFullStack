@@ -102,8 +102,9 @@ table {
   display: none;
 }
 
-
-
+body {
+  
+}
 .nombreweb {
 
   position: absolute; 
@@ -131,6 +132,8 @@ table {
 
 .menu {
 
+  margin-left: 15px;
+  margin-top: 5px;
   position: absolute;
   top: 158px;
 }
@@ -144,7 +147,7 @@ table {
 .contenido {
 
   margin-top: 40px;
-  margin-left: 30px;
+  margin-left: 50px;
   font-size: 20px;
   width: 50%;
   padding: 15px;

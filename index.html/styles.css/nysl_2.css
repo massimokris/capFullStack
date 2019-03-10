@@ -93,11 +93,12 @@ table {
 
 .menu {
     
-    float: right;
-    margin-right: 50px;
-    margin-top: 55px;
-    font-size: 25px;
-    display: inline-block;
+  float: right;
+  margin-right: 50px;
+  margin-top: 55px;
+  margin-bottom: 10px;
+  font-size: 25px;
+  display: inline-block;
 }
 
 .boton {
@@ -106,6 +107,7 @@ table {
   border-width: 2px;
   border-color: black;
   background: blue;
+  padding: 5px;
   text-align: justify;
   float: left;
   margin-left: 10px;
