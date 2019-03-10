@@ -84,15 +84,7 @@ table {
   border-spacing: 0;
 }
 
-
-/* aca comienza el codigo css*/
-
-.imagenprincipal {
-    
-    width: 1366px;
-    height: 280px;
-}
-
+/* aca comienza el codigo css */
 .nombreweb {
     
     float: left;
@@ -101,25 +93,80 @@ table {
 
 .menu {
     
-    margin-bottom: 40px;
+    float: right;
+    margin-right: 50px;
+    margin-top: 55px;
+    font-size: 25px;
+    display: inline-block;
+}
+
+.boton {
+    
+  border-style: solid;
+  border-width: 2px;
+  border-color: black;
+  background: blue;
+  text-align: justify;
+  float: left;
+  margin-left: 10px;
+}
+
+#imagenprincipal1 {
+    
+  display: none;
+}
+
+#imagenprincipal2 {
+
+  width: 1366px;
+  height: 280px;
 }
 
 .titulo {
     
-    border-style: solid;
-    border-width: 3px;
-    border-color: black;
+    border-top-style: solid;
+    border-top-width: 3px;
+    border-top-color: black;
+    border-bottom-style: solid;
+    border-bottom-width: 3px;
+    border-bottom-color: black;
     text-align: center;
     font-size: 40px;
-    background: black;
-    color: white;
 }
 
 .imagenlogo {
     
-    float: right;
+    float: left;
     width: 140px;
-    margin-right: 100px;
+    margin-top: 30px;
+    margin-left: 20px;
 }
+
+.contenido {
+    
+    float: left;
+    margin-top: 60px;
+    margin-left: 50px;
+    font-size: 20px;
+    width: 50%;
 }
+.logo {
+    
+    float: left;
+}
+
+.active {
+    
+    background-color: green;
+}
+
+.parrafocontenido {
+
+  margin-left: 25px;
+  margin-top: 5px;
+}
+
+
+
+
 
