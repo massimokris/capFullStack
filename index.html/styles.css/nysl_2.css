@@ -122,6 +122,11 @@ table {
   height: 280px;
 }
 
+#imagenprincipal3 {
+
+  display: none;
+}
+
 .titulo {
     
     border-top-style: solid;
