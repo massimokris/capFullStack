@@ -103,7 +103,7 @@ table {
 }
 
 body {
-  
+
 }
 .nombreweb {
 
@@ -142,6 +142,8 @@ body {
 
   float: left;
   margin-left: 20px;
+  text-shadow: 2px 2px 0 #AAA,      /* Sombra 1 */
+               6px 6px 2px #777;  /* sombra 2 */
 }
 
 .contenido {
