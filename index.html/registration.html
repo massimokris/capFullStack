@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        
+        <title>Northside Youth Soccer League</title>
+        
+        <link rel="stylesheet" href="styles.css/nysl_3.css">
+
+        <STYLE>A {text-decoration:none;} </STYLE>
+    </head>
+    
+    <body>
+        <div class="nombreweb">
+            <h1>Northside Youth Soccer League</h1>
+        </div>    
+               
+        <div class="menu">
+
+            <p class="boton">
+                <a href="index.html" color:none;>Home</a>
+            </p>
+
+            <p class="boton">
+                <a href="about.html">About NYSL</a>
+            </p>
+
+            <p class="boton">
+                <a href="contact.html">Contact</a>
+            </p>
+
+            <p class="boton">
+                <a href="rules.html">Rules</a>
+            </p>
+
+            <p class="boton">
+                <a href="game_info.html">Game Information</a>
+            </p>
+            
+             <p class="boton active">
+                <a href="registration.html" color:none;>Registration</a>
+            </p>
+        </div>
+                
+            <img src="design1_image1.jpg" alt="soccer image" id="imagenprincipal1">
+
+            <img src="design2_image1.jpg" alt="soccer image" id="imagenprincipal2">
+
+            <img src="design3_image1.jpg" alt="soccer image" id="imagenprincipal3">
+        
+        <div class="titulo">
+            <h2>Registration From</h2>
+        </div>
+        
+
+        <div class="logo">
+            <img src="nysl_logo.png" alt="league logo" class="imagenlogo">
+        </div>
+        <div class="contenido">
+            
+            <form action="show_data.html" method="get">
+        
+                Player's First Name: <input type="text" name="nombre">
+                Last Name: <input type="text" name="apellido"><br>
+                Street Address: <input type="text" name="direccion"><br>
+                City: <input type="text" name="ciudad">
+                Zip Code: <input type="text" name="zip-code"><br>
+                Birth Date (mm/dd/yyyy): <input type="date" name="cumpleaño">
+                Gender: <input type="radio" name="sexo" value="Female" checked> Female 
+                <input type="radio" name="sexo" value="male"> Male<br>
+                Grade: <input type="radio" name="grado" value="preescolar" checked> Pre-School
+                <input type="radio" name="grado" value="primero"> 1°
+                <input type="radio" name="grado" value="segundo"> 2°
+                <input type="radio" name="grado" value="tercero"> 3°
+                <input type="radio" name="grado" value="cuarto"> 4°
+                <input type="radio" name="grado" value="quinto"> 5°<br>
+                Parent/Guardian: <input type="text" name="representante"><br>
+                Contact Phone: <input type="tel" name="telefono"> Contact Email: <input type="email" name="email"><br>
+                <b>Which elementary schools do you live near?</b><br>
+                
+                <b>First Closest School: </b>
+                <select name="escuela">
+                    <option value="aj-katzenmaier" selected>AJ Katzenmaier</option>
+                    <option value="greenbay">Greenbay</option>
+                    <option value="north">North Elementary</option>
+                    <option value="howard-yeager">Howard A Yeager</option>
+                    <option value="south">South Elementary</option>
+                </select>
+                
+                <b>Second Closest School: </b>
+                <select name="escuela2">
+                    <option value="aj-katzenmaier" selected>AJ Katzenmaier</option>
+                    <option value="greenbay">Greenbay</option>
+                    <option value="north">North Elementary</option>
+                    <option value="howard-yeager">Howard A Yeager</option>
+                    <option value="south">South Elementary</option>
+                </select>
+                
+                <b>What position(s) do you normally play?</b>(Check all that apply)<br>
+                <input type="checkbox" name="posicion" value="delantero" checked>Forward
+                <input type="checkbox" name="posicion" value="mediocampo">Midfield<br>
+                <input type="checkbox" name="posicion" value="defensa">Defense
+                <input type="checkbox" name="posicion" value="portero">GoalKeeper<br>
+                <b>What position do you want to play?</b>(check all that apply)<br>
+                  <input type="checkbox" name="posicion" value="delantero" checked>Forward
+                <input type="checkbox" name="posicion" value="mediocampo">Midfield<br>
+                <input type="checkbox" name="posicion" value="defensa">Defense
+                <input type="checkbox" name="posicion" value="portero">GoalKeeper<br>
+                <input type="radio" name"uniforme"><b> Already have a Uniform</b><br>
+                <b>Jersey Size:</b><br>
+                
+                <div class="clearfix">
+                    <table class="tabla-formulario">
+                        <tr>
+                            <th> <b>Jersey Size:</b></th>
+                            <th> </th>
+                            <th> <b>Shorts Size:</b></th>
+                            <th> </th>
+                        </tr>
+                        <tr>
+                            <td><input type="radio" name="talla-franela" value="xs" checked>Youth Small</td>
+                            <td><input type="radio" name="talla-franela" value="m">Medium</td><td><input type="radio" name="talla-short" value="xs" checked>Youth Small</td>
+                            <td><input type="radio" name="talla-short" value="m">Medium</td>
+                        </tr>
+                        <tr>
+                            <td><input type="radio" name="talla-franela" value="xm">Youth Medium</td>
+                            <td><input type="radio" name="talla-franela" value="l">Large</td><td><input type="radio" name="talla-short" value="xm">Youth Medium</td>
+                            <td><input type="radio" name="talla-short" value="l">Large</td>
+                        </tr>
+                        <tr>
+                            <td><input type="radio" name="talla-franela" value="xl">Youth Large</td>
+                            <td><input type="radio" name="talla-franela" value="xxl">Extra-Large</td><td><input type="radio" name="talla-short" value="xl">Youth Large</td>
+                            <td><input type="radio" name="talla-short" value="xxl">Extra-Large</td>
+                        </tr>
+                        <tr>
+                            <td><input type="radio" name="talla-franela" value="s">Small</td>
+                            <td> </td><td><input type="radio" name="talla-short" value="s">Small</td>
+                            <td> </td>
+                        </tr>
+                    </table>
+
+                </div>
+                
+                <b><u>Permission to Play</u></b><br>
+                I, the parent or guardian of the minor registrant, agree that the registrant and I will abide by all the rules of the Northside Youth
+                Soccer League (NYSL). In recognizing the possibility of physical injury associated with soccer and in consideration for the “League”
+                accepting the registrant for its soccer programs and activities, I hereby release, discharge, and/or otherwise indemnify NYSL, their
+                employees and associated personnel and volunteers, including the facilities used for practices and games, against any claim by or
+                on behalf of the registrant as a result of the registrant’s participation in the program and/or being transported to or from NYSL
+                sponsored activities, which transportation.
+                By signing below, I hereby agree and authorize the above. In addition, by signing below, I also acknowledge that I have read the
+                cancellation policy and agree to its terms.<br>
+                Perent/Guardian Signature: <input type="text" name="firma">
+                Date: <input type="date" name="fecha-firma"><br>
+                
+                <input type="submit" name="submit" value="     Send     " id="botonenviar">
+            </form>
+        </div>
+        
+    </body>
+    
+</html>

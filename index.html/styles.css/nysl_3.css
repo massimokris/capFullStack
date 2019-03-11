@@ -69,7 +69,7 @@ body {
   margin-bottom: 40px;
   font-size: 20px;
   width: 50%;
-  padding: 18px;
+  padding: 20px;
   border-style: solid;
   border-width: 3px;
   border-color: soccer_image2.jpg;
@@ -112,6 +112,31 @@ table {
 .tabladirecciones td:nth-child(1) {
 
   text-align: justify;
+}
+
+.tabla-formulario td {
+    
+    text-align: left;
+}
+
+.tabla-formulario td:nth-child(1) {
+    
+    text-align: left;
+}
+
+.clearfix {
+    
+    overflow: auto;
+}
+
+tabla-formulario1 {
+    
+    float: left;
+}
+
+tabla-formulario2 {
+    
+    float: left;
 }
 
 
