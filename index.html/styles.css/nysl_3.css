@@ -19,7 +19,8 @@
 }
 
 body {
-
+    
+    background-color: black;
 }
 .nombreweb {
 
@@ -27,6 +28,7 @@ body {
   left: 180px;
   top: 5px;
   font-size: 30px;
+  color: whitesmoke;
 }
 
 .imagenlogo {
@@ -42,39 +44,54 @@ body {
 
   text-align: center;
   font-size: 25px;
-  background: ;
-  margin-top: 210px;
+  margin-top: 230px;
+  color: whitesmoke;
 }
 
 .menu {
 
   margin-left: 15px;
-  margin-top: 5px;
   position: absolute;
   top: 158px;
+  background-color: darkgray;
+  border-style: solid;
+  border-width: 5px;
+  border-color: dimgrey;
 }
 
 .boton {
 
   float: left;
+  margin-right: 15px;
   margin-left: 20px;
   text-shadow: 2px 2px 0 #AAA,      /* Sombra 1 */
                6px 6px 2px #777;  /* sombra 2 */
+  
+}
+
+a:hover {
+    
+    background-color: dimgray;
+}
+
+a {
+    
+    color: black;
 }
 
 .contenido {
 
   margin-top: 40px;
-  margin-left: 50px;
+  margin-left: 320px;
   margin-bottom: 40px;
   font-size: 20px;
   width: 50%;
   padding: 20px;
   border-style: solid;
-  border-width: 3px;
-  border-color: soccer_image2.jpg;
-  background: soccer_image2.jpg;
+  border-width: 5px;
+  border-color: dimgrey;
   position: absolute;
+    background-color: darkgray;
 }
 
 .reglas {
