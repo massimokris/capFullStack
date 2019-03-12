@@ -86,7 +86,7 @@ while(contadorWhile<edades.length){
     } contadorWhile++
 }
 
-console.log("Solo para separas while y for");
+console.log("Solo para separar while y for");
 
 for(contadorFor=0;contadorFor<nombres.length;contadorFor++){
     
@@ -97,6 +97,23 @@ for(contadorFor=0;contadorFor<nombres.length;contadorFor++){
         console.log(edades [contadorFor]);
     }
 }
+
+//terminamos bucle en array
+
+//comenzamos funciones de array
+
+//sintaxis function nombrearray comparacion(a,b) { return (lo que quieras que devuelva) }
+
+//sintaxis b var array = (a,b) => (lo que quieras que regrese);
+
+var numeros = [1,2,3,4,5,6,7,8,9,10];
+
+function numeros.sort (a,b) {
+    
+    console.log(numeros [0]);
+}
+
+
 
 
 
