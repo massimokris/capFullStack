@@ -214,7 +214,7 @@ function numeroIgual (array){
 
 console.log(numeroIgual(numerosIguales));
 
-//aca intente hacer el ejercicio anterior con for pero no me salio espero comentarios para intentar terminarlo
+//ordenar con for listo
 var numerosIguales2 = [3,6,3,6,1,1,5,4,8,9];
 
 function numeroIgual2 (array){
@@ -225,7 +225,7 @@ function numeroIgual2 (array){
     
     for(contadorIguales2=0;contadorIguales2<array.length;contadorIguales2++){
         
-        for(comparadorIguales=0;comparadorIguales<array.length;comparadorIguales++){
+        for(comparadorIguales=contadorIguales2+1;comparadorIguales<array.length;comparadorIguales++){
             
             if(array[contadorIguales2] == array[comparadorIguales]){
                 
@@ -276,18 +276,112 @@ console.log(ordenar(mycolor));
 function invertir(String){
     
     var numero;
+    var invertido;
+    
+    invertido="";
     
     numero=prompt("Ingrese un numero");
     
-    for(var i = String - 1; i>-1; i--){
+    for(i=numero.length;i>-1;i--){
         
-        result += String[i];
+        invertido=invertido+numero.charAt(i);
     }
-    
-    return(result);
+
+    return invertido;
 }
 
-console.log(result);
+console.log(invertir(String));
+
+//terminamos el ejercicio anterior
+
+//tomar ua palabra y mostrarla en orden alfabetico
+
+function alfabetico (String){
+    
+    var palabra;
+    var palabraOrdenada;
+    
+    palabraOrdenada= "";
+    
+    palabra=prompt("Ingrese una palabra");
+    
+    palabraOrdenada=palabra.split("");
+    
+    console.log(palabraOrdenada);
+    
+    return palabraOrdenada.sort();
+    
+}
+
+console.log(alfabetico(String));
+
+//terminamos el ejercicio anterior
+
+//convertir cada primera letra de cada palabra en mayuscula
+
+function mayuscula (String){
+    
+    var frase;
+    var fraseMayuscula;
+    
+    fraseMayuscula= "";
+    
+    frase=prompt("Ingrese una frase");
+    
+    fraseMayuscula=frase.split(" ");
+    
+    for(var i=0;i<fraseMayuscula.length;i++){
+        
+        fraseMayuscula[i]=fraseMayuscula[i].charAt(0).toUpperCase()+fraseMayuscula[i].slice(1);
+    }
+    
+    return fraseMayuscula;
+}
+
+console.log(mayuscula(String));
+
+//terminamos el ejercicio anteior
+
+//mostrar la palabra mas larga de una frase
+
+function masLarga (String){
+    
+    var frase;
+    var palabraLarga;
+    var masLargo;
+    
+    palabraLarga= "";
+    
+    frase=prompt("ingrese otra frase");
+    
+    palabraLarga= frase.split(" ");
+    
+    for(var i=0;i<palabraLarga.length;i++){
+        
+        
+        if(i==0){
+            
+            masLargo=palabraLarga[i];
+        }else{
+            
+            if(palabraLarga.length>masLargo.length){
+                
+               masLargo=palabraLarga[i]; 
+            }
+        }
+    }
+    
+    return masLargo;
+}
+
+console.log(masLarga(String));
+
+//terminamos ejercicio
+
+
+
+
+
 
 
 
