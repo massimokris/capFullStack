@@ -1,0 +1,145 @@
+<small>elemento HTML se usa para crear un texto secundario más claro en cualquier encabezado
+
+<abbr>elemento HTML se usa para abreviar una palabra
+
+<mark>elemento HTML se usa para resaltar una palabra
+
+<blockquote>elemento HTML se usa para resaltar todo un texto o bloque
+
+<dl>elemento HTML se usa para hacer un estilo de listas con <dt> encabezado mas o menos <dd>cuerpo
+
+<code>elemento HTML se usa para dar color tipo codigo a alguna palabra
+
+<kbd>elemento HTML se usa para subrayar una palabra o texto
+
+<pre>elemento HTML se usa para mostrar texto ordenado de manera predeterminada
+
+clases para colores de texto:
+.text-muted, .text-primary, .text-success, .text-info, .text-warning, y .text-danger
+
+clases para colores de fondo:
+.bg-primary, .bg-success, .bg-info, .bg-warning, y .bg-danger
+
+otras clases de bootstrap:
+
+.lead hace que un parrafo se destaque
+
+.small reduce el tamaño del texto en 85%
+
+alinear texto:
+
+.text-left, .textcenter, .text-right, .text-justiy
+
+.text.nowrap
+
+.textlowercase .textuppercase minuscula y mayuscola
+
+.text-capitalize capitaliza texto
+
+.initialism muestra el texto de un <abbr>
+
+.list-unstyled remueve el estilo de la lista
+
+.list-inline pone los elementos de la lista 
+en una misma linea
+
+.dl-horizontal pone los elementos  fuera de la linea por depecto
+
+.pre-scrollable hace a un elemento scrolleable
+
+Tablas:
+
+.table tabla basica de bootstrap
+
+.table-striped tabla con una raya clara y otra oscura
+
+.tabla-bordered tabla con borde
+
+.table-hover crea un efecto de desplazamiento
+
+.tabla-condensed hace la tabla mas condenza la reduce a la mitad
+
+.active aplica el color de desplazamiento de la tabla o fila
+
+.success accion positiva o exitosa
+
+.info cambio o accion informativa neutral
+
+.warning indica que advertencia que necesita atencion
+
+.danger indica que esta mal y requiere atencion
+
+.table-responsive tabla responsive.desing
+
+forma de imagenes con bootstrap:
+
+.img-rounded esquinas redondas
+
+.img-circle imagen en circulo
+
+.img-thumbnail hace la imagen una miniatura de la misma
+
+.img-responsive imagen con responsive.desing
+
+con una cuadricula bootstrap mas la clase
+.thumbnail podemos crear galeria de imagenes
+
+tambien para video o diapositivas:
+
+.embeb-responsive-item
+
+jumbotron interior: es como una seccion sobreada con gris claro
+.container y dentro de ese un .jumbotron
+
+jumbotron exterior: es como una seccion sobreada con gris claro
+.jumbotron y dentro de ese un .container
+
+.page-header crea una linea horizontal abajo de head y le agregar un espacio extra
+
+.well crea una casilla o pozo sobreado e  
+
+.well-sm o alguna otra medida le doy tamaño a a el poso
+
+alertas con mensajes:
+
+.alert-success exito
+
+.alert-info casi pero falta
+
+.aler-warning falta
+
+.alert-danger incompleto y para revisar
+
+con .alert-link haces un link 
+
+alert-dismissible para cerrar una tabla con class="close" y data-dismiss="alert"
+
+alertas animadas con:
+
+.alert alert-danger fade in
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

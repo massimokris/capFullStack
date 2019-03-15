@@ -60,12 +60,12 @@
             
             <form action="show_data.html" method="get">
         
-                Player's First Name: <input type="text" name="nombre">
-                Last Name: <input type="text" name="apellido"><br>
-                Street Address: <input type="text" name="direccion"><br>
-                City: <input type="text" name="ciudad">
-                Zip Code: <input type="text" name="zip-code"><br>
-                Birth Date (mm/dd/yyyy): <input type="date" name="cumpleaño">
+                <label>Player's First Name: <input type="text" name="nombre"></label>
+                <label>Last Name: <input type="text" name="apellido"></label><br>
+                <label>Street Address: <input type="text" name="direccion"></label><br>
+                <label> City: <input type="text" name="ciudad"></label>
+                <label>Zip Code: <input type="text" name="zip-code"></label><br>
+                <label>Birth Date (mm/dd/yyyy): <input type="date" name="cumpleaño"></label>
                 Gender: <input type="radio" name="sexo" value="Female" checked> Female 
                 <input type="radio" name="sexo" value="male"> Male<br>
                 Grade: <input type="radio" name="grado" value="preescolar" checked> Pre-School
@@ -74,8 +74,9 @@
                 <input type="radio" name="grado" value="tercero"> 3°
                 <input type="radio" name="grado" value="cuarto"> 4°
                 <input type="radio" name="grado" value="quinto"> 5°<br>
-                Parent/Guardian: <input type="text" name="representante"><br>
-                Contact Phone: <input type="tel" name="telefono"> Contact Email: <input type="email" name="email"><br>
+                <label>Parent/Guardian: <input type="text" name="representante"></label><br>
+                <label>Contact Phone: <input type="tel" name="telefono"></label>
+                <label>Contact Email: <input type="email" name="email"></label><br>
                 <b>Which elementary schools do you live near?</b><br>
                 
                 <b>First Closest School: </b>
@@ -97,15 +98,15 @@
                 </select>
                 
                 <b>What position(s) do you normally play?</b>(Check all that apply)<br>
-                <input type="checkbox" name="posicion" value="delantero" checked>Forward
-                <input type="checkbox" name="posicion" value="mediocampo">Midfield<br>
-                <input type="checkbox" name="posicion" value="defensa">Defense
-                <input type="checkbox" name="posicion" value="portero">GoalKeeper<br>
+                <input type="checkbox" name="posicionPlay" value="delantero" checked>Forward
+                <input type="checkbox" name="posicionPlay" value="mediocampo">Midfield<br>
+                <input type="checkbox" name="posicionPlay" value="defensa">Defense
+                <input type="checkbox" name="posicionPlay" value="portero">GoalKeeper<br>
                 <b>What position do you want to play?</b>(check all that apply)<br>
-                  <input type="checkbox" name="posicion" value="delantero" checked>Forward
-                <input type="checkbox" name="posicion" value="mediocampo">Midfield<br>
+                  <input type="checkbox" name="posicionWant" value="delantero" checked>Forward
+                <input type="checkbox" name="posicionWant" value="mediocampo">Midfield<br>
                 <input type="checkbox" name="posicion" value="defensa">Defense
-                <input type="checkbox" name="posicion" value="portero">GoalKeeper<br>
+                <input type="checkbox" name="posicionWant" value="portero">GoalKeeper<br>
                 <input type="radio" name="uniforme"><b> Already have a Uniform</b><br>
                 <b>Jersey Size:</b><br>
                 
@@ -150,8 +151,8 @@
                 sponsored activities, which transportation.
                 By signing below, I hereby agree and authorize the above. In addition, by signing below, I also acknowledge that I have read the
                 cancellation policy and agree to its terms.<br>
-                Perent/Guardian Signature: <input type="text" name="firma">
-                Date: <input type="date" name="fecha-firma"><br>
+                <label>Perent/Guardian Signature: <input type="text" name="firma"></label>
+                <label>Date: <input type="date" name="fecha-firma"></label><br>
                 
                 <input type="submit" name="submit" value="     Send     " id="botonenviar">
             </form>
