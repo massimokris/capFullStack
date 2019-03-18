@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+    
+    <head>
+        <title>Prueba de bootstrap</title>
+    
+        <meta charset="utf-8">
+
+        <!--codigo para resposive desing-->
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        
+        <!--añadimos bootstrap libreria y jQuery libreria-->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+        <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+        
+        <style>
+            .bg-1{
+                background-color: #1abc9c;
+                color: black;
+            }
+            
+            .bg-2{
+                background-color: red;
+                color: white;
+            }
+            
+            .bg-3{
+                background-color: yellow;
+                color: green;
+            }
+            
+            .container-fluid{
+                
+                padding-top: 60px;
+                padding-bottom: 40px;
+            }
+            
+            .navbar{
+                padding-top: 15px;
+                padding-bottom: 10px;
+                border: 0;
+                border-radius: 2;
+                margin-bottom: 0;
+                font-size: 20px;
+                letter-spacing: 3px;
+            }
+            
+            .navbar-nav li a:hover{
+                color: black !important;
+            }
+            
+            .bg-4{
+                background-color: black;
+                color: white;
+            }
+            
+            body{
+                font: 20px "Montserrat", sans-serif;
+                line-height: 1.5;
+                color: black;
+            }
+            
+            p {font-size: 16px;}
+            
+            .margin{margin-bottom: 40px;}
+        </style>
+        
+    </head>
+    
+    <body>
+        
+        <nav class="navbar navbar-default">
+            
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span> 
+                    </button>
+                    <a class="navbar-brand" href="#">Bootstrap</a>
+                </div>
+                <div class="collapse navbar-collapse" id="myNavbar">
+                    <ul class="nav navbar-nav navbar-right">
+                        <li><a href"#">Quien es</a></li>
+                        <li><a href="#">Que es</a></li>
+                        <li><a href="#">Donde esta</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+        </nav>
+        
+        <div class="container-fluid bg-1 text-center">
+            
+            <h2>Como uso bootstrap?</h2>
+        
+            <img src="descarga.png" class="img-circle" alt="logo">
+
+            <p>Bootstrap es una aventura</p>
+            
+        </div>
+        
+        <div class="container-fluid bg-2 text-center">
+            
+            <h3>Que es bootstrap?</h3>
+            
+            <p>bootstrap es una libreria</p>
+            
+            <a href="https://getbootstrap.com/" class="btn btn-default bnt-md">
+            <span class="glyphicon glyphicon-search"></span>Descubreme</a>
+            
+        </div>
+        
+        <div class="container-fluid bg-3 text-center">
+            <h3>Donde puedes encontar bootstrap?</h3>
+            
+            <div class="row">
+                <div class="col-sm-4">
+                    <p>En el buscador de google como todo!</p>
+                    <img src="bootstrap.png" class="img-responsive" style="display:inline" width="50%" alt="logo2">
+                </div>
+                <div class="col-sm-4">
+                    <p>En el buscador de google como todo!</p>
+                    <img src="bootstrap.png"class="img-responsive" style="display:inline" width="30%" alt="logo2">
+                </div>
+                <div class="col-sm-4">
+                    <p>En el buscador de google como todo!</p>
+                    <img src="bootstrap.png"class="img-responsive" style="display:inline" alt="logo2">
+                </div>
+            </div>
+            <p>En el buscador de google como todo!</p>
+        </div>
+        
+        <footer class="container-fluid bg-4 text-center">
+          <p>Esto lo hice junto a W3schools <a href="https://www.w3schools.com">www.w3schools.com</a></p> 
+        </footer>
+        
+    </body>
+    
+</html>
