@@ -1,74 +1,127 @@
 <!DOCTYPE html>
 
-<html>
+<html lang="en">
     
     <head>
         <meta charset="utf-8">
         
         <meta name="viewport" content="width=device-width, initial-scale=1">
         
-        <!--bootstrap css-->
-        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <meta http-equiv="x-ua-compatible" content="ie-edge">
         
         <link rel="stylesheet" href="main.css">
+        
+        <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
 
         <title>Datos del senado</title>
     </head>
     
     <body>
         
-        <nav class="navbar navbar-default navbar-fixed-top">
-        
-            <div class="container-fluid">
+        <header class="container-fluid">
             
-                <div class="navbar-header">
+            <div class="row clearfix">
                 
-                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                <div class="col floar-left">
                     
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
+                   <span class="glyphicon glypincon-bars"></span>
+                   
+                   <h3>TGIF Logo</h3>
                     
-                    </button>
-                    
-                    <span class="glyphicon glyphicon-signal"></span>
-                    
-                    <a class="navbar-brand" href="#">TGIF Logo</a>
-                
                 </div>
                 
-                <div class="collapse navbar-collapse" id="myNavbar">
-                
-                    <ul class="nav navbar-nav navbar-right">
+                <div class="float-right">
                     
-                        <li> 
-                            
-                            <span class="glyphicon glyphicon-envelope"></span>
-                            
-                            <a href="mailto:info@tgif.net">info@tgif.net</a>
-                        
-                        </li>
-                        
-                    </ul>
-                
+                    <span class="glyphicon glyphicon-envelope"></span>
+                   
+                   <h4><a href="mailto:info@tgif.net">info@tgif.net</a></h4>
+                    
                 </div>
-            
+                
             </div>
+            
+            <nav class="navbar navbar-expand-sm bg-light">
+            
+                    <ul class="navbar-nav">
+
+                               <li class="li nav-item"><a href="index.html" class="nav-link">Home</a></li>
+
+                               <li class="li nav-item dropdown"><a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Congress 113</a>
+
+                               <div class="dropdown-menu">
+
+                                   <a href="house-data.html" class="dropdown-item">House</a>
+
+                                   <a href="senate-data.html" class="dropdown-item">Senate</a>
+
+                               </div>
+
+                               </li>
+
+                           </ul> 
+
+                </nav>
+            
+        </header>
         
-        </nav>
+        <section class="container-fluid">
+            
+            <div>
+                
+                <h2>Senators</h2>
+                
+                <p>First convened in 1789, the composition and powers of the Senate are established in Article One of the U.S. Constitution. Each state is represented by two senators, regardless of population, who serve staggered six-year terms. The Senate has several exclusive powers not granted to the House, including consenting to treaties as a precondition to their ratification and consenting to or confirming appointments of Cabinet secretaries, federal judges, other federal executive officials, military officers, regulatory officials, ambassadors, and other federal uniformed officers, as well as trial of federal officials impeached by the House.</p>
+                
+            </div>
+            
+        </section>
         
-        <table id="senate-data"></table>
+        <section class="container fluid">
+            
+            <form action="#" method="post" class="clearfix">
+                
+                <div class="float-left">
+                    
+                   Filter by Party:
+                
+                    <input type="checkbox" name="party" id="republican" checked>
+                    <label for="republican">Republican</label>
+                    <input type="checkbox" name="party" id="democrat">
+                    <label for="democrat">Democrat</label>
+                    <input type="checkbox" name="party" id="independent">
+                    <label for="independent">Independent</label> 
+                    
+                </div>
+                
+                <div class="float-right">
+                    
+                    <label for="state" text-rigth>Filter by State:</label>
+                    
+                    <select name="estados" id="state-data" class="name"></select>
+                    
+                </div>
+                
+            </form>
+            
+            <div style="width: 100%; height: 300px; overflow-y: scroll;">
+                
+                <table class="table table-bordered table-hover" id="members-data"></table>
+                
+            </div>
+            
+        </section>
+        
+        <footer class="container text-center bg-light"> <span class="glyphicon glyphicon-radar"></span> 2016 TGIF | All Rights Reserved</footer>
         
         <script type="text/javascript" src="congress-113-senate.js"></script>
         
         <script type="text/javascript" src="main.js"></script>
         
+        <script src="js/jquery-3.3.1.slim.min.js"></script>
         
+        <script src="js/popper.min.js"></script>
         
-        <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+        <script src="js/bootstrap.min.js"></script>
         
     </body>
     

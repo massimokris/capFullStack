@@ -1,20 +1,128 @@
 <!DOCTYPE html>
 
-<html>
+<html lang="en">
     
     <head>
         <meta charset="utf-8">
         
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        
+        <meta http-equiv="x-ua-compatible" content="ie-edge">
+        
+        <link rel="stylesheet" href="main.css">
+        
+        <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+
         <title>Datos de la camara</title>
     </head>
     
     <body>
         
-        <table id="house-data"></table>
+        <header class="container-fluid">
+            
+            <div class="row clearfix">
+                
+                <div class="col floar-left">
+                    
+                   <span class="glyphicon glypincon-bars"></span>
+                   
+                   <h3>TGIF Logo</h3>
+                    
+                </div>
+                
+                <div class="float-right">
+                    
+                    <span class="glyphicon glyphicon-envelope"></span>
+                   
+                   <h4><a href="mailto:info@tgif.net">info@tgif.net</a></h4>
+                    
+                </div>
+                
+            </div>
+            
+            <nav class="navbar navbar-expand-sm bg-light">
+            
+                    <ul class="navbar-nav">
+
+                               <li class="li nav-item"><a href="index.html" class="nav-link">Home</a></li>
+
+                               <li class="li nav-item dropdown"><a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Congress 113</a>
+
+                               <div class="dropdown-menu">
+
+                                   <a href="house-data.html" class="dropdown-item">House</a>
+
+                                   <a href="senate-data.html" class="dropdown-item">Senate</a>
+
+                               </div>
+
+                               </li>
+
+                           </ul> 
+
+                </nav>
+            
+        </header>
+        
+        <section class="container-fluid">
+            
+            <div>
+                
+                <h2>Congressmen</h2>
+                
+                <p>The major power of the House is to pass federal legislation that affects the entire country, although its bills must also be passed by the Senate and further agreed to by the U.S. President before becoming law (unless both the House and Senate re-pass the legislation with a two-thirds majority in each chamber). The House has some exclusive powers: the power to initiate revenue bills, to impeach officials (impeached officials are subsequently tried in the Senate), and to elect the U.S. President in case there is no majority in the Electoral College.</p>
+                <p>Each U.S. state is represented in the House in proportion to its population as measured in the census, but every state is entitled to at least one representative. </p>
+                
+            </div>
+            
+        </section>
+        
+        <section class="container fluid">
+            
+            <form action="#" method="post" class="clearfix">
+                
+                <div class="float-left">
+                    
+                   Filter by Party:
+                
+                    <input type="checkbox" name="party" id="republican" checked>
+                    <label for="republican">Republican</label>
+                    <input type="checkbox" name="party" id="democrat">
+                    <label for="democrat">Democrat</label>
+                    <input type="checkbox" name="party" id="independent">
+                    <label for="independent">Independent</label> 
+                    
+                </div>
+                
+                <div class="float-right">
+                    
+                    <label for="state" text-rigth>Filter by State:</label>
+                    
+                    <select name="estados" id="state-data" class="name"></select>
+                    
+                </div>
+                
+            </form>
+            
+            <div style="width: 100%; height: 300px; overflow-y: scroll;">
+                
+                <table class="table table-bordered table-hover" id="members-data"></table>
+                
+            </div>
+            
+        </section>
+        
+        <footer class="container text-center bg-light"> <span class="glyphicon glyphicon-radar"></span> 2016 TGIF | All Rights Reserved</footer>
         
         <script type="text/javascript" src="congress-113-house.js"></script>
         
         <script type="text/javascript" src="main.js"></script>
+        
+        <script src="js/jquery-3.3.1.slim.min.js"></script>
+        
+        <script src="js/popper.min.js"></script>
+        
+        <script src="js/bootstrap.min.js"></script>
         
     </body>
     
