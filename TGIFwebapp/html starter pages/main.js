@@ -1,7 +1,38 @@
+var checkboxes = document.getElementsByName('party');
+
+console.log(checkboxes);
+
+var prueba = checkboxes.childNodes;
+
+var checkbox = document.querySelectorAll('input[name=party]:checked');
+
+Array.from( document.querySelectorAll('input[name=party]:checked'))
+
+console.log(Array.from( document.querySelectorAll('input[name=party]:checked')));
+
+document.getElementById('D').addEventListener("click", tabla);
+
+document.getElementById('R').addEventListener("click", tabla);
+
+document.getElementById('I').addEventListener("click", tabla);
+
+var partidos;
+var partidosSeleccionados;
+
+partidos = Array.from( document.getElementsByName('party') )
+
+partidosSeleccionados = Array.from( document.querySelectorAll('input[name=party]:checked'));
+
+
+
+
+
+
 function tabla (){
     
     var miembros;
     var tablaMiembros;
+    var partidosSeleccionados;
 
     miembros = data.results[0].members;
     tablaMiembros =    "<tr>"+
@@ -12,12 +43,16 @@ function tabla (){
                         "<th>% Votes w/Party</th>"+
                         "</tr>"+ 
                         "<tr>";
+    
+    partidosSeleccionados = Array.from( document.querySelectorAll('input[name=party]:checked')).map(x => x.value);
+    
+    console.log(partidosSeleccionados);
 
     //console.log(miembros.length);
 
     for(var i=0;i<miembros.length;i++){
 
-        if(miembros[i].middle_name == null){
+        if(partidosSeleccionados.indexOf(miembros[i].party) !== -1 && miembros[i].middle_name == null){
 
             tablaMiembros +=
             "<tr>" +
@@ -62,7 +97,7 @@ function estados (){
             "<option>"+estado[i].state+"</option>";
     }
     
-    console.log(tablaEstados);
+    //console.log(tablaEstados);
     
     return tablaEstados;
 }
