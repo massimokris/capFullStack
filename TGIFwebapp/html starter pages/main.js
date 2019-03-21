@@ -1,31 +1,24 @@
-var checkboxes = document.getElementsByName('party');
+function estados (){
+    
+    var estado;
+    var tablaEstados;
+    
+    estado = data.results[0].members;
+    tablaEstados= "<option id='estados'>"+"all"+"</option>";
+    
+    for(var i=0;i<estado.length;i++){
+        
+        tablaEstados += 
+            
+            "<option id='estados'>"+estado[i].state+"</option>";
+    }
+    
+    //console.log(tablaEstados);
+    
+    return tablaEstados;
+}
 
-console.log(checkboxes);
-
-var prueba = checkboxes.childNodes;
-
-var checkbox = document.querySelectorAll('input[name=party]:checked');
-
-Array.from( document.querySelectorAll('input[name=party]:checked'))
-
-console.log(Array.from( document.querySelectorAll('input[name=party]:checked')));
-
-document.getElementById('D').addEventListener("click", tabla);
-
-document.getElementById('R').addEventListener("click", tabla);
-
-document.getElementById('I').addEventListener("click", tabla);
-
-var partidos;
-var partidosSeleccionados;
-
-partidos = Array.from( document.getElementsByName('party') )
-
-partidosSeleccionados = Array.from( document.querySelectorAll('input[name=party]:checked'));
-
-
-
-
+document.getElementById("state-data").innerHTML = estados();
 
 
 function tabla (){
@@ -33,6 +26,11 @@ function tabla (){
     var miembros;
     var tablaMiembros;
     var partidosSeleccionados;
+    var states; 
+    
+    states = document.querySelector('#state-data').value
+    
+    console.log(states);
 
     miembros = data.results[0].members;
     tablaMiembros =    "<tr>"+
@@ -46,13 +44,15 @@ function tabla (){
     
     partidosSeleccionados = Array.from( document.querySelectorAll('input[name=party]:checked')).map(x => x.value);
     
-    console.log(partidosSeleccionados);
+    //console.log(partidosSeleccionados);
 
     //console.log(miembros.length);
 
     for(var i=0;i<miembros.length;i++){
 
-        if(partidosSeleccionados.indexOf(miembros[i].party) !== -1 && miembros[i].middle_name == null){
+        if(partidosSeleccionados.indexOf(miembros[i].party) !== -1 && (states == miembros[i].state || states == "all")){
+            
+            if(miembros[i].middle_name == null){
 
             tablaMiembros +=
             "<tr>" +
@@ -62,16 +62,18 @@ function tabla (){
             "<td>"+miembros[i].seniority+"</td>"+
             "<td>"+miembros[i].votes_with_party_pct+"%</td>"+
             "</tr>";
-        }else{
+            }else{
 
-             tablaMiembros +=
-             "<td><a href="+miembros[i].url+">"+miembros[i].first_name+" "+miembros[i].middle_name+" "+miembros[i].last_name+"</a></td>"+
-             "<td>"+miembros[i].party+"</td>"+
-             "<td>"+miembros[i].state+"</td>"+
-             "<td>"+miembros[i].seniority+"</td>"+
-             "<td>"+miembros[i].votes_with_party_pct+"%</td>"+
-             "</tr>";
+                 tablaMiembros +=
+                 "<td><a href="+miembros[i].url+">"+miembros[i].first_name+" "+miembros[i].middle_name+" "+miembros[i].last_name+"</a></td>"+
+                 "<td>"+miembros[i].party+"</td>"+
+                 "<td>"+miembros[i].state+"</td>"+
+                 "<td>"+miembros[i].seniority+"</td>"+
+                 "<td>"+miembros[i].votes_with_party_pct+"%</td>"+
+                 "</tr>";
+            }
         }
+        
     }
 
     /*console.log(tablaMiembros);
@@ -80,26 +82,23 @@ function tabla (){
     return tablaMiembros;
 }
 
-document.getElementById("members-data").innerHTML = tabla();
+ document.getElementById("members-data").innerHTML = tabla();
 
-function estados (){
-    
-    var estado;
-    var tablaEstados;
-    
-    estado = data.results[0].members;
-    tablaEstados= "<option>"+"all"+"</option>";
-    
-    for(var i=0;i<estado.length;i++){
-        
-        tablaEstados += 
-            
-            "<option>"+estado[i].state+"</option>";
-    }
-    
-    //console.log(tablaEstados);
-    
-    return tablaEstados;
-}
+document.getElementById("D").addEventListener("click", function(){
+    document.getElementById("members-data").innerHTML = tabla();
+});
 
-document.getElementById("state-data").innerHTML = estados();
+document.getElementById("R").addEventListener("click", function(){
+    document.getElementById("members-data").innerHTML = tabla();
+});
+
+document.getElementById("I").addEventListener("click", function(){
+    document.getElementById("members-data").innerHTML = tabla();
+});
+
+document.getElementById("state-data").addEventListener("change", function(){
+    document.getElementById("members-data").innerHTML = tabla();
+});
+
+
+
