@@ -39,8 +39,7 @@ function tabla (){
                         "<th>State</th>"+
                         "<th>Years in Office</th>"+
                         "<th>% Votes w/Party</th>"+
-                        "</tr>"+ 
-                        "<tr>";
+                        "</tr>";
     
     partidosSeleccionados = Array.from( document.querySelectorAll('input[name=party]:checked')).map(x => x.value);
     
@@ -65,6 +64,7 @@ function tabla (){
             }else{
 
                  tablaMiembros +=
+                 "<tr>"+
                  "<td><a href="+miembros[i].url+">"+miembros[i].first_name+" "+miembros[i].middle_name+" "+miembros[i].last_name+"</a></td>"+
                  "<td>"+miembros[i].party+"</td>"+
                  "<td>"+miembros[i].state+"</td>"+
