@@ -16,5 +16,10 @@ var statistics = {
     
     "leastLoyal": [],
     
-    "mostLoyal": []
+    "mostLoyal": [],
+    
+    "mostAttendance": [],
+    
+    "leastAttendance": []
+    
 }

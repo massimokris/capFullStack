@@ -18,8 +18,10 @@ function estados (){
     return tablaEstados;
 }
 
-document.getElementById("state-data").innerHTML = estados();
-
+if(document.getElementById("state-data")){
+    
+    document.getElementById("state-data").innerHTML = estados(); 
+}
 
 function tabla (){
     
@@ -82,23 +84,39 @@ function tabla (){
     return tablaMiembros;
 }
 
- document.getElementById("members-data").innerHTML = tabla();
+if(document.getElementById("members-data")){
+    
+    document.getElementById("members-data").innerHTML = tabla();  
+}
+ 
+if(document.getElementById("members-data")){
+    
+      document.getElementById("D").addEventListener("click", function(){
+        document.getElementById("members-data").innerHTML = tabla();
+    });  
+}
 
-document.getElementById("D").addEventListener("click", function(){
-    document.getElementById("members-data").innerHTML = tabla();
-});
+if(document.getElementById("members-data")){
+    
+      document.getElementById("R").addEventListener("click", function(){
+        document.getElementById("members-data").innerHTML = tabla();
+    });  
+}
 
-document.getElementById("R").addEventListener("click", function(){
+if(document.getElementById("members-data")){
+    
+    document.getElementById("I").addEventListener("click", function(){
     document.getElementById("members-data").innerHTML = tabla();
-});
+    });  
+}
 
-document.getElementById("I").addEventListener("click", function(){
-    document.getElementById("members-data").innerHTML = tabla();
-});
+if(document.getElementById("members-data")){
+    
+      document.getElementById("state-data").addEventListener("change", function(){
+        document.getElementById("members-data").innerHTML = tabla();
+    });  
+}
 
-document.getElementById("state-data").addEventListener("change", function(){
-    document.getElementById("members-data").innerHTML = tabla();
-});
 
 
 
