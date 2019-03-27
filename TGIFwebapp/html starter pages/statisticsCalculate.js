@@ -38,6 +38,7 @@ function glance (){
     
     statistics.votesDemocrats = statistics.votesDemocrats/statistics.numDemocrats;
     
+    //agrego una condicion para que muestre el valor original cuando es 0
     if(statistics.votesIndependents == 0){
         
         statistics.votesIndependents = statistics.votesIndependents
@@ -53,7 +54,7 @@ function glance (){
     
     statistics.votesDemocrats = statistics.votesDemocrats.toFixed(2);
     
-    //porcentaje total
+    //calculo porcentaje total
     statistics.votestotal = statistics.votestotal/members.length;
     
     //porcentaje total con solo 2 decimales
@@ -102,6 +103,7 @@ function glance (){
     "</td>"+
     "</tr>"; 
     
+    //retorno la tabla de miembros de un vistazo
     return table;
 }
 
@@ -156,6 +158,7 @@ function leastLoyal (){
     
     console.log(tableLeastLoyal);
     
+    //retorno la tabla lista de los menos leales
     return tableLeastLoyal;
 }
 
@@ -208,7 +211,8 @@ function mostLoyal (){
     }
     
     console.log(tableMostLoyal);
-            
+     
+    //retorno la tabla lista de los mas leales
     return tableMostLoyal;
 }
 

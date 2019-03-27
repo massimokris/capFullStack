@@ -1,14 +1,17 @@
+/*le damos un padding a todo el cuerpo de la pagina*/
 body{
     
     padding: 50px;
 }
 
+/*le damos un borde a la barra de navegacion */
 .navbar{
     
     border: solid 1px;
     margin-bottom: 40px;
 }
 
+/*le damos un borde a la barra de navegacion */
 footer{
     
     border: solid 1px;
