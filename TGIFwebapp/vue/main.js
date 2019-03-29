@@ -1,4 +1,10 @@
-Vue.component('product',{
+Vue.component('product', {
+    props: {
+        premium:{
+            type: Boolean,
+            required: true
+        }
+    },
     template: `
     <div class="product">
 
@@ -10,11 +16,12 @@ Vue.component('product',{
 
             <div class="product-info float-left">
 
-                <h1>{{ title }}</h1>
+                <h1>{{ product }}</h1>
                 
                 <p v-if="inStock">In Stock</p>
                 
                 <p v-else>Out of Stock</p>
+                <p>Shipping: {{ shipping }}</p>
                 
                 <ul>
                     
@@ -29,7 +36,7 @@ Vue.component('product',{
                 </ul>
                 
                 <div v-for="(variant, index) in variants" :key="variant.variantId" class="color-box" 
-                :style="{backgroundColor: variant.variantColor}"
+                :style="{ backgroundColor: variant.variantColor }"
                 @mouseover="updateProduct(index)">
                     
                 </div>
@@ -40,18 +47,17 @@ Vue.component('product',{
                 <button v-on:click="deleteToCart" :disabled="! inStock"
                 :class="{ disabledButton: !inStock }">Delete to Cart</button>
                 
-                <div class="cart">Cart({{cart}})</div>
-                
                 <a v-bind:href="link" target="_blank">More products like this</a>
 
             </div>
+
+            <product-review @review-subtited="addReview"></product-review>
 
         </div>
 ` ,
     
     data() {
-        return
-        {
+        return {
             brand: 'Vue Mastery',
             product: 'Socks',
             selectedVariant: 0,
@@ -72,20 +78,23 @@ Vue.component('product',{
                 }
             ],
             sizes: ['S', 'M', 'L', 'XL', 'XXL'],
-            cart: 0
+            reviews: []
         }
     },
     methods: {
         
         addToCart: function (){
-            this.cart += 1
+            this.$emit('add-to-cart', this.variants[this.selectedVariant].variantId)
         },
         deleteToCart: function(){
-            this.cart -= 1
+            this.$emit('delete-to-cart', this.variants[this.selectedVariant].variantId)
         },
         updateProduct: function (index){
             this.selectedVariant = index
             console.log(index)
+        },
+        addReview(productReview){
+            this.reviews.push(productReview)
         }
     },
     computed: {
@@ -97,13 +106,88 @@ Vue.component('product',{
         },
         inStock(){
             return this.variants[this.selectedVariant].variantQuantity
+        },
+        shipping(){
+            if(this.premium){
+                return "Free"
+            }
+            return 2.99
         }
     }
     
 })
 
+Vue.component('product-review', {
+    template: `
+        <from class="review-form" @submit.prevent="onSubmit">
+
+        <p>
+        <label for="name">Name:</label>
+        <input id="name" v-model="name">
+        </p>
+
+        <p>
+        <label for="review">Review:</label>
+        <textarea id="review" v-model="review"></textarea>
+        </p>
+
+        <p>
+        <label for="rating">Rating:</label>
+        <select id="rating" v-model.number="rating">
+        <option>5</option>
+        <option>4</option>
+        <option>3</option>
+        <option>2</option>
+        <option>1</option>
+        </select>
+        </p>
+
+        <p>
+        <input type="submit" value="Submit">
+        </p>
+        </from>
+`,
+    data() {
+        return {
+            name: null,
+            review: null,
+            rating: null
+        }
+    },
+    methods: {
+        onSubmit() {
+            let productReview = {
+                name: this.name,
+                review: this.review,
+                rating: this.rating
+            }
+            this.$emit('review-submitted', productReview)
+            this.name = null
+            this.review = null
+            this.rating = null
+        }
+    }
+})
+
 var app = new Vue({
     
-    el: '#app'
+    el: '#app',
+    data: {
+        premium: false,
+        cart: []
+},
+    methods: {
+        updateCart (id) {
+            this.cart.push(id)
+        },
+        deleteCart (id) {
+            for(var i = this.cart.length - 1; i > -1; i--) {
+            if (this.cart[i] === id) {
+               this.cart.splice(i, 1);
+            }
+          }
+        }
+    }
     
 })
+
