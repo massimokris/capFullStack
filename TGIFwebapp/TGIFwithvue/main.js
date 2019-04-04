@@ -1,24 +1,20 @@
 //funcion para sacar todos los estados de objeto json y ordenarlos en u dropdown
 function estados (){
     
-    var estado;
     var tablaEstados;
-    
-    //asignamos a la variable el objeto json de la lista de senadores para reucir la direccion del objeto para cuando la quiera llamar
-    estado = data.results[0].members;
     
     //inicializamos el dropdown con una cabecera
     tablaEstados= "<option id='estados'>"+"all"+"</option>";
     
     //recorremos el array de la lista de senadores 
-    for(var i=0;i<estado.length;i++){
+    for(var i=0;i<members.length;i++){
         
-       /*condicion para no repetir los estados en el dropdown*/ if(estado.indexOf(estado[i].state !== -1)){
+       /*condicion para no repetir los estados en el dropdown*/ if(members.indexOf(members[i].state == -1)){
             
             //mientras lo recorremos en cada iteracion metemos cada opcion del dropdown de estados
             tablaEstados += 
             
-                "<option id='estados'>"+estado[i].state+"</option>";
+                "<option id='estados'>"+members[i].state+"</option>";
         }
     }
     
@@ -60,7 +56,7 @@ function tabla (){
                         "<th>% Votes w/Party</th>"+
                         "</tr>";
     
-    //extraigo el nodo de los objetos con el name#party lo combierto en un array lo recorro con .map y solo estraigo su value
+    //extraigo el nodo de los objetos con el name #party lo combierto en un array lo recorro con .map y solo estraigo su value
     partidosSeleccionados = Array.from( document.querySelectorAll('input[name=party]:checked')).map(x => x.value);
     
     //console.log(partidosSeleccionados);
