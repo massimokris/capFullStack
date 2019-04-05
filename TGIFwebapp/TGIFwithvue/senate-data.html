@@ -113,9 +113,7 @@
                     <input type="checkbox" name="party" value="D" id="D" v-model="checkedParty" checked>
                     <label for="D">Democrat</label>
                     <input type="checkbox" name="party" value="I" id="I" v-model="checkedParty" checked>
-                    <label for="I">Independent</label>
-                    
-                    <span>{{checkedParty}}</span> 
+                    <label for="I">Independent</label> 
                     
                 </div>
                 
@@ -123,9 +121,9 @@
                     
                     <label for="state" text-rigth>Filter by State:</label>
                     
-                    <select>
+                    <select v-model="checkedState">
                         
-                        <option v-for="state in members">{{state.state}}</option>
+                        <option v-for="state in filterStates()" :value="state" selected>{{state}}</option>
                         
                     </select>
                     

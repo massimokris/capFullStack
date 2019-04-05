@@ -20,7 +20,7 @@
     
     <body>
        
-       <div class="container-fluid">
+       <div class="container-fluid" id="house">
            
            <header>
             
@@ -109,11 +109,11 @@
                     
                    Filter by Party:
                 
-                    <input type="checkbox" name="party" id="R" value="R" checked>
+                    <input type="checkbox" name="party" value="R" id="R" v-model="checkedParty" checked>
                     <label for="R">Republican</label>
-                    <input type="checkbox" name="party" id="D" value="D" checked>
+                    <input type="checkbox" name="party" value="D" id="D" v-model="checkedParty" checked>
                     <label for="D">Democrat</label>
-                    <input type="checkbox" name="party" id="I" value="I" checked>
+                    <input type="checkbox" name="party" value="I" id="I" v-model="checkedParty" checked>
                     <label for="I">Independent</label> 
                     
                 </div>
@@ -122,7 +122,11 @@
                     
                     <label for="state" text-rigth>Filter by State:</label>
                     
-                    <select name="estados" id="state-data" class="name"></select>
+                    <select v-model="checkedState">
+                        
+                        <option v-for="state in filterStates()" :value="state" selected>{{state}}</option>
+                        
+                    </select>
                     
                 </div>
                 
@@ -130,7 +134,36 @@
             
             <div style="width: 100%; height: 300px; overflow-y: scroll;">
                 
-                <table class="table table-bordered table-hover" id="members-data"></table>
+                <table class="table table-bordered table-hover">
+                   
+                    <tr>
+                        <th>Full name</th>
+                        
+                        <th>Party</th>
+                        
+                        <th>State</th>
+                        
+                        <th>Years in Office</th>
+                        
+                        <th>% Votes w/Party</th>
+                    </tr>
+                   
+                    <tr v-for="member in filter()">
+                        
+                        <td v-if="member.url == ''">{{member.first_name}} {{member.middle_name}} {{member.last_name}}</td>
+                        
+                        <td v-else><a :href="member.url">{{member.first_name}} {{member.middle_name}} {{member.last_name}}</a></td>
+                        
+                        <td>{{member.party}}</td>
+                        
+                        <td>{{member.state}}</td>
+                        
+                        <td>{{member.seniority}}</td>
+                        
+                        <td>{{member.votes_with_party_pct}}%</td>
+                        
+                    </tr>
+                </table>
                 
             </div>
             
@@ -142,9 +175,9 @@
        
         <script src="vue.js"></script>
         
-        <!--<script type="text/javascript" src="congress-113-house.js"></script>-->
+        <script type="text/javascript" src="congress-113-house.js"></script>
         
-        <script type="text/javascript" src="main.js"></script>
+        <!--<script type="text/javascript" src="main.js"></script>-->
         
         <script src="js/jquery-3.3.1.slim.min.js"></script>
         
