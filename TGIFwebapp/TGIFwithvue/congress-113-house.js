@@ -3,7 +3,17 @@ var app = new Vue({
     data: {
         members: {},
         checkedParty: ["R","D","I"],
-        checkedState: ["all"]
+        checkedState: ["all"],
+        numRepublicans: 0,
+        votesRepublicans: 0,
+        numDemocrats: 0,
+        votesDemocrats: 0,
+        numIndependents: 0,
+        votesIndependents: 0,
+        totalMembers: 0,
+        totalVotes: 0,
+        mostLoyal: {},
+        leastLoyal: {}
     },
     methods:{
         
@@ -42,6 +52,76 @@ var app = new Vue({
             }
             
             return stateFilter;
+        },
+        
+        glanceMembers: function(){
+            
+            for(var i=0; this.members.length; i++){
+                
+                totalVotes += members[i].votes_with_party_pct; 
+                
+                switch(members[i].party){
+                        
+                    case "R":
+                        
+                        numRepublicans++;
+                        votesRepublicans += this.members[i].votes_with_party_pct;
+                        break;
+                    
+                    case "D":
+                        
+                        numDemocrats++;
+                        votesDemocrats += this.members[i].votes_with_party_pct;
+                        break;
+                    
+                    case "I":
+                    
+                        numIndependents++;
+                        votesIndependents += this.members[i].votes_with_party_pct;
+                        break;
+                }
+            }
+                    
+            votesIndependents = votesIndependents/numIndependents;
+            
+                
+            votesRepublicans = votesRepublicans/numRepublicans;
+                
+            votesDemocrats = votesDemocrats/numDemocrats;
+            
+            totalMembers = this.members.length;
+            
+            totalVotes = totalVotes/totalMembers;
+            
+            return 0;
+        },
+        
+        loyalLeast: function(){
+        
+            var porcent;
+            var members = this.members;
+            
+            porcent = Math.floor(members.length*10/100);
+        
+            members.sort(function(a, b){return a.votes_with_party_pct - b.votes_with_party_pct});
+    
+            leastLoyal = members.slice(0, porcent);
+        
+            return leastLoyal;
+        },
+        
+        loyalMost: function(){
+        
+            var porcent;
+            var members = this.members;
+            
+            porcent = Math.floor(members.length*10/100);
+        
+            members.sort(function(a, b){return a.votes_with_party_pct - b.votes_with_party_pct});
+    
+            mostLoyal = members.slice(-porcent);
+        
+            return mostLoyal;
         }
     }
     

@@ -111,7 +111,6 @@ function glance (){
 function leastLoyal (){
     
     var members;
-    var least;
     var porcent;
     var tableLeastLoyal;
     

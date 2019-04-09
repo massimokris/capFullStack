@@ -3,7 +3,17 @@ var app = new Vue({
     data: {
         members: {},
         checkedParty: ["R","D","I"],
-        checkedState: ["all"]
+        checkedState: ["all"],
+        numRepublicans: 0,
+        votesRepublicans: 0,
+        numDemocrats: 0,
+        votesDemocrats: 0,
+        numIndependents: 0,
+        votesIndependents: 0,
+        totalMembers: 0,
+        totalVotes: 0,
+        mostLoyal: {},
+        leastLoyal: {}
     },
     methods:{
         
@@ -42,6 +52,80 @@ var app = new Vue({
             }
             
             return stateFilter;
+        },
+        
+        glanceMembers: function(){
+            
+            var members = this.members;
+            
+            for(var i=0; members.length; i++){
+                
+                totalVotes += members[i].votes_with_party_pct; 
+                
+                numRepublicans++;
+                
+                switch(members[i].party){
+                        
+                    case "R":
+                        
+                        numRepublicans++;
+                        votesRepublicans += members[i].votes_with_party_pct;
+                        break;
+                    
+                    case "D":
+                        
+                        numDemocrats++;
+                        votesDemocrats += members[i].votes_with_party_pct;
+                        break;
+                    
+                    case "I":
+                    
+                        numIndependents++;
+                        votesIndependents += members[i].votes_with_party_pct;
+                        break;
+                }
+            }
+                    
+            votesIndependents = votesIndependents/numIndependents;
+            
+                
+            votesRepublicans = votesRepublicans/numRepublicans;
+                
+            votesDemocrats = votesDemocrats/numDemocrats;
+            
+            totalMembers = members.length;
+            
+            totalVotes = totalVotes/totalMembers;
+            
+            return 0;
+        },
+        
+        loyalLeast: function(){
+        
+            var porcent;
+            var members = this.members;
+            
+            porcent = Math.floor(members.length*10/100);
+        
+            members.sort(function(a, b){return a.votes_with_party_pct - b.votes_with_party_pct});
+    
+            leastLoyal = members.slice(0, porcent);
+        
+            return leastLoyal;
+        },
+        
+        loyalMost: function(){
+        
+            var porcent;
+            var member = this.members;
+            
+            porcent = Math.floor(member.length*10/100);
+        
+            member.sort(function(a, b){return a.votes_with_party_pct - b.votes_with_party_pct});
+    
+            mostLoyal = member.slice(-porcent);
+        
+            return mostLoyal;
         }
     }
     
@@ -65,6 +149,7 @@ fetch( "https://api.propublica.org/congress/v1/113/senate/members.json", {
     
     app.members = value.results[0].members;
     app.checkedState = "all";
+    app.glanceMembers();
     
 }).catch(function(error) {
     
