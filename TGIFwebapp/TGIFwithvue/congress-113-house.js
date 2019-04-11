@@ -1,19 +1,14 @@
 var app = new Vue({
     el: '#house',
     data: {
-        members: {},
+        members: [],
         checkedParty: ["R","D","I"],
         checkedState: ["all"],
-        numRepublicans: 0,
-        votesRepublicans: 0,
-        numDemocrats: 0,
-        votesDemocrats: 0,
-        numIndependents: 0,
-        votesIndependents: 0,
-        totalMembers: 0,
-        totalVotes: 0,
+        glance: {},
         mostLoyal: {},
-        leastLoyal: {}
+        leastLoyal: {},
+        mostAttendance: {},
+        leastAttendance: {}
     },
     methods:{
         
@@ -56,44 +51,71 @@ var app = new Vue({
         
         glanceMembers: function(){
             
-            for(var i=0; this.members.length; i++){
+            var members = this.members;
+            
+            var obj = {
                 
-                totalVotes += members[i].votes_with_party_pct; 
+                numRepublicans: 0,
+                votesRepublicans: 0,
+                numDemocrats: 0,
+                votesDemocrats: 0,
+                numIndependents: 0,
+                votesIndependents: 0,
+                totalMembers: 0,
+                totalVotes: 0
+            }
+            
+            for(var i=0; this.members.length > i; i++){
+                
+                obj.totalVotes += members[i].votes_with_party_pct; 
                 
                 switch(members[i].party){
                         
                     case "R":
                         
-                        numRepublicans++;
-                        votesRepublicans += this.members[i].votes_with_party_pct;
+                        obj.numRepublicans++;
+                        obj.votesRepublicans += this.members[i].votes_with_party_pct;
                         break;
                     
                     case "D":
                         
-                        numDemocrats++;
-                        votesDemocrats += this.members[i].votes_with_party_pct;
+                        obj.numDemocrats++;
+                        obj.votesDemocrats += this.members[i].votes_with_party_pct;
                         break;
                     
                     case "I":
                     
-                        numIndependents++;
-                        votesIndependents += this.members[i].votes_with_party_pct;
+                        obj.numIndependents++;
+                        obj.votesIndependents += this.members[i].votes_with_party_pct;
                         break;
                 }
             }
-                    
-            votesIndependents = votesIndependents/numIndependents;
             
+            if(obj.votesIndependents == 0){
                 
-            votesRepublicans = votesRepublicans/numRepublicans;
+                obj.votesIndependents = obj.votesIndependents;
+            }else{
                 
-            votesDemocrats = votesDemocrats/numDemocrats;
+                obj.votesIndependents = obj.votesIndependents/obj.numIndependents;
+            }
+                
+            obj.votesRepublicans = obj.votesRepublicans/obj.numRepublicans;
+                
+            obj.votesDemocrats = obj.votesDemocrats/obj.numDemocrats;
             
-            totalMembers = this.members.length;
+            obj.totalMembers = this.members.length;
             
-            totalVotes = totalVotes/totalMembers;
+            obj.totalVotes = obj.totalVotes/obj.totalMembers;
             
-            return 0;
+            obj.votesIndependents = obj.votesIndependents.toFixed(2);
+               
+            obj.votesRepublicans = obj.votesRepublicans.toFixed(2);
+                
+            obj.votesDemocrats = obj.votesDemocrats.toFixed(2);
+            
+            obj.totalVotes = obj.totalVotes.toFixed(2);
+            
+            return obj;
         },
         
         loyalLeast: function(){
@@ -102,10 +124,8 @@ var app = new Vue({
             var members = this.members;
             
             porcent = Math.floor(members.length*10/100);
-        
-            members.sort(function(a, b){return a.votes_with_party_pct - b.votes_with_party_pct});
     
-            leastLoyal = members.slice(0, porcent);
+            leastLoyal = [...members].sort(function(a, b){return a.votes_with_party_pct - b.votes_with_party_pct}).slice(0, porcent);
         
             return leastLoyal;
         },
@@ -116,12 +136,34 @@ var app = new Vue({
             var members = this.members;
             
             porcent = Math.floor(members.length*10/100);
-        
-            members.sort(function(a, b){return a.votes_with_party_pct - b.votes_with_party_pct});
     
-            mostLoyal = members.slice(-porcent);
+            mostLoyal = [...members].sort(function(a, b){return a.votes_with_party_pct - b.votes_with_party_pct}).slice(-porcent);
         
             return mostLoyal;
+        },
+        
+        attendanceLeast: function(){
+        
+            var porcent;
+            var members = this.members;
+            
+            porcent = Math.floor(members.length*10/100);
+    
+            leastAttendance = [...members].sort(function(a, b){return a.missed_votes - b.missed_votes}).slice(0, porcent);
+        
+            return leastAttendance;
+        },
+        
+        attendanceMost: function(){
+        
+            var porcent;
+            var members = this.members;
+            
+            porcent = Math.floor(members.length*10/100);
+    
+            mostAttendance = [...members].sort(function(a, b){return a.missed_votes - b.missed_votes}).slice(-porcent);
+        
+            return mostAttendance;
         }
     }
     
@@ -145,6 +187,7 @@ fetch( "https://api.propublica.org/congress/v1/113/house/members.json", {
     
     app.members = value.results[0].members;
     app.checkedState = "all";
+    app.glance = app.glanceMembers();
     
 }).catch(function(error) {
     

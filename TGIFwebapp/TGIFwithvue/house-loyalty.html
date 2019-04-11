@@ -109,11 +109,11 @@
                         <th>No. of Reps</th>
                         <th>% voted w/party</th>
                         </tr>
-                        <tr><td>Democrats</td><td>{{numDemocrats}}</td><td>{{votesDemocrats}}</td></tr>
-                        <tr><td>Republicans</td><td>{{numRepublicans}}</td><td>{{votesRepublicans}}</td></tr>
-                        <tr><td>Independents</td><td>{{numIndependents}}</td><td>{{votesIndependents}}</td></tr>
+                        <tr><td>Democrats</td><td>{{glance.numDemocrats}}</td><td>{{glance.votesDemocrats}}</td></tr>
+                        <tr><td>Republicans</td><td>{{glance.numRepublicans}}</td><td>{{glance.votesRepublicans}}</td></tr>
+                        <tr><td>Independents</td><td>{{glance.numIndependents}}</td><td>{{glance.votesIndependents}}</td></tr>
                         <tr>
-                        <td>Total</td><td>{{totalMembers}}</td><td>{{totalVotes}}
+                        <td>Total</td><td>{{glance.totalMembers}}</td><td>{{glance.totalVotes}}
                         </td>
                         </tr>
                     
@@ -132,6 +132,16 @@
                <div style="width: 100%; height: 300px; overflow-y: scroll;" >
                    
                    <table class="table table-bordered table-hover">
+                      
+                      <tr>
+                          
+                          <th>Name</th>
+                          
+                          <th>No. Party Votes</th>
+                          
+                          <th>% Party Votes</th>
+                          
+                      </tr>
                        
                        <tr v-for="member in loyalLeast()">
                            
@@ -158,6 +168,16 @@
                <div style="width: 100%; height: 300px; overflow-y: scroll;" >
                    
                    <table class="table table-bordered table-hover">
+                      
+                      <tr>
+                          
+                          <th>Name</th>
+                          
+                          <th>No. Party Votes</th>
+                          
+                          <th>% Party Votes</th>
+                          
+                      </tr>
                        
                        <tr v-for="member in loyalMost()">
                            
@@ -187,11 +207,11 @@
         
         <script type="text/javascript" src="congress-113-house.js"></script>
        
-        <script type="text/javascript" src="statistics.js"></script>
+        <!--<script type="text/javascript" src="statistics.js"></script>-->
         
         <!--<script type="text/javascript" src="statisticsCalculate.js"></script>-->
         
-        <script type="text/javascript" src="main.js"></script>
+        <!--<script type="text/javascript" src="main.js"></script>-->
         
         <script src="js/jquery-3.3.1.slim.min.js"></script>
         
