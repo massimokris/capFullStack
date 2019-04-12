@@ -49,10 +49,12 @@ var app = new Vue({
             return stateFilter;
         },
         
+        //funcion para mostrar el total de senadores por partido y el porcenaje de votos
         glanceMembers: function(){
             
             var members = this.members;
             
+            //objeto con los datos a extraer de los miembros
             var obj = {
                 
                 numRepublicans: 0,
@@ -65,10 +67,13 @@ var app = new Vue({
                 totalVotes: 0
             }
             
+            //recorro el array de miembros del congreso
             for(var i=0; this.members.length > i; i++){
                 
+                //acumulo el total de porcetaje de votos para luego calcular el porccentaje total
                 obj.totalVotes += members[i].votes_with_party_pct; 
                 
+                //acumulo y sumo por partido comparando con un switch en cada iteracion
                 switch(members[i].party){
                         
                     case "R":
@@ -91,6 +96,7 @@ var app = new Vue({
                 }
             }
             
+            //calculo de porcentaje de votos
             if(obj.votesIndependents == 0){
                 
                 obj.votesIndependents = obj.votesIndependents;
@@ -107,6 +113,7 @@ var app = new Vue({
             
             obj.totalVotes = obj.totalVotes/obj.totalMembers;
             
+            //reduccion de decimales
             obj.votesIndependents = obj.votesIndependents.toFixed(2);
                
             obj.votesRepublicans = obj.votesRepublicans.toFixed(2);
@@ -118,6 +125,7 @@ var app = new Vue({
             return obj;
         },
         
+        //funcion para calcular la estadistica del x% menos leal a su partido en base al porcentaje de votos con su partido
         loyalLeast: function(){
         
             var porcent;
@@ -125,11 +133,21 @@ var app = new Vue({
             
             porcent = Math.floor(members.length*10/100);
     
-            leastLoyal = [...members].sort(function(a, b){return a.votes_with_party_pct - b.votes_with_party_pct}).slice(0, porcent);
+            leastLoyal = [...members].sort(function(a, b){return a.votes_with_party_pct - b.votes_with_party_pct});
+            
+            for(var i= 0; porcent > i; i++){
+                
+                if(i!=0 && leastLoyal[i].votes_with_party_pct == leastLoyal[i-1].votes_with_party_pct){
+                    
+                    porcent++;
+                }
+            }
         
-            return leastLoyal;
+            return leastLoyal.slice(0, porcent);
+            
         },
         
+        //funcion para calcular la estadistica del x% mas leal a su partido en base al porcentaje de votos con su partido
         loyalMost: function(){
         
             var porcent;
@@ -137,23 +155,42 @@ var app = new Vue({
             
             porcent = Math.floor(members.length*10/100);
     
-            mostLoyal = [...members].sort(function(a, b){return a.votes_with_party_pct - b.votes_with_party_pct}).slice(-porcent);
+            mostLoyal = [...members].sort(function(a, b){return a.votes_with_party_pct - b.votes_with_party_pct});
+            
+            for(var i = 0; porcent > i; i++){
+                
+               if(i != 0 && mostLoyal[i].votes_with_party_pct == mostLoyal[i-1].votes_with_party_pct){
+                   
+                   porcent++;
+               } 
+            }
         
-            return mostLoyal;
+            return mostLoyal.slice(-porcent);
         },
         
+        //funcion para calcular la estadistica del x% con menos ausencias en el congreso en base a los votos perdidos
         attendanceLeast: function(){
         
             var porcent;
             var members = this.members;
             
             porcent = Math.floor(members.length*10/100);
-    
-            leastAttendance = [...members].sort(function(a, b){return a.missed_votes - b.missed_votes}).slice(0, porcent);
+            
+            leastAttendance = [...members].sort(function(a, b){return b.missed_votes - a.missed_votes});
+            
+            for(var i = 0; porcent > i; i++){
+                
+                if(i!=0 && leastAttendance[i].missed_votes == leastAttendance[i-1].missed_votes ){
+                    
+                    porcent++;
+                }
+            }
+            
         
-            return leastAttendance;
+            return leastAttendance.slice(0, porcent);
         },
         
+         //funcion para calcular la estadistica del x% con menos ausencias en el congreso en base a los votos perdidos
         attendanceMost: function(){
         
             var porcent;
@@ -161,9 +198,17 @@ var app = new Vue({
             
             porcent = Math.floor(members.length*10/100);
     
-            mostAttendance = [...members].sort(function(a, b){return a.missed_votes - b.missed_votes}).slice(-porcent);
+            mostAttendance = [...members].sort(function(a, b){return a.missed_votes - b.missed_votes});
+            
+            for(var i = 0; porcent > i; i++){
+                
+                if(i != 0 && leastAttendance[i].missed_votes == leastAttendance[i-1].missed_votes){
+                    
+                    porcent++;
+                }
+            }
         
-            return mostAttendance;
+            return mostAttendance.slice(0, porcent);
         }
     }
     
