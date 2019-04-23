@@ -11,8 +11,10 @@
         <meta http-equiv="x-ua-compatible" content="ie-edge">
         
         <link rel="stylesheet" type="text/css" href="bootstrap-4.3.1-dist/css/bootstrap.css">
-
-        <STYLE>A {text-decoration:none;} </STYLE>
+        
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+        
+        <link rel="stylesheet" href="main.css">
         
     </head>
     
@@ -20,44 +22,90 @@
     
         <div class="container-fluid">
             
-            <header>
-               
-               <img src="nysl_logo.png" alt="league logo" width="18%">
+            <header class="row">
+              
+              <div class="col-12">
                 
-               <nav class="navbar navbar float-right">
-            
-                    <ul class="navbar-nav">
-                    
-                        <li class="li nav-item">
-                
-                           <a href="#home" class="nav-link">Home</a>
-                            
-                        </li>
+                   <nav class="navbar navbar-light">
                         
-                        <li class="li nav-item">
-                            
-                            <a href="#info" class="nav-link">Game Inf</a>
-                            
-                        </li>
+                        <img src="nysl_logo.png" alt="league logo" width="18%">
                         
-                        <li class="li nav-item">
+                        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navNavbar">
+                            <span class="navbar-toggler-icon"></span>
                             
-                            <a href="#contact" class="nav-link">Contact</a>
+                        </button>
+                        
+                        <div class="collapse navbar-collapse" id="navNavbar">
                             
-                        </li>
-                     
-                    </ul>
-                </nav> 
-                
+                            <ul class="navbar-nav">
+
+                                <li class="nav-item nav-pills">
+
+                                   <a href="#home" class="nav-link">Home</a>
+
+                                </li>
+
+                                <li class="li nav-item">
+
+                                    <a href="#info" class="nav-link">Game Inf</a>
+
+                                </li>
+
+                                <li class="li nav-item">
+
+                                    <a href="#contact" class="nav-link">Contact</a>
+
+                                </li>
+
+                                <li class="li nav-item">
+
+                                    <a href="#contact" class="nav-link">Maps</a>
+
+                                </li>
+
+                            </ul>
+                            
+                        </div>
+
+                    </nav>
+                  
+              </div>
+                 
             </header>
             
             <section>
+                  
+                <div class="welcome">
+                    
+                    <div class="row justify-content-center">
+                    
+                        <div class="col">
+
+                              <img src="nysl_logo.png" alt="league logo" width="80%" class="mx-auto d-block">
+
+                        </div>
+
+                    </div>
+                    
+                    <div class="row justify-content-center">
+                    
+                        <div class="col-4 text-center">
+                               <p>Welcome<br>
+                               NYSL League</p>
+
+                        </div>
+
+                    </div>   
+                    
+                </div>
                 
                 <div class="home">
+                  
+                  <h2>Categories</h2>
                    
-                   <div class="row">
+                   <div class="row justify-content-center">
                        
-                       <div class="panel panel-default text-center col-sm-6">
+                       <div class="panel panel-default text-center col-5">
 
                            <div class="panel-heading">
 
@@ -67,7 +115,7 @@
 
                        </div>
 
-                        <div class="panel panel-default text-center col-sm-6">
+                        <div class="panel panel-default text-center col-5">
 
                            <div class="panel-heading">
 
@@ -79,9 +127,9 @@
                        
                    </div>
                    
-                   <div class="row">
+                   <div class="row justify-content-center">
                        
-                       <div class="panel panel-default text-center col-sm-6">
+                       <div class="panel panel-default text-center col-5">
 
                            <div class="panel-heading">
 
@@ -91,7 +139,7 @@
 
                        </div>
 
-                        <div class="panel panel-default text-center col-sm-6">
+                        <div class="panel panel-default text-center col-5">
 
                            <div class="panel-heading">
 
@@ -103,9 +151,9 @@
                        
                    </div>
                     
-                    <div class="row">
+                    <div class="row justify-content-center">
                         
-                        <div class="panel panel-default text-center col-sm-6">
+                        <div class="panel panel-default text-center col-5">
 
                            <div class="panel-heading">
 
@@ -115,7 +163,7 @@
 
                        </div>
 
-                        <div class="panel panel-default text-center col-sm-6">
+                        <div class="panel panel-default text-center col-5">
 
                            <div class="panel-heading">
 
@@ -142,44 +190,54 @@
                                 <th>SEPTEMBER</th>
                                 <th>Location</th>
                                 <th>Times</th>
+                                <th>Directions</th>
                             </tr>
                             <tr>
                                 <td>9/01</td>
                                 <td>AJ Katzenmaier</td>
                                 <td>9:30 a.m.</td>
+                                <td><button class="btn btn-md">Maps</button></td>
                             </tr>
                             <tr>
                                 <td>9/08</td>
                                 <td>Marjorie P Hart</td>
                                 <td>1:00 p.m.</td>
+                                <td><button class="btn btn-md">Maps</button></td>
                             </tr>
                             <tr>
                                 <td>9/15</td>
                                 <td>South</td>
                                 <td>9:30 a.m.</td>
+                                <td><button class="btn btn-md">Maps</button></td>
                             </tr>
                             
                             <tr>
                                 <th>OCTOBER</th>
                                 <th>Location</th>
                                 <th>Times</th>
+                                <th>Directions</th>
                             </tr>
                             <tr>
                                 <td>10/06</td>
                                 <td>South</td>
                                 <td>1:00 p.m.</td>
+                                <td><button class="btn btn-md">Maps</button></td>
                             </tr>
                             <tr>
                                 <td>10/08</td>
                                 <td>Greenbay</td>
                                 <td>1:00 p.m.</td>
+                                <td><button class="btn btn-md">Maps</button></td>
                             </tr>
                             <tr>
                                 <td>10/20</td>
                                 <td>AJ Katzenmaier</td>
                                 <td>9:30 a.m.</td>
+                                <td><button class="btn btn-md">Maps</button></td>
                             </tr>
                         </table> 
+                        
+                        <button class="btn btn-md">Back</button>
                         
                     </div>
                     
@@ -192,39 +250,48 @@
                                 <th>SEPTEMBER</th>
                                 <th>Location</th>
                                 <th>Times</th>
+                                 <th>Directions</th>
                             </tr>
                             <tr>
                                 <td>9/01</td>
                                 <td>Greenbay</td>
                                 <td>1:00 p.m.</td>
+                                <td><button class="btn btn-md">Maps</button></td>
                             </tr>
                             <tr>
                                 <td>9/15</td>
                                 <td>North</td>
                                 <td>9:30 a.m.</td>
+                                <td><button class="btn btn-md">Maps</button></td>
                             </tr>
                             <tr>
                                 <td>9/22</td>
                                 <td>Howard A Yeager</td>
                                 <td>1:00 p.m.</td>
+                                <td><button class="btn btn-md">Maps</button></td>
                             </tr>
                             
                             <tr>
                                 <th>OCTOBER</th>
                                 <th>Location</th>
                                 <th>Times</th>
+                                <th>Directions</th>
                             </tr>
                             <tr>
                                 <td>10/06</td>
                                 <td>Marjorie P Hart</td>
                                 <td>9:30 a.m.</td>
+                                <td><button class="btn btn-md">Maps</button></td>
                             </tr>
                             <tr>
                                 <td>10/20</td>
                                 <td>Marjorie P Hart</td>
                                 <td>1:00 p.m.</td>
+                                <td><button class="btn btn-md">Maps</button></td>
                             </tr>
                         </table> 
+                        
+                        <button class="btn btn-md">Back</button>
                         
                     </div>
                     
@@ -237,22 +304,26 @@
                                 <th>SEPTEMBER</th>
                                 <th>Location</th>
                                 <th>Times</th>
+                                <th>Directions</th>
                             </tr>
                             <tr>
                                 <td>9/01</td>
                                 <td>Greenbay</td>
                                 <td>1:00 p.m.</td>
+                                <td><button class="btn btn-md">Maps</button></td>
                             </tr>
                             <tr>
                                 <td>9/15</td>
                                 <td>AJ Katzenmaier</td>
                                 <td>1:00 p.m.</td>
+                                <td><button class="btn btn-md">Maps</button></td>
                             </tr>
                             <tr>
                                 
                                 <td>9/15</td>
                                 <td>South</td>
                                 <td>9:30 a.m</td>
+                                <td><button class="btn btn-md">Maps</button></td>
                                 
                             </tr>
                             
@@ -260,23 +331,29 @@
                                 <th>OCTOBER</th>
                                 <th>Location</th>
                                 <th>Times</th>
+                                <th>Directions</th>
                             </tr>
                             <tr>
                                 <td>10/06</td>
                                 <td>Howardd A Yeager</td>
                                 <td>9:30 a.m.</td>
+                                <td><button class="btn btn-md">Maps</button></td>
                             </tr>
                             <tr>
                                 <td>10/08</td>
                                 <td>North</td>
                                 <td>9:30 a.m.</td>
+                                <td><button class="btn btn-md">Maps</button></td>
                             </tr>
                             <tr>
                                 <td>10/20</td>
                                 <td>AJ Katzenmaier</td>
                                 <td>9:30 a.m.</td>
+                                <td><button class="btn btn-md">Maps</button></td>
                             </tr>
                         </table>
+                        
+                        <button class="btn btn-md">Back</button>
                         
                     </div>
                     
@@ -289,39 +366,48 @@
                                 <th>SEPTEMBER</th>
                                 <th>Location</th>
                                 <th>Times</th>
+                                <th>Directions</th>
                             </tr>
                             <tr>
                                 <td>9/01</td>
                                 <td>AJ Katzenmaier</td>
                                 <td>9:30 a.m.</td>
+                                <td><button class="btn btn-md">Maps</button></td>
                             </tr>
                             <tr>
                                 <td>9/08</td>
                                 <td>North</td>
                                 <td>9:30 a.m.</td>
+                                <td><button class="btn btn-md">Maps</button></td>
                             </tr>
                             <tr>
                                 <td>9/29</td>
                                 <td>Greenbay</td>
                                 <td>9:30 a.m.</td>
+                                <td><button class="btn btn-md">Maps</button></td>
                             </tr>
                             
                             <tr>
                                 <th>OCTOBER</th>
                                 <th>Location</th>
                                 <th>Times</th>
+                                <th>Directions</th>
                             </tr>
                             <tr>
                                 <td>10/06</td>
                                 <td>Howard A Yeager</td>
                                 <td>9:30 a.m.</td>
+                                <td><button class="btn btn-md">Maps</button></td>
                             </tr>
                             <tr>
                                 <td>10/20</td>
                                 <td>Marjorie P Hart</td>
                                 <td>1:00 p.m.</td>
+                                <td><button class="btn btn-md">Maps</button></td>
                             </tr>
                         </table>
+                        
+                        <button class="btn btn-md">Back</button>
                         
                     </div>
                     
@@ -334,44 +420,54 @@
                                 <th>SEPTEMBER</th>
                                 <th>Location</th>
                                 <th>Times</th>
+                                <th>Directions</th>
                             </tr>
                             <tr>
                                 <td>9/01</td>
                                 <td>Howard A Yeager</td>
                                 <td>9:30 a.m.</td>
+                                <td><button class="btn btn-md">Maps</button></td>
                             </tr>
                             <tr>
                                 <td>9/15</td>
                                 <td>AJ Katzenmaier</td>
                                 <td>1:00 p.m.</td>
+                                <td><button class="btn btn-md">Maps</button></td>
                             </tr>
                             <tr>
                                 <td>9/29</td>
                                 <td>Greenbay</td>
                                 <td>9:30 a.m.</td>
+                                <td><button class="btn btn-md">Maps</button></td>
                             </tr>
                             
                             <tr>
                                 <th>OCTOBER</th>
                                 <th>Location</th>
                                 <th>Times</th>
+                                <th>Directions</th>
                             </tr>
                             <tr>
                                 <td>10/06</td>
                                 <td>Marjorie P Hart</td>
                                 <td>9:30 a.m.</td>
+                                <td><button class="btn btn-md">Maps</button></td>
                             </tr>
                             <tr>
                                 <td>10/08</td>
                                 <td>Greenbay</td>
                                 <td>1:00 p.m.</td>
+                                <td><button class="btn btn-md">Maps</button></td>
                             </tr>
                             <tr>
                                 <td>10/27</td>
                                 <td>Howard A Yeager</td>
                                 <td>1:00 p.m.</td>
+                                <td><button class="btn btn-md">Maps</button></td>
                             </tr>
                         </table>
+                        
+                        <button class="btn btn-md">Back</button>
                         
                     </div>
                     
@@ -384,59 +480,191 @@
                                 <th>SEPTEMBER</th>
                                 <th>Location</th>
                                 <th>Times</th>
+                                <th>Directions</th>
                             </tr>
                             <tr>
                                 <td>9/01</td>
                                 <td>Howard A Yeager</td>
                                 <td>9:30 a.m.</td>
+                                <td><button class="btn btn-md">Maps</button></td>
                             </tr>
                             <tr>
                                 <td>9/08</td>
                                 <td>Marjorie P hart</td>
                                 <td>1:00 p.m.</td>
+                                <td><button class="btn btn-md">Maps</button></td>
                             </tr>
                             <tr>
                                 <td>9/22</td>
                                 <td>Howard A Yeager</td>
                                 <td>1:00 p.m.</td>
+                                <td><button class="btn btn-md">Maps</button></td>
                             </tr>
                             
                             <tr>
                                 <th>OCTOBER</th>
                                 <th>Location</th>
                                 <th>Times</th>
+                                <th>Directions</th>
                             </tr>
                             <tr>
                                 <td>10/06</td>
                                 <td>South</td>
                                 <td>1:00 p.m.</td>
+                                <td><button class="btn btn-md">Maps</button></td>
                             </tr>
                             <tr>
                                 <td>10/08</td>
                                 <td>North</td>
                                 <td>9:30 a.m.</td>
+                                <td><button class="btn btn-md">Maps</button></td>
                             </tr>
                             <tr>
                                 <td>10/20</td>
                                 <td>Howard A Yeager</td>
                                 <td>1:00 p.m.</td>
+                                <td><button class="btn btn-md">Maps</button></td>
                             </tr>
                         </table>
+                        
+                        <button class="btn btn-md">Back</button>
                         
                     </div>
                 </div>
                 
+                <div class="maps">
+                   
+                   <h2>Game Locations</h2>
+                    
+                    <div class="row">
+                        
+                        <div class="col-12">
+                            
+                            <p>AJ Katzenmaier Elementary<br>24 W. Walton St., Chicago, IL 60610</p>
+                            
+                        </div>
+                        
+                        <div class="col-12">
+                            
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d2969.6540604261627!2d-87.63123908505526!3d41.900296372004725!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses-419!2sar!4v1552323767908" width="350" height="200" style="border:0" allowfullscreen></iframe>
+                            
+                        </div>
+                        
+                    </div>
+                       
+                    <div class="row">
+                        
+                        <div class="col-12">
+                            
+                            <p>Greenbay Elementary<br>1734 N. Orleans St., Chicago, IL 60614</p>
+                            
+                        </div>
+                        
+                        <div class="col-12">
+                            
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2969.0256986745426!2d-87.64002798505479!3d41.91380627115881!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x880fd34073f306a3%3A0x9e1726bbf8f23f0e!2s1734+N+Orleans+St%2C+Chicago%2C+IL+60614%2C+EE.+UU.!5e0!3m2!1ses-419!2sar!4v1552323731212" width="350" height="200" style="border:0" allowfullscreen></iframe>
+                            
+                        </div>
+                        
+                    </div>
+                       
+                    <div class="row">
+                        
+                        <div class="col-12">
+                            
+                            <p>Howard A Yeager Elementary<br>2245 N. Southport Ave., Chicago, IL 60614</p>
+                            
+                        </div>
+                        
+                        <div class="col-12">
+                            
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2968.5854973846845!2d-87.66511458505448!3d41.92326857056615!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x880fd2e37f9b8d2d%3A0x62ad8b907dd755d6!2s2245+N+Southport+Ave%2C+Chicago%2C+IL+60614%2C+EE.+UU.!5e0!3m2!1ses-419!2sar!4v1552323695495" width="350" height="200" style="border:0" allowfullscreen></iframe>
+                            
+                        </div>
+                        
+                    </div>
+                       
+                    <div class="row">
+                        
+                        <div class="col-12">
+                            
+                            <p>Marjorie P Hart Elementary<br>2625 N. Orchard St., Chicago, IL 60614</p>
+                            
+                        </div>
+                        
+                        <div class="col-12">
+                            
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2968.291728953083!2d-87.64808628505428!3d41.92958227017081!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x880fd30f2630e551%3A0x3e719e44a5cef714!2s2625+N+Orchard+St%2C+Chicago%2C+IL+60614%2C+EE.+UU.!5e0!3m2!1ses-419!2sar!4v1552323643440" width="350" height="200" style="border:0" allowfullscreen></iframe>
+                            
+                        </div>
+                        
+                    </div>
+                       
+                    <div class="row">
+                        
+                        <div class="col-12">
+                            
+                            <p>North Elementary<br>
+                    1409 N. Ogden Ave., Chicago, IL 60610</p>
+                            
+                        </div>
+                        
+                        <div class="col-12">
+                            
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2969.336302541957!2d-87.64835588505505!3d41.90712867157695!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x880fd33af13a8945%3A0xb6ad1ec2b6f379ba!2s1409+N+Ogden+Ave%2C+Chicago%2C+IL+60610%2C+EE.+UU.!5e0!3m2!1ses-419!2sar!4v1552323556043" width="350" height="200" style="border:0" allowfullscreen></iframe>
+                            
+                        </div>
+                        
+                    </div>
+                       
+                    <div class="row">
+                        
+                        <div class="col-12">
+                            
+                            <p>South Elementary<br>
+                            2101 N. Fremont St., Chicago, IL 60614</p>
+                            
+                        </div>
+                        
+                        <div class="col-12">
+                            
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2968.7477648265644!2d-87.65355538505459!3d41.91978077078475!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x880fd3196fb41dc7%3A0x970be7f7d6336df5!2s2101+N+Fremont+St%2C+Chicago%2C+IL+60614%2C+EE.+UU.!5e0!3m2!1ses-419!2sar!4v1552323597566" width="350" height="200" style="border:0" allowfullscreen></iframe>
+                            
+                        </div>
+                        
+                    </div>
+                    
+                    <button class="btn btn-md">Back</button>
+                    
+                </div>
+                
                 <div class="contact">
+                   
+                   <h2>Contact</h2>
                     
+                    <from>
+                        
+                        <label for="name">Name: </label> <input type="text" id="name" class="form-control">
+                        
+                        <label for="email">Email: </label> <input type="email" id="email" class="form-control">
+                        
+                        <label for="feedback">Feedback: </label> <br>
+                        <textarea name="feedback" id="feedback" cols="30" rows="5"></textarea>
+                        
+                        <button class="btn btn-sm">Submit</button>
+                        
+                    </from>
                     
+                    <br><br>
+                    <button class="btn btn-md">Back</button>
                     
                 </div>
                 
             </section>
             
-            <footer>
+            <footer class="text-center">
                 
-                
+                <i class="far fa-copyright"></i> 2019 Mk. | All Rights Reserved
                 
             </footer>
         </div>

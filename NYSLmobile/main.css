@@ -1,0 +1,23 @@
+/*le damos un padding a todo el cuerpo de la pagina*/
+body{
+    
+    padding: 50px;
+    font-family: "Comic Sans Ms", cursive, sans-serif !important;
+    background-color: #050D38;
+}
+
+/*le damos un borde a la barra de navegacion */
+.navbar{
+    
+    margin-bottom: 40px;
+}
+
+/*le damos un borde a la barra de navegacion */
+footer{
+    
+    border: solid 1px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding: 20px;
+}
+
