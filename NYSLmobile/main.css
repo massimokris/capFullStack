@@ -1,15 +1,19 @@
 /*le damos un padding a todo el cuerpo de la pagina*/
 body{
     
-    padding: 50px;
     font-family: "Comic Sans Ms", cursive, sans-serif !important;
-    background-color: #050D38;
+    background-color: #ede9e1;
+    padding: 10px;
 }
 
 /*le damos un borde a la barra de navegacion */
 .navbar{
     
+    background-color: #16a316;
     margin-bottom: 40px;
+    padding: 20px;
+    border: solid 1px;
+    
 }
 
 /*le damos un borde a la barra de navegacion */
@@ -19,5 +23,125 @@ footer{
     margin-top: 20px;
     margin-bottom: 20px;
     padding: 20px;
+    background-color: white;
 }
 
+.welcome{
+    
+    background-color: white;
+    padding: 20px;
+    border: solid 1px;
+}
+
+.home{
+    
+    background-color: white;
+    padding: 20px;
+    border: solid 1px;
+}
+
+.u1{
+    
+    background-color: white;
+    padding: 20px;
+    border: solid 1px;
+}
+
+.u2{
+    
+    background-color: white;
+    padding: 20px;
+    border: solid 1px;
+}
+
+.u3{
+    
+    background-color: white;
+    padding: 20px;
+    border: solid 1px;
+}
+
+.u4{
+    
+    background-color: white;
+    padding: 20px;
+    border: solid 1px;
+}
+
+.u5{
+    
+    background-color: white;
+    padding: 20px;
+    border: solid 1px;
+}
+
+.u6{
+    
+    background-color: white;
+    padding: 20px;
+    border: solid 1px;
+}
+
+.contact{
+    
+    background-color: white;
+    padding: 20px;
+    border: solid 1px;
+}
+
+.maps{
+    
+    background-color: white;
+    padding: 20px;
+    border: solid 1px;
+}
+
+.panel{
+    
+    background-color: #16a316;
+    border: solid 1px;
+    margin: 4px 4px 4px 4px;
+    border-radius: 7px 7px 7px 7px;
+    -moz-border-radius: 7px 7px 7px 7px;
+    -webkit-border-radius: 7px 7px 7px 7px;
+}
+
+iframe{
+    
+    width: 90%;
+}
+
+#imgNavbar{
+    
+    width: 30%;
+}
+
+.navbar-light .navbar-nav .nav-link {
+    color: black;
+    resize: vertical;
+}
+
+.navbar-light .navbar-toggler {
+    color: black;
+    border-color: black;
+}
+
+a {
+    color: black;
+    text-decoration: none;
+    background-color: none;
+}
+
+textarea {
+    margin: 0;
+    font-family: none;
+    font-size: none;
+    line-height: inherit;
+    width: 95%;
+}
+
+#textIn{
+    
+    font-size: 18px;
+    text-align: center;
+}
