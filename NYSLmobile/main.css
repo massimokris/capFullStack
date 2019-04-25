@@ -1,25 +1,23 @@
 /*le damos un padding a todo el cuerpo de la pagina*/
 body{
     
-    font-family: "Comic Sans Ms", cursive, sans-serif !important;
-    background-color: #ede9e1;
-    padding: 10px;
+    /*font-family: "Comic Sans Ms", cursive, sans-serif !important;*/
+    background-color: #3e3e3e;
 }
 
 /*le damos un borde a la barra de navegacion */
 .navbar{
     
-    background-color: #16a316;
-    margin-bottom: 40px;
+    background-color: #044a04;
+    margin: 10px 0 20px 0;
     padding: 20px;
-    border: solid 1px;
+    background: linear-gradient(to bottom right, rgba(6, 6, 72, 0.8), #3838af, #060635);
     
 }
 
 /*le damos un borde a la barra de navegacion */
 footer{
     
-    border: solid 1px;
     margin-top: 20px;
     margin-bottom: 20px;
     padding: 20px;
@@ -30,80 +28,88 @@ footer{
     
     background-color: white;
     padding: 20px;
-    border: solid 1px;
 }
 
 .home{
     
     background-color: white;
     padding: 20px;
-    border: solid 1px;
 }
 
 .u1{
     
     background-color: white;
     padding: 20px;
-    border: solid 1px;
 }
 
 .u2{
     
     background-color: white;
     padding: 20px;
-    border: solid 1px;
 }
 
 .u3{
     
     background-color: white;
     padding: 20px;
-    border: solid 1px;
 }
 
 .u4{
     
     background-color: white;
     padding: 20px;
-    border: solid 1px;
 }
 
 .u5{
     
     background-color: white;
     padding: 20px;
-    border: solid 1px;
 }
 
 .u6{
     
     background-color: white;
     padding: 20px;
-    border: solid 1px;
 }
 
 .contact{
     
     background-color: white;
     padding: 20px;
-    border: solid 1px;
 }
 
 .maps{
     
     background-color: white;
     padding: 20px;
-    border: solid 1px;
 }
 
-.panel{
+/*.panel{
     
     background-color: #16a316;
-    border: solid 1px;
     margin: 4px 4px 4px 4px;
+    border: solid 1px;
     border-radius: 7px 7px 7px 7px;
     -moz-border-radius: 7px 7px 7px 7px;
     -webkit-border-radius: 7px 7px 7px 7px;
+}*/
+
+button{
+    
+    border: solid 1px;
+    border-radius: 7px 7px 7px 7px;
+    -moz-border-radius: 7px 7px 7px 7px;
+    -webkit-border-radius: 7px 7px 7px 7px;
+}
+
+.btn-md{
+    
+    color: black;
+    background-color: #fff;
+    border-color: #000;
+    border-radius: 40px 40px 40px 40px;
+    -moz-border-radius: 35px 35px 35px 35px;
+    -webkit-border-radius: 45px 45px 45px 45px;
 }
 
 iframe{
@@ -123,7 +129,7 @@ iframe{
 
 .navbar-light .navbar-toggler {
     color: black;
-    border-color: black;
+    border-color: none;
 }
 
 a {
@@ -142,6 +148,28 @@ textarea {
 
 #textIn{
     
-    font-size: 18px;
+    font-size: 80%;
     text-align: center;
+}
+
+h2{
+    
+    margin: 10px 1px 30px 10px;
+    
+}
+
+.categories{
+    
+    margin: 40px 0px 0px 0px;
+}
+
+.plus{
+    
+    color: black;
+    background-color: #fff;
+    border-color: #fff;
+    border-radius: 40px 40px 40px 40px;
+    -moz-border-radius: 35px 35px 35px 35px;
+    -webkit-border-radius: 45px 45px 45px 45px;
+    margin: 45px 0 0 5px;
 }
