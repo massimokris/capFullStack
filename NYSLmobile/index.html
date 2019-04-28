@@ -21,6 +21,27 @@
     <body>
     
         <div>
+          
+          <div class="topHeader">
+              
+              <div class="container">
+               
+                   <div class="team_logos">
+
+                       <div class="logo"><img src="minicalvari.png" alt=""></div>
+                       <div class="logo"><img src="miniedmonton.png" alt=""></div>
+                       <div class="logo"><img src="miniforge.png" alt=""></div>
+                       <div class="logo"><img src="minipacific.png" alt=""></div>
+                       <div class="logo"><img src="minivalour.png" alt=""></div>
+                       <div class="logo"><img src="miniyork.png" alt=""></div>
+
+                   </div>
+
+               </div>
+              
+          </div>
+           
+           <br><br>
             
             <header>
               
@@ -70,13 +91,13 @@
 
                                 <li class="li nav-item">
 
-                                    <a href="#contact" class="nav-link"><h2>Maps</h2></a>
+                                    <a href="#maps" class="nav-link"><h2>Maps</h2></a>
 
                                 </li>
 
                                 <li class="li nav-item">
 
-                                    <a href="#maps" class="nav-link"><h2>Contact</h2></a>
+                                    <a href="#contact" class="nav-link"><h2>Contact</h2></a>
 
                                 </li>
 
@@ -118,7 +139,7 @@
                      
                      <a href="#monthU1" data-toggle="collapse"><h3>Schedule</h3></a>
                       
-                      <div id="monthU1" class="collapse">
+                      <div id="monthU1" class="collapse months">
                              
                              <ul>
                        
@@ -163,7 +184,7 @@
                       
                       <a href="#monthU2" data-toggle="collapse"><h3>Schedule</h3></a>
                        
-                       <div id="monthU2" class="collapse">
+                       <div id="monthU2" class="collapse months">
                              
                              <h5>SEPTEMBER</h5>
                         
@@ -206,7 +227,7 @@
                      
                      <a href="#monthU3" data-toggle="collapse"><h3>Schedule</h3></a>
                       
-                      <div id="monthU3" class="collapse">
+                      <div id="monthU3" class="collapse months">
                              
                              <h5>SEPTEMBER</h5>
                        
@@ -249,7 +270,7 @@
                      
                      <a href="#monthU4" data-toggle="collapse"><h3>Schedule</h3></a>
                       
-                      <div id="monthU4" class="collapse">
+                      <div id="monthU4" class="collapse months">
                              
                             <h5>SEPTEMBER</h5>
                        
@@ -292,7 +313,7 @@
                         
                         <a href="#monthU5" data-toggle="collapse"><h3>Schedule</h3></a>
                          
-                         <div id="monthU5" class="collapse">
+                         <div id="monthU5" class="collapse months">
                             
                             <h5>SEPTEMBER</h5>
                              
@@ -336,7 +357,7 @@
                          
                          <a href="#monthU6" data-toggle="collapse"><h3>Schedule</h3></a>
                          
-                         <div id="monthU6" class="collapse">
+                         <div id="monthU6" class="collapse months">
                             
                             <h5>SEPTEMBER</h5>
                              
@@ -484,6 +505,8 @@
                         
                     </div>
                     
+                    <button class="btn btn-md btn-circle"><i class="fas fa-arrow-left"></i></button>
+                    
                 </div>
                 
                 <div class="maps" id="maps">
@@ -492,7 +515,7 @@
                     
                     <div class="row">
                         
-                        <div class="col-12">
+                        <div class="col-12 directions">
                             
                             <p>AJ Katzenmaier Elementary<br>24 W. Walton St., Chicago, IL 60610</p>
                             
@@ -508,7 +531,7 @@
                        
                     <div class="row">
                         
-                        <div class="col-12">
+                        <div class="col-12 directions">
                             
                             <p>Greenbay Elementary<br>1734 N. Orleans St., Chicago, IL 60614</p>
                             
@@ -524,7 +547,7 @@
                        
                     <div class="row">
                         
-                        <div class="col-12">
+                        <div class="col-12 directions">
                             
                             <p>Howard A Yeager Elementary<br>2245 N. Southport Ave., Chicago, IL 60614</p>
                             
@@ -540,7 +563,7 @@
                        
                     <div class="row">
                         
-                        <div class="col-12">
+                        <div class="col-12 directions">
                             
                             <p>Marjorie P Hart Elementary<br>2625 N. Orchard St., Chicago, IL 60614</p>
                             
@@ -556,7 +579,7 @@
                        
                     <div class="row">
                         
-                        <div class="col-12">
+                        <div class="col-12 directions">
                             
                             <p>North Elementary<br>
                     1409 N. Ogden Ave., Chicago, IL 60610</p>
@@ -573,7 +596,7 @@
                        
                     <div class="row">
                         
-                        <div class="col-12">
+                        <div class="col-12 directions">
                             
                             <p>South Elementary<br>
                             2101 N. Fremont St., Chicago, IL 60614</p>
@@ -597,29 +620,29 @@
                 <div class="contact" id="contact">
                    
                    <h2 class="subtitle">Contact</h2>
-                    
-                    <from>
+                   
+                   <div class="from">
+                       
+                       <from>
                         
-                        <label for="name">Name: </label> <input type="text" id="name" class="form-control">
-                        
-                        <label for="email">Email: </label> <input type="email" id="email" class="form-control">
-                        
-                        <label for="feedback">Feedback: </label> <br>
-                        <textarea name="feedback" id="feedback" cols="30" rows="5"></textarea>
-                        
-                        <button id="feedbackButton"class="btn btn-sm">Submit</button>
-                        
-                    </from>
-                    
-                    <br>
+                            <label for="name">Name: </label> <input type="text" id="name" class="form-control">
+
+                            <label for="email">Email: </label> <input type="email" id="email" class="form-control">
+
+                            <label for="feedback">Feedback: </label> <br>
+                            <textarea name="feedback" id="feedback" cols="30" rows="5"></textarea>
+
+                            <button id="feedbackButton"class="btn btn-sm">Submit</button>
+
+                        </from>
+                       
+                   </div>
                     
                     <button class="btn btn-md btn-circle"><i class="fas fa-arrow-left"></i></button>
                     
                 </div>
                 
             </section>
-            
-            <br>
             
             <footer class="text-center">
                 

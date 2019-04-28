@@ -109,11 +109,13 @@ button{
     border-radius: 40px 30px 40px 40px;
     -moz-border-radius: 35px 35px 35px 35px;
     -webkit-border-radius: 45px 45px 45px 45px;
+    margin: 5px 0 15px 15px;
 }
 
 iframe{
     
     width: 90%;
+    margin: 0 0 0 15px;
 }
 
 .navbar-light .navbar-nav .nav-link {
@@ -134,22 +136,11 @@ a {
 }
 
 textarea {
-    margin: 0;
+    margin: 10px 0 5px 8px;
     font-family: none;
     font-size: none;
     line-height: inherit;
-    width: 95%;
-}
-
-.plus{
-    
-    color: black;
-    background-color: #fff;
-    border-color: #fff;
-    border-radius: 40px 40px 40px 40px;
-    -moz-border-radius: 35px 35px 35px 35px;
-    -webkit-border-radius: 45px 45px 45px 45px;
-    margin: 45px 0 0 5px;
+    width: 90%;
 }
 
 .content-logo{
@@ -265,6 +256,70 @@ table{
     margin: 1px 10px 5px 5px;
     padding: 10px;
 }
+
+.topHeader {
+    background-color: #22356F;
+}
+
+.team_logos {
+    width: 80%;
+    float: right;
+    /* text-align: right; */
+    padding-top: 4px;
+}
+
+.logo {
+    float: right;
+    width: 14%;
+}
+
+.team_logos img {
+    width: 30px;
+    height: 30px;
+}
+
+.container {
+    display: block;
+}
+
+.from{
+    
+    padding: 15px;
+}
+
+.schedule {
+    
+    margin: 20px 0 15px 25px;
+}
+
+.matches {
+    
+    margin: 10px 0 10px 25px;
+}
+
+.months {
+    
+    margin: 10px 0 10px 15px;
+}
+
+.months ul{
+    
+    margin: 10px 0 10px 20px;
+}
+
+.directions {
+    
+    margin: 10px 0 10px 15px;
+}
+
+
+
+
+
+
+
+
+
 
 
 
