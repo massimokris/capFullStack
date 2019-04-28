@@ -36,63 +36,52 @@ footer{
 .welcome{
     
     background-color: white;
-    padding: 20px;
 }
 
 .home{
     
     background-color: white;
-    padding: 20px;
 }
 
 .u1{
     
     background-color: white;
-    padding: 20px;
+    
 }
 
 .u2{
     
     background-color: white;
-    padding: 20px;
 }
 
 .u3{
     
     background-color: white;
-    padding: 20px;
 }
 
 .u4{
     
     background-color: white;
-    padding: 20px;
 }
 
 .u5{
     
     background-color: white;
-    padding: 20px;
-    width: 100%
 }
 
 .u6{
-    
-    width: 100%;
+
     background-color: white;
-    padding: 20px;
 }
 
 .contact{
     
     background-color: white;
-    padding: 20px;
 }
 
 .maps{
     
     background-color: white;
-    padding: 20px;
 }
 
 .panel{
@@ -177,8 +166,8 @@ textarea {
 
 .content-team{
     
-    width: 60px;
-    height: 65px;
+    width: 70px;
+    height: 75px;
     margin: 20px 20px 0px 10px
 }
 .content-team img{
@@ -206,7 +195,7 @@ header{
 .slider{
     
     width: 95%;
-    margin: 20px 20px 0px 8px;
+    margin: 20px 10px 0px 10px;
     overflow: hidden;
 }
 
@@ -215,7 +204,7 @@ header{
     display: flex;
     padding: 0;
     width: 500%;
-    height: 100px;
+    height: 150px;
     
     animation: change 25s infinite alternate;
 }
