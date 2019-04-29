@@ -262,10 +262,11 @@ table{
 }
 
 .team_logos {
-    width: 80%;
+    width: 100%;
     float: right;
-    /* text-align: right; */
-    padding-top: 4px;
+    text-align: left;
+    padding: 6px;
+    background-color: #22356F;
 }
 
 .logo {
@@ -312,8 +313,56 @@ table{
     margin: 10px 0 10px 15px;
 }
 
+#categoriesMenu ul{
+    
+    margin: 2px 0px 5px 15px;
+    border: 1px solid;
+}
 
+#categoriesMenu li{
+    
+    list-style: none;
+    padding: 5px;
+}
 
+#teamsMenu li{
+    
+    list-style: none;
+    padding: 5px;
+}
+
+#teamsMenu ul{
+    
+    margin: 2px 0px 5px 15px;
+    border: 1px solid;
+}
+
+.table_img_logo{
+    
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+}
+
+.table_img_logo img{
+    
+    width: 100%;
+    height: 100%;
+    align-items: center;
+}
+
+.table tr th, .table tr td {
+    padding: 0.40rem;
+    vertical-align: middle!important;
+    border-top: 1px solid #dee2e6;
+}
+
+.table_vs{
+    
+    color: white;
+    background-color: #22356F;
+    padding: 2px;
+}
 
 
 
