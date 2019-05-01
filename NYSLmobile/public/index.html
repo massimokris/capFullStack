@@ -10,11 +10,37 @@
         
         <meta http-equiv="x-ua-compatible" content="ie-edge">
         
+        <script src="https://www.gstatic.com/firebasejs/5.11.0/firebase.js"></script>
+        <script>
+          // Initialize Firebase
+          var config = {
+            apiKey: "AIzaSyDl4LoXTPZj5pXF9GRYCe-OoSiTvmwc0rw",
+            authDomain: "nysl-2019.firebaseapp.com",
+            databaseURL: "https://nysl-2019.firebaseio.com",
+            projectId: "nysl-2019",
+            storageBucket: "nysl-2019.appspot.com",
+            messagingSenderId: "1041085116911"
+          };
+          firebase.initializeApp(config);
+        </script>
+        
         <link rel="stylesheet" type="text/css" href="bootstrap-4.3.1-dist/css/bootstrap.css">
         
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
         
-        <link rel="stylesheet" href="main.css">
+        <link rel="stylesheet" href="styles/main.css">
+        
+        <!--meta icono de la app en iphone-->
+        <link rel="apple-touch-icon" href="images/nysl_logo.png">
+        
+        <!--meta imagen de muestra mientras carga la app en iphone-->
+        <link rel="apple-touch-startup-image" href="images/nysl_logo.png">
+        
+        <!--meta para sobreescrivir nombre de icono de la app en iphone-->
+        <meta name="apple-mobile-web-app-title" content="NYSL by Mk.">
+        
+        <!--meta para ocultar la barra de navegacion en iphone-->
+        <meta name="apple-mobile-web-app-capable" content="yes">
         
     </head>
     
@@ -28,12 +54,12 @@
                
                    <div class="team_logos">
 
-                       <div class="logo"><img src="minicalvari.png" alt=""></div>
-                       <div class="logo"><img src="miniedmonton.png" alt=""></div>
-                       <div class="logo"><img src="miniforge.png" alt=""></div>
-                       <div class="logo"><img src="minipacific.png" alt=""></div>
-                       <div class="logo"><img src="minivalour.png" alt=""></div>
-                       <div class="logo"><img src="miniyork.png" alt=""></div>
+                       <div class="logo"><img src="images/minicalvari.png" alt=""></div>
+                       <div class="logo"><img src="images/miniedmonton.png" alt=""></div>
+                       <div class="logo"><img src="images/miniforge.png" alt=""></div>
+                       <div class="logo"><img src="images/minipacific.png" alt=""></div>
+                       <div class="logo"><img src="images/minivalour.png" alt=""></div>
+                       <div class="logo"><img src="images/miniyork.png" alt=""></div>
 
                    </div>
 
@@ -50,7 +76,7 @@
                         
                         <section class="content-logo">
                             
-                            <img src="nysl_logo.png" alt="league logo" id="imgNavbar">
+                            <img src="images/nysl_logo.png" alt="league logo" id="imgNavbar">
                             
                         </section>
                         
@@ -158,7 +184,7 @@
                                     
                                     <div class="team_home">
                                         
-                                        <img src="calvary.png" alt="">
+                                        <img src="images/calvary.png" alt="">
                                         
                                     </div>
                                     
@@ -166,7 +192,7 @@
                                     
                                     <div class="team_away">
                                         
-                                        <img src="forge.png" alt="">
+                                        <img src="images/forge.png" alt="">
                                         
                                     </div>
                                     
@@ -187,7 +213,7 @@
                                     
                                     <div class="team_home">
                                         
-                                        <img src="edmonton.png" alt="">
+                                        <img src="images/edmonton.png" alt="">
                                         
                                     </div>
                                     
@@ -195,7 +221,7 @@
                                     
                                     <div class="team_away">
                                         
-                                        <img src="york.png" alt="">
+                                        <img src="images/york.png" alt="">
                                         
                                     </div>
                                     
@@ -216,7 +242,7 @@
                                     
                                     <div class="team_home">
                                         
-                                        <img src="valour.png" alt="">
+                                        <img src="images/valour.png" alt="">
                                         
                                     </div>
                                     
@@ -224,7 +250,7 @@
                                     
                                     <div class="team_away">
                                         
-                                        <img src="pacific.png" alt="">
+                                        <img src="images/pacific.png" alt="">
                                         
                                     </div>
                                     
@@ -245,7 +271,7 @@
                                     
                                     <div class="team_home">
                                         
-                                        <img src="valour.png" alt="">
+                                        <img src="images/valour.png" alt="">
                                         
                                     </div>
                                     
@@ -253,7 +279,7 @@
                                     
                                     <div class="team_away">
                                         
-                                        <img src="calvary.png" alt="">
+                                        <img src="images/calvary.png" alt="">
                                         
                                     </div>
                                     
@@ -274,7 +300,7 @@
                                     
                                     <div class="team_home">
                                         
-                                        <img src="forge.png" alt="">
+                                        <img src="images/forge.png" alt="">
                                         
                                     </div>
                                     
@@ -282,7 +308,7 @@
                                     
                                     <div class="team_away">
                                         
-                                        <img src="york.png" alt="">
+                                        <img src="images/york.png" alt="">
                                         
                                     </div>
                                     
@@ -303,7 +329,7 @@
                                     
                                     <div class="team_home">
                                         
-                                        <img src="pacific.png" alt="">
+                                        <img src="images/pacific.png" alt="">
                                         
                                     </div>
                                     
@@ -311,7 +337,7 @@
                                     
                                     <div class="team_away">
                                         
-                                        <img src="edmonton.png" alt="">
+                                        <img src="images/edmonton.png" alt="">
                                         
                                     </div>
                                     
@@ -333,15 +359,15 @@
                   
                   <ul>
                       
-                      <li><img src="img2.jpg" alt=""></li>
+                      <li><img src="images/img2.jpg" alt=""></li>
                       
-                      <li><img src="img4.jpg" alt=""></li>
+                      <li><img src="images/img4.jpg" alt=""></li>
                       
-                      <li><img src="img3.jpg" alt=""></li>
+                      <li><img src="images/img3.jpg" alt=""></li>
                       
-                      <li><img src="img1.jpg" alt=""></li>
+                      <li><img src="images/img1.jpg" alt=""></li>
                       
-                      <li><img src="img6.jpg" alt=""></li>
+                      <li><img src="images/img6.jpg" alt=""></li>
                       
                   </ul>
                   
@@ -431,81 +457,81 @@
                                <tr>
                                    
                                    <td><b>9/01-Sunday</b><br>9:30 am</td>
-                                   <td><div class="table_img_logo prueba"><img src="calvary.png" alt=""></div></td>
+                                   <td><div class="table_img_logo prueba"><img src="images/calvary.png" alt=""></div></td>
                                    <td><span class="table_vs">vs.</span></td>
-                                   <td><div class="table_img_logo"><img src="forge.png" alt=""></div></td>
+                                   <td><div class="table_img_logo"><img src="images/forge.png" alt=""></div></td>
                                    
                                </tr>
                                
                                <tr>
                                    
                                    <td><b>9/01-Sunday</b><br>9:30 am</td>
-                                   <td><div class="table_img_logo"><img src="edmonton.png" alt=""></div></td>
+                                   <td><div class="table_img_logo"><img src="images/edmonton.png" alt=""></div></td>
                                    <td><span class="table_vs">vs.</span></td>
-                                   <td><div class="table_img_logo"><div class="table_img_logo"><img src="york.png" alt=""></div></div></td>
+                                   <td><div class="table_img_logo"><div class="table_img_logo"><img src="images/york.png" alt=""></div></div></td>
                                    
                                </tr>
                                
                                <tr>
                                    
                                    <td><b>9/01-Sunday</b><br>9:30 am</td>
-                                   <td><div class="table_img_logo"><div class="table_img_logo"><img src="valour.png" alt=""></div></div></td>
+                                   <td><div class="table_img_logo"><div class="table_img_logo"><img src="images/valour.png" alt=""></div></div></td>
                                    <td><span class="table_vs">vs.</span></td>
-                                   <td><div class="table_img_logo"><img src="pacific.png" alt=""></div></td>
+                                   <td><div class="table_img_logo"><img src="images/pacific.png" alt=""></div></td>
                                    
                                </tr>
                                
                                <tr>
                                    
                                    <td><b>9/08-Sunday</b><br>1:00 pm</td>
-                                   <td><div class="table_img_logo"><img src="forge.png" alt=""></div></td>
+                                   <td><div class="table_img_logo"><img src="images/forge.png" alt=""></div></td>
                                    <td><span class="table_vs">vs.</span></td>
-                                   <td><div class="table_img_logo"><img src="pacific.png" alt=""></div></td>
+                                   <td><div class="table_img_logo"><img src="images/pacific.png" alt=""></div></td>
                                    
                                </tr>
                                
                                <tr>
                                    
                                    <td><b>9/08-Sunday</b><br>1:00 pm</td>
-                                   <td><div class="table_img_logo"><img src="valour.png" alt=""></div></td>
+                                   <td><div class="table_img_logo"><img src="images/valour.png" alt=""></div></td>
                                    <td><span class="table_vs">vs.</span></td>
-                                   <td><div class="table_img_logo"><img src="edmonton.png" alt=""></div></td>
+                                   <td><div class="table_img_logo"><img src="images/edmonton.png" alt=""></div></td>
                                    
                                </tr>
                                
                                <tr>
                                    
                                    <td><b>9/08-Sunday</b><br>1:00 pm</td>
-                                   <td><div class="table_img_logo"><img src="york.png" alt=""></div></td>
+                                   <td><div class="table_img_logo"><img src="images/york.png" alt=""></div></td>
                                    <td><span class="table_vs">vs.</span></td>
-                                   <td><div class="table_img_logo"><img src="calvary.png" alt=""></div></td>
+                                   <td><div class="table_img_logo"><img src="images/calvary.png" alt=""></div></td>
                                    
                                </tr>
                                
                                <tr>
                                    
                                    <td><b>9/15-Sunday</b><br>9:30 am</td>
-                                   <td><div class="table_img_logo"><img src="york.png" alt=""></div></td>
+                                   <td><div class="table_img_logo"><img src="images/york.png" alt=""></div></td>
                                    <td><span class="table_vs">vs.</span></td>
-                                   <td><div class="table_img_logo"><img src="valour.png" alt=""></div></td>
+                                   <td><div class="table_img_logo"><img src="images/valour.png" alt=""></div></td>
                                    
                                </tr>
                                
                                <tr>
                                    
                                    <td><b>9/15-Sunday</b><br>9:30 am</td>
-                                   <td><div class="table_img_logo"><img src="pacific.png" alt=""></div></td>
+                                   <td><div class="table_img_logo"><img src="images/pacific.png" alt=""></div></td>
                                    <td><span class="table_vs">vs.</span></td>
-                                   <td><div class="table_img_logo"><img src="calvary.png" alt=""></div></td>
+                                   <td><div class="table_img_logo"><img src="images/calvary.png" alt=""></div></td>
                                    
                                </tr>
                                
                                <tr>
                                    
                                    <td><b>9/15-Sunday</b><br>9:30 am</td>
-                                   <td><div class="table_img_logo"><img src="edmonton.png" alt=""></div></td>
+                                   <td><div class="table_img_logo"><img src="images/edmonton.png" alt=""></div></td>
                                    <td><span class="table_vs">vs.</span></td>
-                                   <td><div class="table_img_logo"><img src="forge.png" alt=""></div></td>
+                                   <td><div class="table_img_logo"><img src="images/forge.png" alt=""></div></td>
                                    
                                </tr>
   
@@ -527,81 +553,81 @@
                               <tr>
                                    
                                    <td><b>10/06-Sunday</b><br>1:00 pm</td>
-                                   <td><div class="table_img_logo"><img src="valour.png" alt=""></div></td>
+                                   <td><div class="table_img_logo"><img src="images/valour.png" alt=""></div></td>
                                    <td><span class="table_vs">vs.</span></td>
-                                   <td><div class="table_img_logo"><img src="calvary.png" alt=""></div></td>
+                                   <td><div class="table_img_logo"><img src="images/calvary.png" alt=""></div></td>
                                    
                               </tr>
                                
                               <tr>
                                   
                                   <td><b>10/06-Sunday</b><br>1:00 pm</td>
-                                   <td><div class="table_img_logo"><img src="forge.png" alt=""></div></td>
+                                   <td><div class="table_img_logo"><img src="images/forge.png" alt=""></div></td>
                                    <td><span class="table_vs">vs.</span></td>
-                                   <td><div class="table_img_logo"><img src="york.png" alt=""></div></td>
+                                   <td><div class="table_img_logo"><img src="images/york.png" alt=""></div></td>
                                   
                               </tr>
                                
                                <tr>
                                    
                                    <td><b>10/06-Sunday</b><br>1:00 pm</td>
-                                   <td><div class="table_img_logo"><img src="valour.png" alt=""></div></td>
+                                   <td><div class="table_img_logo"><img src="images/valour.png" alt=""></div></td>
                                    <td><span class="table_vs">vs.</span></td>
-                                   <td><div class="table_img_logo"><img src="pacific.png" alt=""></div></td>
+                                   <td><div class="table_img_logo"><img src="images/pacific.png" alt=""></div></td>
                                    
                                </tr>
                                
                                <tr>
                                    
                                    <td>10/08-Tuesday<br>1:00 pm</td>
-                                   <td><div class="table_img_logo"><img src="forge.png" alt=""></div></td>
+                                   <td><div class="table_img_logo"><img src="images/forge.png" alt=""></div></td>
                                    <td><span class="table_vs">vs.</span></td>
-                                   <td><div class="table_img_logo"><img src="edmonton.png" alt=""></div></td> 
+                                   <td><div class="table_img_logo"><img src="images/edmonton.png" alt=""></div></td> 
                                    
                                </tr>
                                
                                <tr>
                                    
                                    <td>10/08-Tuesday<br>1:00 pm</td>
-                                   <td><div class="table_img_logo"><img src="edmonton.png" alt=""></div></td>
+                                   <td><div class="table_img_logo"><img src="images/edmonton.png" alt=""></div></td>
                                    <td><span class="table_vs">vs.</span></td>
-                                   <td><div class="table_img_logo"><img src="calvary.png" alt=""></div></td>
+                                   <td><div class="table_img_logo"><img src="images/calvary.png" alt=""></div></td>
 
                                </tr>
                                
                                <tr>
                                    
                                    <td>10/08-Tuesday<br>1:00 pm</td>
-                                   <td><div class="table_img_logo"><img src="york.png" alt=""></div></td>
+                                   <td><div class="table_img_logo"><img src="images/york.png" alt=""></div></td>
                                    <td><span class="table_vs">vs.</span></td>
-                                   <td><div class="table_img_logo"><img src="pacific.png" alt=""></div></td>
+                                   <td><div class="table_img_logo"><img src="images/pacific.png" alt=""></div></td>
                                    
                                </tr>
                                
                                <tr>
                                    
                                    <td><b>10/20-Sunday</b><br>9:30 am</td>
-                                   <td><div class="table_img_logo"><img src="york.png" alt=""></div></td>
+                                   <td><div class="table_img_logo"><img src="images/york.png" alt=""></div></td>
                                    <td><span class="table_vs">vs.</span></td>
-                                   <td><div class="table_img_logo"><img src="valour.png" alt=""></div></td>
+                                   <td><div class="table_img_logo"><img src="images/valour.png" alt=""></div></td>
                                    
                                </tr>
                                
                                <tr>
                                    
                                    <td><b>10/20-Sunday</b><br>9:30 am</td>
-                                   <td><div class="table_img_logo"><img src="pacific.png" alt=""></div></td>
+                                   <td><div class="table_img_logo"><img src="images/pacific.png" alt=""></div></td>
                                    <td><span class="table_vs">vs.</span></td>
-                                   <td><div class="table_img_logo"><img src="edmonton.png" alt=""></div></td>
+                                   <td><div class="table_img_logo"><img src="images/edmonton.png" alt=""></div></td>
                                    
                                </tr>
                                
                                <tr>
                                    
                                    <td><b>10/20-Sunday</b><br>9:30 am</td>
-                                   <td><div class="table_img_logo"><img src="calvary.png" alt=""></div></td>
+                                   <td><div class="table_img_logo"><img src="images/calvary.png" alt=""></div></td>
                                    <td><span class="table_vs">vs.</span></td>
-                                   <td><div class="table_img_logo"><img src="forge.png" alt=""></div></td>
+                                   <td><div class="table_img_logo"><img src="images/forge.png" alt=""></div></td>
                                    
                                </tr>
                                
@@ -671,81 +697,81 @@
                                <tr>
                                    
                                    <td><b>9/01-Sunday</b><br>1:00 pm</td>
-                                   <td><div class="table_img_logo"><img src="calvary.png" alt=""></div></td>
+                                   <td><div class="table_img_logo"><img src="images/calvary.png" alt=""></div></td>
                                    <td><span class="table_vs">vs.</span></td>
-                                   <td><div class="table_img_logo"><img src="forge.png" alt=""></div></td>
+                                   <td><div class="table_img_logo"><img src="images/forge.png" alt=""></div></td>
                                    
                                </tr>
                                
                                <tr>
                                    
                                    <td><b>9/01-Sunday</b><br>1:00 pm</td>
-                                   <td><div class="table_img_logo"><img src="edmonton.png" alt=""></div></td>
+                                   <td><div class="table_img_logo"><img src="images/edmonton.png" alt=""></div></td>
                                    <td><span class="table_vs">vs.</span></td>
-                                   <td><div class="table_img_logo"><img src="york.png" alt=""></div></td>
+                                   <td><div class="table_img_logo"><img src="images/york.png" alt=""></div></td>
                                    
                                </tr>
                                
                                <tr>
                                    
                                    <td><b>9/01-Sunday</b><br>1:00 pm</td>
-                                   <td><div class="table_img_logo"><img src="valour.png" alt=""></div></td>
+                                   <td><div class="table_img_logo"><img src="images/valour.png" alt=""></div></td>
                                    <td><span class="table_vs">vs.</span></td>
-                                   <td><div class="table_img_logo"><img src="pacific.png" alt=""></div></td>
+                                   <td><div class="table_img_logo"><img src="images/pacific.png" alt=""></div></td>
                                    
                                </tr>
                                
                                <tr>
                                    
                                    <td><b>9/15-Sunday</b><br>9:30 am</td>
-                                   <td><div class="table_img_logo"><img src="forge.png" alt=""></div></td>
+                                   <td><div class="table_img_logo"><img src="images/forge.png" alt=""></div></td>
                                    <td><span class="table_vs">vs.</span></td>
-                                   <td><div class="table_img_logo"><img src="pacific.png" alt=""></div></td>
+                                   <td><div class="table_img_logo"><img src="images/pacific.png" alt=""></div></td>
                                    
                                </tr>
                                
                                <tr>
                                    
                                    <td><b>9/15-Sunday</b><br>9:30 am</td>
-                                   <td><div class="table_img_logo"><img src="valour.png" alt=""></div></td>
+                                   <td><div class="table_img_logo"><img src="images/valour.png" alt=""></div></td>
                                    <td><span class="table_vs">vs.</span></td>
-                                   <td><div class="table_img_logo"><img src="edmonton.png" alt=""></div></td>
+                                   <td><div class="table_img_logo"><img src="images/edmonton.png" alt=""></div></td>
                                    
                                </tr>
                                
                                <tr>
                                    
                                    <td><b>9/15-Sunday</b><br>9:30 am</td>
-                                   <td><div class="table_img_logo"><img src="york.png" alt=""></div></td>
+                                   <td><div class="table_img_logo"><img src="images/york.png" alt=""></div></td>
                                    <td><span class="table_vs">vs.</span></td>
-                                   <td><div class="table_img_logo"><img src="calvary.png" alt=""></div></td>
+                                   <td><div class="table_img_logo"><img src="images/calvary.png" alt=""></div></td>
                                    
                                </tr>
                                
                                <tr>
                                    
                                    <td><b>9/22-Sunday</b><br>1:00 pm</td>
-                                   <td><div class="table_img_logo"><img src="york.png" alt=""></div></td>
+                                   <td><div class="table_img_logo"><img src="images/york.png" alt=""></div></td>
                                    <td><span class="table_vs">vs.</span></td>
-                                   <td><div class="table_img_logo"><img src="valour.png" alt=""></div></td>
+                                   <td><div class="table_img_logo"><img src="images/valour.png" alt=""></div></td>
                                    
                                </tr>
                                
                                <tr>
                                    
                                    <td><b>9/22-Sunday</b><br>1:00 pm</td>
-                                   <td><div class="table_img_logo"><img src="pacific.png" alt=""></div></td>
+                                   <td><div class="table_img_logo"><img src="images/pacific.png" alt=""></div></td>
                                    <td><span class="table_vs">vs.</span></td>
-                                   <td><div class="table_img_logo"><img src="calvary.png" alt=""></div></td>
+                                   <td><div class="table_img_logo"><img src="images/calvary.png" alt=""></div></td>
                                    
                                </tr>
                                
                                <tr>
                                    
                                    <td><b>9/22-Sunday</b><br>1:00 pm</td>
-                                   <td><div class="table_img_logo"><img src="edmonton.png" alt=""></div></td>
+                                   <td><div class="table_img_logo"><img src="images/edmonton.png" alt=""></div></td>
                                    <td><span class="table_vs">vs.</span></td>
-                                   <td><div class="table_img_logo"><img src="forge.png" alt=""></div></td>
+                                   <td><div class="table_img_logo"><img src="images/forge.png" alt=""></div></td>
                                    
                                </tr>
   
@@ -767,54 +793,54 @@
                               <tr>
                                    
                                    <td><b>10/06-Sunday</b><br>9:30 am</td>
-                                   <td><div class="table_img_logo"><img src="valour.png" alt=""></div></td>
+                                   <td><div class="table_img_logo"><img src="images/valour.png" alt=""></div></td>
                                    <td><span class="table_vs">vs.</span></td>
-                                   <td><div class="table_img_logo"><img src="calvary.png" alt=""></div></td>
+                                   <td><div class="table_img_logo"><img src="images/calvary.png" alt=""></div></td>
                                    
                               </tr>
                                
                               <tr>
                                   
                                   <td><b>10/06-Sunday</b><br>9:30 am</td>
-                                   <td><div class="table_img_logo"><img src="forge.png" alt=""></div></td>
+                                   <td><div class="table_img_logo"><img src="images/forge.png" alt=""></div></td>
                                    <td><span class="table_vs">vs.</span></td>
-                                   <td><div class="table_img_logo"><img src="york.png" alt=""></div></td>
+                                   <td><div class="table_img_logo"><img src="images/york.png" alt=""></div></td>
                                   
                               </tr>
                                
                                <tr>
                                    
                                    <td><b>10/06-Sunday</b><br>9:30 am</td>
-                                   <td><div class="table_img_logo"><img src="valour.png" alt=""></div></td>
+                                   <td><div class="table_img_logo"><img src="images/valour.png" alt=""></div></td>
                                    <td><span class="table_vs">vs.</span></td>
-                                   <td><div class="table_img_logo"><img src="pacific.png" alt=""></div></td>
+                                   <td><div class="table_img_logo"><img src="images/pacific.png" alt=""></div></td>
                                    
                                </tr>
                                
                                <tr>
                                    
                                    <td><b>10/20-Sunday</b><br>1:00 pm</td>
-                                   <td><div class="table_img_logo"><img src="forge.png" alt=""></div></td>
+                                   <td><div class="table_img_logo"><img src="images/forge.png" alt=""></div></td>
                                    <td><span class="table_vs">vs.</span></td>
-                                   <td><div class="table_img_logo"><img src="edmonton.png" alt=""></div></td> 
+                                   <td><div class="table_img_logo"><img src="images/edmonton.png" alt=""></div></td> 
                                    
                                </tr>
                                
                                <tr>
                                    
                                    <td><b>10/20-Sunday</b><br>1:00 pm</td>
-                                   <td><div class="table_img_logo"><img src="edmonton.png" alt=""></div></td>
+                                   <td><div class="table_img_logo"><img src="images/edmonton.png" alt=""></div></td>
                                    <td><span class="table_vs">vs.</span></td>
-                                   <td><div class="table_img_logo"><img src="calvary.png" alt=""></div></td>
+                                   <td><div class="table_img_logo"><img src="images/calvary.png" alt=""></div></td>
 
                                </tr>
                                
                                <tr>
                                    
                                    <td><b>10/20-Sunday</b><br>1:00 pm</td>
-                                   <td><div class="table_img_logo"><img src="york.png" alt=""></div></td>
+                                   <td><div class="table_img_logo"><img src="images/york.png" alt=""></div></td>
                                    <td><span class="table_vs">vs.</span></td>
-                                   <td><div class="table_img_logo"><img src="pacific.png" alt=""></div></td>
+                                   <td><div class="table_img_logo"><img src="images/pacific.png" alt=""></div></td>
                                    
                                </tr>
                                
@@ -883,81 +909,81 @@
                                <tr>
                                    
                                    <td><b>9/01-Sunday</b><br>1:00 pm</td>
-                                   <td><div class="table_img_logo"><img src="calvary.png" alt=""></div></td>
+                                   <td><div class="table_img_logo"><img src="images/calvary.png" alt=""></div></td>
                                    <td><span class="table_vs">vs.</span></td>
-                                   <td><div class="table_img_logo"><img src="forge.png" alt=""></div></td>
+                                   <td><div class="table_img_logo"><img src="images/forge.png" alt=""></div></td>
                                    
                                </tr>
                                
                                <tr>
                                    
                                    <td><b>9/01-Sunday</b><br>1:00 pm</td>
-                                   <td><div class="table_img_logo"><img src="edmonton.png" alt=""></div></td>
+                                   <td><div class="table_img_logo"><img src="images/edmonton.png" alt=""></div></td>
                                    <td><span class="table_vs">vs.</span></td>
-                                   <td><div class="table_img_logo"><img src="york.png" alt=""></div></td>
+                                   <td><div class="table_img_logo"><img src="images/york.png" alt=""></div></td>
                                    
                                </tr>
                                
                                <tr>
                                    
                                    <td><b>9/01-Sunday</b><br>1:00 pm</td>
-                                   <td><div class="table_img_logo"><img src="valour.png" alt=""></div></td>
+                                   <td><div class="table_img_logo"><img src="images/valour.png" alt=""></div></td>
                                    <td><span class="table_vs">vs.</span></td>
-                                   <td><div class="table_img_logo"><img src="pacific.png" alt=""></div></td>
+                                   <td><div class="table_img_logo"><img src="images/pacific.png" alt=""></div></td>
                                    
                                </tr>
                                
                                <tr>
                                    
                                    <td><b>9/15-Sunday</b><br>1:00 pm</td>
-                                   <td><div class="table_img_logo"><img src="forge.png" alt=""></div></td>
+                                   <td><div class="table_img_logo"><img src="images/forge.png" alt=""></div></td>
                                    <td><span class="table_vs">vs.</span></td>
-                                   <td><div class="table_img_logo"><img src="pacific.png" alt=""></div></td>
+                                   <td><div class="table_img_logo"><img src="images/pacific.png" alt=""></div></td>
                                    
                                </tr>
                                
                                <tr>
                                    
                                    <td><b>9/15-Sunday</b><br>1:00 pm</td>
-                                   <td><div class="table_img_logo"><img src="valour.png" alt=""></div></td>
+                                   <td><div class="table_img_logo"><img src="images/valour.png" alt=""></div></td>
                                    <td><span class="table_vs">vs.</span></td>
-                                   <td><div class="table_img_logo"><img src="edmonton.png" alt=""></div></td>
+                                   <td><div class="table_img_logo"><img src="images/edmonton.png" alt=""></div></td>
                                    
                                </tr>
                                
                                <tr>
                                    
                                    <td><b>9/15-Sunday</b><br>1:00 pm</td>
-                                   <td><div class="table_img_logo"><img src="york.png" alt=""></div></td>
+                                   <td><div class="table_img_logo"><img src="images/york.png" alt=""></div></td>
                                    <td><span class="table_vs">vs.</span></td>
-                                   <td><div class="table_img_logo"><img src="calvary.png" alt=""></div></td>
+                                   <td><div class="table_img_logo"><img src="images/calvary.png" alt=""></div></td>
                                    
                                </tr>
                                
                                <tr>
                                    
                                    <td><b>9/15-Sunday</b><br>9:30 am</td>
-                                   <td><div class="table_img_logo"><img src="york.png" alt=""></div></td>
+                                   <td><div class="table_img_logo"><img src="images/york.png" alt=""></div></td>
                                    <td><span class="table_vs">vs.</span></td>
-                                   <td><div class="table_img_logo"><img src="valour.png" alt=""></div></td>
+                                   <td><div class="table_img_logo"><img src="images/valour.png" alt=""></div></td>
                                    
                                </tr>
                                
                                <tr>
                                    
                                    <td><b>9/15-Sunday</b><br>9:30 am</td>
-                                   <td><div class="table_img_logo"><img src="pacific.png" alt=""></div></td>
+                                   <td><div class="table_img_logo"><img src="images/pacific.png" alt=""></div></td>
                                    <td><span class="table_vs">vs.</span></td>
-                                   <td><div class="table_img_logo"><img src="calvary.png" alt=""></div></td>
+                                   <td><div class="table_img_logo"><img src="images/calvary.png" alt=""></div></td>
                                    
                                </tr>
                                
                                <tr>
                                    
                                    <td><b>9/15-Sunday</b><br>9:30 am</td>
-                                   <td><div class="table_img_logo"><img src="edmonton.png" alt=""></div></td>
+                                   <td><div class="table_img_logo"><img src="images/edmonton.png" alt=""></div></td>
                                    <td><span class="table_vs">vs.</span></td>
-                                   <td><div class="table_img_logo"><img src="forge.png" alt=""></div></td>
+                                   <td><div class="table_img_logo"><img src="images/forge.png" alt=""></div></td>
                                    
                                </tr>
   
@@ -979,81 +1005,81 @@
                               <tr>
                                    
                                    <td><b>10/06-Sunday</b><br>1:00 pm</td>
-                                   <td><div class="table_img_logo"><img src="valour.png" alt=""></div></td>
+                                   <td><div class="table_img_logo"><img src="images/valour.png" alt=""></div></td>
                                    <td><span class="table_vs">vs.</span></td>
-                                   <td><div class="table_img_logo"><img src="calvary.png" alt=""></div></td>
+                                   <td><div class="table_img_logo"><img src="images/calvary.png" alt=""></div></td>
                                    
                               </tr>
                                
                               <tr>
                                   
                                   <td><b>10/06-Sunday</b><br>1:00 pm</td>
-                                   <td><div class="table_img_logo"><img src="forge.png" alt=""></div></td>
+                                   <td><div class="table_img_logo"><img src="images/forge.png" alt=""></div></td>
                                    <td><span class="table_vs">vs.</span></td>
-                                   <td><div class="table_img_logo"><img src="york.png" alt=""></div></td>
+                                   <td><div class="table_img_logo"><img src="images/york.png" alt=""></div></td>
                                   
                               </tr>
                                
                                <tr>
                                    
                                    <td><b>10/06-Sunday</b><br>1:00 pm</td>
-                                   <td><div class="table_img_logo"><img src="valour.png" alt=""></div></td>
+                                   <td><div class="table_img_logo"><img src="images/valour.png" alt=""></div></td>
                                    <td><span class="table_vs">vs.</span></td>
-                                   <td><div class="table_img_logo"><img src="pacific.png" alt=""></div></td>
+                                   <td><div class="table_img_logo"><img src="images/pacific.png" alt=""></div></td>
                                    
                                </tr>
                                
                                <tr>
                                    
                                    <td>10/08-Tuesday<br>9:30 am</td>
-                                   <td><div class="table_img_logo"><img src="forge.png" alt=""></div></td>
+                                   <td><div class="table_img_logo"><img src="images/forge.png" alt=""></div></td>
                                    <td><span class="table_vs">vs.</span></td>
-                                   <td><div class="table_img_logo"><img src="edmonton.png" alt=""></div></td> 
+                                   <td><div class="table_img_logo"><img src="images/edmonton.png" alt=""></div></td> 
                                    
                                </tr>
                                
                                <tr>
                                    
                                    <td>10/08-Tuesday<br>9:30 am</td>
-                                   <td><div class="table_img_logo"><img src="edmonton.png" alt=""></div></td>
+                                   <td><div class="table_img_logo"><img src="images/edmonton.png" alt=""></div></td>
                                    <td><span class="table_vs">vs.</span></td>
-                                   <td><div class="table_img_logo"><img src="calvary.png" alt=""></div></td>
+                                   <td><div class="table_img_logo"><img src="images/calvary.png" alt=""></div></td>
 
                                </tr>
                                
                                <tr>
                                    
                                    <td>10/08-Tuesday<br>9:30 am</td>
-                                   <td><div class="table_img_logo"><img src="york.png" alt=""></div></td>
+                                   <td><div class="table_img_logo"><img src="images/york.png" alt=""></div></td>
                                    <td><span class="table_vs">vs.</span></td>
-                                   <td><div class="table_img_logo"><img src="pacific.png" alt=""></div></td>
+                                   <td><div class="table_img_logo"><img src="images/pacific.png" alt=""></div></td>
                                    
                                </tr>
                                
                                <tr>
                                    
                                    <td><b>10/20-Sunday</b><br>9:30 am</td>
-                                   <td><div class="table_img_logo"><img src="york.png" alt=""></div></td>
+                                   <td><div class="table_img_logo"><img src="images/york.png" alt=""></div></td>
                                    <td><span class="table_vs">vs.</span></td>
-                                   <td><div class="table_img_logo"><img src="valour.png" alt=""></div></td>
+                                   <td><div class="table_img_logo"><img src="images/valour.png" alt=""></div></td>
                                    
                                </tr>
                                
                                <tr>
                                    
                                    <td><b>10/20-Sunday</b><br>9:30 am</td>
-                                   <td><div class="table_img_logo"><img src="pacific.png" alt=""></div></td>
+                                   <td><div class="table_img_logo"><img src="images/pacific.png" alt=""></div></td>
                                    <td><span class="table_vs">vs.</span></td>
-                                   <td><div class="table_img_logo"><img src="edmonton.png" alt=""></div></td>
+                                   <td><div class="table_img_logo"><img src="images/edmonton.png" alt=""></div></td>
                                    
                                </tr>
                                
                                <tr>
                                    
                                    <td><b>10/20-Sunday</b><br>9:30 am</td>
-                                   <td><div class="table_img_logo"><img src="calvary.png" alt=""></div></td>
+                                   <td><div class="table_img_logo"><img src="images/calvary.png" alt=""></div></td>
                                    <td><span class="table_vs">vs.</span></td>
-                                   <td><div class="table_img_logo"><img src="forge.png" alt=""></div></td>
+                                   <td><div class="table_img_logo"><img src="images/forge.png" alt=""></div></td>
                                    
                                </tr>
                                
@@ -1122,81 +1148,81 @@
                                <tr>
                                    
                                    <td><b>9/01-Sunday</b><br>9:30 am</td>
-                                   <td><div class="table_img_logo"><img src="calvary.png" alt=""></div></td>
+                                   <td><div class="table_img_logo"><img src="images/calvary.png" alt=""></div></td>
                                    <td><span class="table_vs">vs.</span></td>
-                                   <td><div class="table_img_logo"><img src="forge.png" alt=""></div></td>
+                                   <td><div class="table_img_logo"><img src="images/forge.png" alt=""></div></td>
                                    
                                </tr>
                                
                                <tr>
                                    
                                    <td><b>9/01-Sunday</b><br>9:30 am</td>
-                                   <td><div class="table_img_logo"><img src="edmonton.png" alt=""></div></td>
+                                   <td><div class="table_img_logo"><img src="images/edmonton.png" alt=""></div></td>
                                    <td><span class="table_vs">vs.</span></td>
-                                   <td><div class="table_img_logo"><img src="york.png" alt=""></div></td>
+                                   <td><div class="table_img_logo"><img src="images/york.png" alt=""></div></td>
                                    
                                </tr>
                                
                                <tr>
                                    
                                    <td><b>9/01-Sunday</b><br>9:30 am</td>
-                                   <td><div class="table_img_logo"><img src="valour.png" alt=""></div></td>
+                                   <td><div class="table_img_logo"><img src="images/valour.png" alt=""></div></td>
                                    <td><span class="table_vs">vs.</span></td>
-                                   <td><div class="table_img_logo"><img src="pacific.png" alt=""></div></td>
+                                   <td><div class="table_img_logo"><img src="images/pacific.png" alt=""></div></td>
                                    
                                </tr>
                                
                                <tr>
                                    
                                    <td><b>9/08-Sunday</b><br>9:30 am</td>
-                                   <td><div class="table_img_logo"><img src="forge.png" alt=""></div></td>
+                                   <td><div class="table_img_logo"><img src="images/forge.png" alt=""></div></td>
                                    <td><span class="table_vs">vs.</span></td>
-                                   <td><div class="table_img_logo"><img src="pacific.png" alt=""></div></td>
+                                   <td><div class="table_img_logo"><img src="images/pacific.png" alt=""></div></td>
                                    
                                </tr>
                                
                                <tr>
                                    
                                    <td><b>9/08-Sunday</b><br>9:30 am</td>
-                                   <td><div class="table_img_logo"><img src="valour.png" alt=""></div></td>
+                                   <td><div class="table_img_logo"><img src="images/valour.png" alt=""></div></td>
                                    <td><span class="table_vs">vs.</span></td>
-                                   <td><div class="table_img_logo"><img src="edmonton.png" alt=""></div></td>
+                                   <td><div class="table_img_logo"><img src="images/edmonton.png" alt=""></div></td>
                                    
                                </tr>
                                
                                <tr>
                                    
                                    <td><b>9/08-Sunday</b><br>9:30 am</td>
-                                   <td><div class="table_img_logo"><img src="york.png" alt=""></div></td>
+                                   <td><div class="table_img_logo"><img src="images/york.png" alt=""></div></td>
                                    <td><span class="table_vs">vs.</span></td>
-                                   <td><div class="table_img_logo"><img src="calvary.png" alt=""></div></td>
+                                   <td><div class="table_img_logo"><img src="images/calvary.png" alt=""></div></td>
                                    
                                </tr>
                                
                                <tr>
                                    
                                    <td><b>9/29-Sunday</b><br>9:30 am</td>
-                                   <td><div class="table_img_logo"><img src="york.png" alt=""></div></td>
+                                   <td><div class="table_img_logo"><img src="images/york.png" alt=""></div></td>
                                    <td><span class="table_vs">vs.</span></td>
-                                   <td><div class="table_img_logo"><img src="valour.png" alt=""></div></td>
+                                   <td><div class="table_img_logo"><img src="images/valour.png" alt=""></div></td>
                                    
                                </tr>
                                
                                <tr>
                                    
                                    <td><b>9/29-Sunday</b><br>9:30 am</td>
-                                   <td><div class="table_img_logo"><img src="pacific.png" alt=""></div></td>
+                                   <td><div class="table_img_logo"><img src="images/pacific.png" alt=""></div></td>
                                    <td><span class="table_vs">vs.</span></td>
-                                   <td><div class="table_img_logo"><img src="calvary.png" alt=""></div></td>
+                                   <td><div class="table_img_logo"><img src="images/calvary.png" alt=""></div></td>
                                    
                                </tr>
                                
                                <tr>
                                    
                                    <td><b>9/29-Sunday</b><br>9:30 am</td>
-                                   <td><div class="table_img_logo"><img src="edmonton.png" alt=""></div></td>
+                                   <td><div class="table_img_logo"><img src="images/edmonton.png" alt=""></div></td>
                                    <td><span class="table_vs">vs.</span></td>
-                                   <td><div class="table_img_logo"><img src="forge.png" alt=""></div></td>
+                                   <td><div class="table_img_logo"><img src="images/forge.png" alt=""></div></td>
                                    
                                </tr>
   
@@ -1218,54 +1244,54 @@
                               <tr>
                                    
                                    <td><b>10/06-Sunday</b><br>9:30 am</td>
-                                   <td><div class="table_img_logo"><img src="valour.png" alt=""></div></td>
+                                   <td><div class="table_img_logo"><img src="images/valour.png" alt=""></div></td>
                                    <td><span class="table_vs">vs.</span></td>
-                                   <td><div class="table_img_logo"><img src="calvary.png" alt=""></div></td>
+                                   <td><div class="table_img_logo"><img src="images/calvary.png" alt=""></div></td>
                                    
                               </tr>
                                
                               <tr>
                                   
                                   <td><b>10/06-Sunday</b><br>9:30 am</td>
-                                   <td><div class="table_img_logo"><img src="forge.png" alt=""></div></td>
+                                   <td><div class="table_img_logo"><img src="images/forge.png" alt=""></div></td>
                                    <td><span class="table_vs">vs.</span></td>
-                                   <td><div class="table_img_logo"><img src="york.png" alt=""></div></td>
+                                   <td><div class="table_img_logo"><img src="images/york.png" alt=""></div></td>
                                   
                               </tr>
                                
                                <tr>
                                    
                                    <td><b>10/06-Sunday</b><br>9:30 am</td>
-                                   <td><div class="table_img_logo"><img src="valour.png" alt=""></div></td>
+                                   <td><div class="table_img_logo"><img src="images/valour.png" alt=""></div></td>
                                    <td><span class="table_vs">vs.</span></td>
-                                   <td><div class="table_img_logo"><img src="pacific.png" alt=""></div></td>
+                                   <td><div class="table_img_logo"><img src="images/pacific.png" alt=""></div></td>
                                    
                                </tr>
                                
                                <tr>
                                    
                                    <td>10/08-Tuesday<br>1:00 pm</td>
-                                   <td><div class="table_img_logo"><img src="forge.png" alt=""></div></td>
+                                   <td><div class="table_img_logo"><img src="images/forge.png" alt=""></div></td>
                                    <td><span class="table_vs">vs.</span></td>
-                                   <td><div class="table_img_logo"><img src="edmonton.png" alt=""></div></td> 
+                                   <td><div class="table_img_logo"><img src="images/edmonton.png" alt=""></div></td> 
                                    
                                </tr>
                                
                                <tr>
                                    
                                    <td>10/08-Tuesday<br>1:00 pm</td>
-                                   <td><div class="table_img_logo"><img src="edmonton.png" alt=""></div></td>
+                                   <td><div class="table_img_logo"><img src="images/edmonton.png" alt=""></div></td>
                                    <td><span class="table_vs">vs.</span></td>
-                                   <td><div class="table_img_logo"><img src="calvary.png" alt=""></div></td>
+                                   <td><div class="table_img_logo"><img src="images/calvary.png" alt=""></div></td>
 
                                </tr>
                                
                                <tr>
                                    
                                    <td>10/08-Tuesday<br>1:00 pm</td>
-                                   <td><div class="table_img_logo"><img src="york.png" alt=""></div></td>
+                                   <td><div class="table_img_logo"><img src="images/york.png" alt=""></div></td>
                                    <td><span class="table_vs">vs.</span></td>
-                                   <td><div class="table_img_logo"><img src="pacific.png" alt=""></div></td>
+                                   <td><div class="table_img_logo"><img src="images/pacific.png" alt=""></div></td>
                                    
                                </tr>
                                
@@ -1335,81 +1361,81 @@
                                <tr>
                                    
                                    <td><b>9/01-Sunday</b><br>9:30 am</td>
-                                   <td><div class="table_img_logo"><img src="calvary.png" alt=""></div></td>
+                                   <td><div class="table_img_logo"><img src="images/calvary.png" alt=""></div></td>
                                    <td><span class="table_vs">vs.</span></td>
-                                   <td><div class="table_img_logo"><img src="forge.png" alt=""></div></td>
+                                   <td><div class="table_img_logo"><img src="images/forge.png" alt=""></div></td>
                                    
                                </tr>
                                
                                <tr>
                                    
                                    <td><b>9/01-Sunday</b><br>9:30 am</td>
-                                   <td><div class="table_img_logo"><img src="edmonton.png" alt=""></div></td>
+                                   <td><div class="table_img_logo"><img src="images/edmonton.png" alt=""></div></td>
                                    <td><span class="table_vs">vs.</span></td>
-                                   <td><div class="table_img_logo"><img src="york.png" alt=""></div></td>
+                                   <td><div class="table_img_logo"><img src="images/york.png" alt=""></div></td>
                                    
                                </tr>
                                
                                <tr>
                                    
                                    <td><b>9/01-Sunday</b><br>9:30 am</td>
-                                   <td><div class="table_img_logo"><img src="valour.png" alt=""></div></td>
+                                   <td><div class="table_img_logo"><img src="images/valour.png" alt=""></div></td>
                                    <td><span class="table_vs">vs.</span></td>
-                                   <td><div class="table_img_logo"><img src="pacific.png" alt=""></div></td>
+                                   <td><div class="table_img_logo"><img src="images/pacific.png" alt=""></div></td>
                                    
                                </tr>
                                
                                <tr>
                                    
                                    <td><b>9/15-Sunday</b><br>1:00 pm</td>
-                                   <td><div class="table_img_logo"><img src="forge.png" alt=""></div></td>
+                                   <td><div class="table_img_logo"><img src="images/forge.png" alt=""></div></td>
                                    <td><span class="table_vs">vs.</span></td>
-                                   <td><div class="table_img_logo"><img src="pacific.png" alt=""></div></td>
+                                   <td><div class="table_img_logo"><img src="images/pacific.png" alt=""></div></td>
                                    
                                </tr>
                                
                                <tr>
                                    
                                    <td><b>9/15-Sunday</b><br>1:00 pm</td>
-                                   <td><div class="table_img_logo"><img src="valour.png" alt=""></div></td>
+                                   <td><div class="table_img_logo"><img src="images/valour.png" alt=""></div></td>
                                    <td><span class="table_vs">vs.</span></td>
-                                   <td><div class="table_img_logo"><img src="edmonton.png" alt=""></div></td>
+                                   <td><div class="table_img_logo"><img src="images/edmonton.png" alt=""></div></td>
                                    
                                </tr>
                                
                                <tr>
                                    
                                    <td><b>9/15-Sunday</b><br>1:00 pm</td>
-                                   <td><div class="table_img_logo"><img src="york.png" alt=""></div></td>
+                                   <td><div class="table_img_logo"><img src="images/york.png" alt=""></div></td>
                                    <td><span class="table_vs">vs.</span></td>
-                                   <td><div class="table_img_logo"><img src="calvary.png" alt=""></div></td>
+                                   <td><div class="table_img_logo"><img src="images/calvary.png" alt=""></div></td>
                                    
                                </tr>
                                
                                <tr>
                                    
                                    <td><b>9/29-Sunday</b><br>9:30 am</td>
-                                   <td><div class="table_img_logo"><img src="york.png" alt=""></div></td>
+                                   <td><div class="table_img_logo"><img src="images/york.png" alt=""></div></td>
                                    <td><span class="table_vs">vs.</span></td>
-                                   <td><div class="table_img_logo"><img src="valour.png" alt=""></div></td>
+                                   <td><div class="table_img_logo"><img src="images/valour.png" alt=""></div></td>
                                    
                                </tr>
                                
                                <tr>
                                    
                                    <td><b>9/29-Sunday</b><br>9:30 am</td>
-                                   <td><div class="table_img_logo"><img src="pacific.png" alt=""></div></td>
+                                   <td><div class="table_img_logo"><img src="images/pacific.png" alt=""></div></td>
                                    <td><span class="table_vs">vs.</span></td>
-                                   <td><div class="table_img_logo"><img src="calvary.png" alt=""></div></td>
+                                   <td><div class="table_img_logo"><img src="images/calvary.png" alt=""></div></td>
                                    
                                </tr>
                                
                                <tr>
                                    
                                    <td><b>9/29-Sunday</b><br>9:30 am</td>
-                                   <td><div class="table_img_logo"><img src="edmonton.png" alt=""></div></td>
+                                   <td><div class="table_img_logo"><img src="images/edmonton.png" alt=""></div></td>
                                    <td><span class="table_vs">vs.</span></td>
-                                   <td><div class="table_img_logo"><img src="forge.png" alt=""></div></td>
+                                   <td><div class="table_img_logo"><img src="images/forge.png" alt=""></div></td>
                                    
                                </tr>
   
@@ -1431,81 +1457,81 @@
                               <tr>
                                    
                                    <td><b>10/06-Sunday</b><br>9:30 am</td>
-                                   <td><div class="table_img_logo"><img src="valour.png" alt=""></div></td>
+                                   <td><div class="table_img_logo"><img src="images/valour.png" alt=""></div></td>
                                    <td><span class="table_vs">vs.</span></td>
-                                   <td><div class="table_img_logo"><img src="calvary.png" alt=""></div></td>
+                                   <td><div class="table_img_logo"><img src="images/calvary.png" alt=""></div></td>
                                    
                               </tr>
                                
                               <tr>
                                   
                                   <td><b>10/06-Sunday</b><br>9:30 am</td>
-                                   <td><div class="table_img_logo"><img src="forge.png" alt=""></div></td>
+                                   <td><div class="table_img_logo"><img src="images/forge.png" alt=""></div></td>
                                    <td><span class="table_vs">vs.</span></td>
-                                   <td><div class="table_img_logo"><img src="york.png" alt=""></div></td>
+                                   <td><div class="table_img_logo"><img src="images/york.png" alt=""></div></td>
                                   
                               </tr>
                                
                                <tr>
                                    
                                    <td><b>10/06-Sunday</b><br>9:30 am</td>
-                                   <td><div class="table_img_logo"><img src="valour.png" alt=""></div></td>
+                                   <td><div class="table_img_logo"><img src="images/valour.png" alt=""></div></td>
                                    <td><span class="table_vs">vs.</span></td>
-                                   <td><div class="table_img_logo"><img src="pacific.png" alt=""></div></td>
+                                   <td><div class="table_img_logo"><img src="images/pacific.png" alt=""></div></td>
                                    
                                </tr>
                                
                                <tr>
                                    
                                    <td>10/08-Tuesday<br>1:00 pm</td>
-                                   <td><div class="table_img_logo"><img src="forge.png" alt=""></div></td>
+                                   <td><div class="table_img_logo"><img src="images/forge.png" alt=""></div></td>
                                    <td><span class="table_vs">vs.</span></td>
-                                   <td><div class="table_img_logo"><img src="edmonton.png" alt=""></div></td> 
+                                   <td><div class="table_img_logo"><img src="images/edmonton.png" alt=""></div></td> 
                                    
                                </tr>
                                
                                <tr>
                                    
                                    <td>10/08-Tuesday<br>1:00 pm</td>
-                                   <td><div class="table_img_logo"><img src="edmonton.png" alt=""></div></td>
+                                   <td><div class="table_img_logo"><img src="images/edmonton.png" alt=""></div></td>
                                    <td><span class="table_vs">vs.</span></td>
-                                   <td><div class="table_img_logo"><img src="calvary.png" alt=""></div></td>
+                                   <td><div class="table_img_logo"><img src="images/calvary.png" alt=""></div></td>
 
                                </tr>
                                
                                <tr>
                                    
                                    <td>10/08-Tuesday<br>1:00 pm</td>
-                                   <td><div class="table_img_logo"><img src="york.png" alt=""></div></td>
+                                   <td><div class="table_img_logo"><img src="images/york.png" alt=""></div></td>
                                    <td><span class="table_vs">vs.</span></td>
-                                   <td><div class="table_img_logo"><img src="pacific.png" alt=""></div></td>
+                                   <td><div class="table_img_logo"><img src="images/pacific.png" alt=""></div></td>
                                    
                                </tr>
                                
                                <tr>
                                    
                                    <td><b>10/20-Sunday</b><br>1:00 pm</td>
-                                   <td><div class="table_img_logo"><img src="york.png" alt=""></div></td>
+                                   <td><div class="table_img_logo"><img src="images/york.png" alt=""></div></td>
                                    <td><span class="table_vs">vs.</span></td>
-                                   <td><div class="table_img_logo"><img src="valour.png" alt=""></div></td>
+                                   <td><div class="table_img_logo"><img src="images/valour.png" alt=""></div></td>
                                    
                                </tr>
                                
                                <tr>
                                    
                                    <td><b>10/20-Sunday</b><br>1:00 pm</td>
-                                   <td><div class="table_img_logo"><img src="pacific.png" alt=""></div></td>
+                                   <td><div class="table_img_logo"><img src="images/pacific.png" alt=""></div></td>
                                    <td><span class="table_vs">vs.</span></td>
-                                   <td><div class="table_img_logo"><img src="edmonton.png" alt=""></div></td>
+                                   <td><div class="table_img_logo"><img src="images/edmonton.png" alt=""></div></td>
                                    
                                </tr>
                                
                                <tr>
                                    
                                    <td><b>10/20-Sunday</b><br>1:00 pm</td>
-                                   <td><div class="table_img_logo"><img src="calvary.png" alt=""></div></td>
+                                   <td><div class="table_img_logo"><img src="images/calvary.png" alt=""></div></td>
                                    <td><span class="table_vs">vs.</span></td>
-                                   <td><div class="table_img_logo"><img src="forge.png" alt=""></div></td>
+                                   <td><div class="table_img_logo"><img src="images/forge.png" alt=""></div></td>
                                    
                                </tr>
                                
@@ -1575,81 +1601,81 @@
                                <tr>
                                    
                                    <td><b>9/01-Sunday</b><br>9:30 am</td>
-                                   <td><div class="table_img_logo"><img src="calvary.png" alt=""></div></td>
+                                   <td><div class="table_img_logo"><img src="images/calvary.png" alt=""></div></td>
                                    <td><span class="table_vs">vs.</span></td>
-                                   <td><div class="table_img_logo"><img src="forge.png" alt=""></div></td>
+                                   <td><div class="table_img_logo"><img src="images/forge.png" alt=""></div></td>
                                    
                                </tr>
                                
                                <tr>
                                    
                                    <td><b>9/01-Sunday</b><br>9:30 am</td>
-                                   <td><div class="table_img_logo"><img src="edmonton.png" alt=""></div></td>
+                                   <td><div class="table_img_logo"><img src="images/edmonton.png" alt=""></div></td>
                                    <td><span class="table_vs">vs.</span></td>
-                                   <td><div class="table_img_logo"><img src="york.png" alt=""></div></td>
+                                   <td><div class="table_img_logo"><img src="images/york.png" alt=""></div></td>
                                    
                                </tr>
                                
                                <tr>
                                    
                                    <td><b>9/01-Sunday</b><br>9:30 am</td>
-                                   <td><div class="table_img_logo"><img src="valour.png" alt=""></div></td>
+                                   <td><div class="table_img_logo"><img src="images/valour.png" alt=""></div></td>
                                    <td><span class="table_vs">vs.</span></td>
-                                   <td><div class="table_img_logo"><img src="pacific.png" alt=""></div></td>
+                                   <td><div class="table_img_logo"><img src="images/pacific.png" alt=""></div></td>
                                    
                                </tr>
                                
                                <tr>
                                    
                                    <td><b>9/08-Sunday</b><br>1:00 pm</td>
-                                   <td><div class="table_img_logo"><img src="forge.png" alt=""></div></td>
+                                   <td><div class="table_img_logo"><img src="images/forge.png" alt=""></div></td>
                                    <td><span class="table_vs">vs.</span></td>
-                                   <td><div class="table_img_logo"><img src="pacific.png" alt=""></div></td>
+                                   <td><div class="table_img_logo"><img src="images/pacific.png" alt=""></div></td>
                                    
                                </tr>
                                
                                <tr>
                                    
                                    <td><b>9/08-Sunday</b><br>1:00 pm</td>
-                                   <td><div class="table_img_logo"><img src="valour.png" alt=""></div></td>
+                                   <td><div class="table_img_logo"><img src="images/valour.png" alt=""></div></td>
                                    <td><span class="table_vs">vs.</span></td>
-                                   <td><div class="table_img_logo"><img src="edmonton.png" alt=""></div></td>
+                                   <td><div class="table_img_logo"><img src="images/edmonton.png" alt=""></div></td>
                                    
                                </tr>
                                
                                <tr>
                                    
                                    <td><b>9/08-Sunday</b><br>1:00 pm</td>
-                                   <td><div class="table_img_logo"><img src="york.png" alt=""></div></td>
+                                   <td><div class="table_img_logo"><img src="images/york.png" alt=""></div></td>
                                    <td><span class="table_vs">vs.</span></td>
-                                   <td><div class="table_img_logo"><img src="calvary.png" alt=""></div></td>
+                                   <td><div class="table_img_logo"><img src="images/calvary.png" alt=""></div></td>
                                    
                                </tr>
                                
                                <tr>
                                    
                                    <td><b>9/22-Sunday</b><br>1:00 pm</td>
-                                   <td><div class="table_img_logo"><img src="york.png" alt=""></div></td>
+                                   <td><div class="table_img_logo"><img src="images/york.png" alt=""></div></td>
                                    <td><span class="table_vs">vs.</span></td>
-                                   <td><div class="table_img_logo"><img src="valour.png" alt=""></div></td>
+                                   <td><div class="table_img_logo"><img src="images/valour.png" alt=""></div></td>
                                    
                                </tr>
                                
                                <tr>
                                    
                                    <td><b>9/22-Sunday</b><br>1:00 pm</td>
-                                   <td><div class="table_img_logo"><img src="pacific.png" alt=""></div></td>
+                                   <td><div class="table_img_logo"><img src="images/pacific.png" alt=""></div></td>
                                    <td><span class="table_vs">vs.</span></td>
-                                   <td><div class="table_img_logo"><img src="calvary.png" alt=""></div></td>
+                                   <td><div class="table_img_logo"><img src="images/calvary.png" alt=""></div></td>
                                    
                                </tr>
                                
                                <tr>
                                    
                                    <td><b>9/22-Sunday</b><br>1:00 pm</td>
-                                   <td><div class="table_img_logo"><img src="edmonton.png" alt=""></div></td>
+                                   <td><div class="table_img_logo"><img src="images/edmonton.png" alt=""></div></td>
                                    <td><span class="table_vs">vs.</span></td>
-                                   <td><div class="table_img_logo"><img src="forge.png" alt=""></div></td>
+                                   <td><div class="table_img_logo"><img src="images/forge.png" alt=""></div></td>
                                    
                                </tr>
   
@@ -1671,81 +1697,81 @@
                               <tr>
                                    
                                    <td><b>10/06-Sunday</b><br>1:00 pm</td>
-                                   <td><div class="table_img_logo"><img src="valour.png" alt=""></div></td>
+                                   <td><div class="table_img_logo"><img src="images/valour.png" alt=""></div></td>
                                    <td><span class="table_vs">vs.</span></td>
-                                   <td><div class="table_img_logo"><img src="calvary.png" alt=""></div></td>
+                                   <td><div class="table_img_logo"><img src="images/calvary.png" alt=""></div></td>
                                    
                               </tr>
                                
                               <tr>
                                   
                                   <td><b>10/06-Sunday</b><br>1:00 pm</td>
-                                   <td><div class="table_img_logo"><img src="forge.png" alt=""></div></td>
+                                   <td><div class="table_img_logo"><img src="images/forge.png" alt=""></div></td>
                                    <td><span class="table_vs">vs.</span></td>
-                                   <td><div class="table_img_logo"><img src="york.png" alt=""></div></td>
+                                   <td><div class="table_img_logo"><img src="images/york.png" alt=""></div></td>
                                   
                               </tr>
                                
                                <tr>
                                    
                                    <td><b>10/06-Sunday</b><br>1:00 pm</td>
-                                   <td><div class="table_img_logo"><img src="valour.png" alt=""></div></td>
+                                   <td><div class="table_img_logo"><img src="images/valour.png" alt=""></div></td>
                                    <td><span class="table_vs">vs.</span></td>
-                                   <td><div class="table_img_logo"><img src="pacific.png" alt=""></div></td>
+                                   <td><div class="table_img_logo"><img src="images/pacific.png" alt=""></div></td>
                                    
                                </tr>
                                
                                <tr>
                                    
                                    <td>10/08-Tuesday<br>9:30 am</td>
-                                   <td><div class="table_img_logo"><img src="forge.png" alt=""></div></td>
+                                   <td><div class="table_img_logo"><img src="images/forge.png" alt=""></div></td>
                                    <td><span class="table_vs">vs.</span></td>
-                                   <td><div class="table_img_logo"><img src="edmonton.png" alt=""></div></td> 
+                                   <td><div class="table_img_logo"><img src="images/edmonton.png" alt=""></div></td> 
                                    
                                </tr>
                                
                                <tr>
                                    
                                    <td>10/08-Tuesday<br>9:30 am</td>
-                                   <td><div class="table_img_logo"><img src="edmonton.png" alt=""></div></td>
+                                   <td><div class="table_img_logo"><img src="images/edmonton.png" alt=""></div></td>
                                    <td><span class="table_vs">vs.</span></td>
-                                   <td><div class="table_img_logo"><img src="calvary.png" alt=""></div></td>
+                                   <td><div class="table_img_logo"><img src="images/calvary.png" alt=""></div></td>
 
                                </tr>
                                
                                <tr>
                                    
                                    <td>10/08-Tuesday<br>9:30 am</td>
-                                   <td><div class="table_img_logo"><img src="york.png" alt=""></div></td>
+                                   <td><div class="table_img_logo"><img src="images/york.png" alt=""></div></td>
                                    <td><span class="table_vs">vs.</span></td>
-                                   <td><div class="table_img_logo"><img src="pacific.png" alt=""></div></td>
+                                   <td><div class="table_img_logo"><img src="images/pacific.png" alt=""></div></td>
                                    
                                </tr>
                                
                                <tr>
                                    
                                    <td><b>10/20-Sunday</b><br>1:00 pm</td>
-                                   <td><div class="table_img_logo"><img src="york.png" alt=""></div></td>
+                                   <td><div class="table_img_logo"><img src="images/york.png" alt=""></div></td>
                                    <td><span class="table_vs">vs.</span></td>
-                                   <td><div class="table_img_logo"><img src="valour.png" alt=""></div></td>
+                                   <td><div class="table_img_logo"><img src="images/valour.png" alt=""></div></td>
                                    
                                </tr>
                                
                                <tr>
                                    
                                    <td><b>10/20-Sunday</b><br>1:00 pm</td>
-                                   <td><div class="table_img_logo"><img src="pacific.png" alt=""></div></td>
+                                   <td><div class="table_img_logo"><img src="images/pacific.png" alt=""></div></td>
                                    <td><span class="table_vs">vs.</span></td>
-                                   <td><div class="table_img_logo"><img src="edmonton.png" alt=""></div></td>
+                                   <td><div class="table_img_logo"><img src="images/edmonton.png" alt=""></div></td>
                                    
                                </tr>
                                
                                <tr>
                                    
                                    <td><b>10/20-Sunday</b><br>1:00 pm</td>
-                                   <td><div class="table_img_logo"><img src="calvary.png" alt=""></div></td>
+                                   <td><div class="table_img_logo"><img src="images/calvary.png" alt=""></div></td>
                                    <td><span class="table_vs">vs.</span></td>
-                                   <td><div class="table_img_logo"><img src="forge.png" alt=""></div></td>
+                                   <td><div class="table_img_logo"><img src="images/forge.png" alt=""></div></td>
                                    
                                </tr>
                                
@@ -1767,7 +1793,7 @@
                         
                         <div class="content-team float-left">
                             
-                            <img src="calvary.png" alt="">
+                            <img src="images/calvary.png" alt="">
                             
                         </div>
                         
@@ -1785,7 +1811,7 @@
                         
                         <div class="content-team float-left">
                             
-                            <img src="edmonton.png" alt="">
+                            <img src="images/edmonton.png" alt="">
                             
                         </div>
                         
@@ -1803,7 +1829,7 @@
                         
                         <div class="content-team float-left">
                             
-                            <img src="forge.png" alt="">
+                            <img src="images/forge.png" alt="">
                             
                         </div>
                         
@@ -1821,7 +1847,7 @@
                         
                         <div class="content-team float-left">
                             
-                            <img src="pacific.png" alt="">
+                            <img src="images/pacific.png" alt="">
                             
                         </div>
                         
@@ -1839,7 +1865,7 @@
                         
                         <div class="content-team float-left">
                             
-                            <img src="york.png" alt="">
+                            <img src="images/york.png" alt="">
                         
                         </div>
                         
@@ -1857,7 +1883,7 @@
                         
                         <div class="content-team float-left">
                             
-                            <img src="valour.png" alt="">
+                            <img src="images/valour.png" alt="">
                             
                         </div>
                         
@@ -2017,7 +2043,7 @@
             </footer>
         </div>
         
-        <script src="main.js"></script>
+        <script src="scripts\main.js"></script>
     
         <script src="bootstrap-4.3.1-dist/js/jquery-3.3.1.slim.min.js"></script>
         
