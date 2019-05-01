@@ -20,9 +20,9 @@
     
     <body>
     
-        <div>
+        <div id="page">
           
-          <div class="topHeader">
+          <div class="topHeader" id="topHeader">
               
               <div class="">
                
@@ -43,9 +43,9 @@
             
             <header>
               
-              <div>
+              <div id="navBar">
                 
-                   <nav class="navbar navbar-light navbar-expand-sm">
+                   <nav class="navbar navbar-light navbar-expand-lg">
                         
                         
                         <section class="content-logo">
@@ -65,7 +65,7 @@
 
                                 <li class="nav-itb">
 
-                                   <a href="#home" class="nav-link"><h2>Schedule</h2></a>
+                                   <a href="#" class="nav-link" onclick="mostrarSchedule2();"><h2>Schedule</h2></a>
 
                                 </li>
                                    
@@ -77,12 +77,12 @@
                                        
                                        <ul>
                                            
-                                           <li><a href=""><b>Under one</b></a></li>
-                                           <li><a href=""><b>Under two</b></a></li>
-                                           <li><a href=""><b>Under three</b></a></li>
-                                           <li><a href=""><b>Under four</b></a></li>
-                                           <li><a href=""><b>Under five</b></a></li>
-                                           <li><a href=""><b>Under six</b></a></li>
+                                           <li><a href="#" onclick="mostrarU1();"><b>Under one</b></a></li>
+                                           <li><a href="#" onclick="mostrarU2();"><b>Under two</b></a></li>
+                                           <li><a href="#" onclick="mostrarU3();"><b>Under three</b></a></li>
+                                           <li><a href="#" onclick="mostrarU4();"><b>Under four</b></a></li>
+                                           <li><a href="#" onclick="mostrarU5();"><b>Under five</b></a></li>
+                                           <li><a href="#" onclick="mostrarU6();"><b>Under six</b></a></li>
                                            
                                        </ul>
                                        
@@ -98,12 +98,12 @@
                                        
                                        <ul>
                                            
-                                           <li><a href=""><b>Calvary FC</b></a></li>
-                                           <li><a href=""><b>FC Edmonton</b></a></li>
-                                           <li><a href=""><b>Forge FC</b></a></li>
-                                           <li><a href=""><b>Pacific FC</b></a></li>
-                                           <li><a href=""><b>York 9 FC</b></a></li>
-                                           <li><a href=""><b>Valour FC</b></a></li>
+                                           <li><a href="#calvary"  onclick="mostrarCalvary();"><b>Calvary FC</b></a></li>
+                                           <li><a href="#" onclick="mostrarEdmonton();"><b>FC Edmonton</b></a></li>
+                                           <li><a href="#" onclick="mostrarForge();"><b>Forge FC</b></a></li>
+                                           <li><a href="#" onclick="mostrarPacific();"><b>Pacific FC</b></a></li>
+                                           <li><a href="#" onclick="mostrarYork();"><b>York 9 FC</b></a></li>
+                                           <li><a href="#" onclick="mostrarValour();"><b>Valour FC</b></a></li>
                                            
                                        </ul>
                                        
@@ -113,19 +113,13 @@
 
                                 <li class="li nav-itb">
 
-                                    <a href="#u1" class="nav-link"><h2>Matches</h2></a>
+                                    <a href="#" class="nav-link" onclick="mostrarMaps();"><h2>Maps</h2></a>
 
                                 </li>
 
                                 <li class="li nav-itb">
 
-                                    <a href="#maps" class="nav-link"><h2>Maps</h2></a>
-
-                                </li>
-
-                                <li class="li nav-itb">
-
-                                    <a href="#contact" class="nav-link"><h2>Contact</h2></a>
+                                    <a href="#" class="nav-link" onclick="mostrarContact();"><h2>Contact</h2></a>
 
                                 </li>
 
@@ -140,8 +134,202 @@
             </header>
             
             <section>
+             
+             <div class="scoreboard" id="scoreboard">
+                 
+                 <div class="scoreboard_wrapper">
+                     
+                     <a href="" class="scoreboard_scroller-left"><i class="fas fa-chevron-left"></i></a>
+                     
+                     <div class="scoreboard_games-wrapper">
+                         
+                        <div class="scoreboard_games">
+                            
+                            <div class="scoreboard_game">
+                                
+                                <div class="game_header">
+                                    
+                                    09/01-SUN
+                                    <br>9:30 am
+                                    
+                                </div>
+                                
+                                <div class="game_info">
+                                    
+                                    <div class="team_home">
+                                        
+                                        <img src="calvary.png" alt="">
+                                        
+                                    </div>
+                                    
+                                    <span class="game_score">vs.</span>
+                                    
+                                    <div class="team_away">
+                                        
+                                        <img src="forge.png" alt="">
+                                        
+                                    </div>
+                                    
+                                </div>
+                                
+                            </div>
+                            
+                            <div class="scoreboard_game">
+                                
+                                <div class="game_header">
+                                    
+                                    9/01-sun <br>
+                                    9:30 am
+                                    
+                                </div>
+                                
+                                <div class="game_info">
+                                    
+                                    <div class="team_home">
+                                        
+                                        <img src="edmonton.png" alt="">
+                                        
+                                    </div>
+                                    
+                                    <span class="game_score">vs.</span>
+                                    
+                                    <div class="team_away">
+                                        
+                                        <img src="york.png" alt="">
+                                        
+                                    </div>
+                                    
+                                </div>
+                                
+                            </div>
+                            
+                            <div class="scoreboard_game">
+                                
+                                <div class="game_header">
+                                    
+                                    9/01-sun <br>
+                                    9:30am
+                                    
+                                </div>
+                                
+                                <div class="game_info">
+                                    
+                                    <div class="team_home">
+                                        
+                                        <img src="valour.png" alt="">
+                                        
+                                    </div>
+                                    
+                                    <span class="game_score">vs.</span>
+                                    
+                                    <div class="team_away">
+                                        
+                                        <img src="pacific.png" alt="">
+                                        
+                                    </div>
+                                    
+                                </div>
+                                
+                            </div>
+                            
+                            <div class="scoreboard_game">
+                                
+                                <div class="game_header">
+                                    
+                                    10/06-sun<br>
+                                    1:00 pm
+                                    
+                                </div>
+                                
+                                <div class="game_info">
+                                    
+                                    <div class="team_home">
+                                        
+                                        <img src="valour.png" alt="">
+                                        
+                                    </div>
+                                    
+                                    <span class="game_score">vs.</span>
+                                    
+                                    <div class="team_away">
+                                        
+                                        <img src="calvary.png" alt="">
+                                        
+                                    </div>
+                                    
+                                </div>
+                                
+                            </div>
+                            
+                            <div class="scoreboard_game">
+                                
+                                <div class="game_header">
+                                    
+                                    10/06-sun<br>
+                                    1:00 pm
+                                    
+                                </div>
+                                
+                                <div class="game_info">
+                                    
+                                    <div class="team_home">
+                                        
+                                        <img src="forge.png" alt="">
+                                        
+                                    </div>
+                                    
+                                    <span class="game_score">vs.</span>
+                                    
+                                    <div class="team_away">
+                                        
+                                        <img src="york.png" alt="">
+                                        
+                                    </div>
+                                    
+                                </div>
+                                
+                            </div>
+                            
+                            <div class="scoreboard_game">
+                                
+                                <div class="game_header">
+                                    
+                                    10/06-sun<br>
+                                    1:00 pm
+                                    
+                                </div>
+                                
+                                <div class="game_info">
+                                    
+                                    <div class="team_home">
+                                        
+                                        <img src="pacific.png" alt="">
+                                        
+                                    </div>
+                                    
+                                    <span class="game_score">vs.</span>
+                                    
+                                    <div class="team_away">
+                                        
+                                        <img src="edmonton.png" alt="">
+                                        
+                                    </div>
+                                    
+                                </div>
+                                
+                            </div>
+                            
+                        </div>  
+                         
+                     </div>
+                     
+                     <a href="" class="scoreboard_scroller-right"><i class="fas fa-chevron-right"></i></a>
+                     
+                 </div>
+                 
+             </div>
               
-              <div class="slider">
+              <div class="slider" id="sliderImg">
                   
                   <ul>
                       
@@ -158,6 +346,34 @@
                   </ul>
                   
               </div>
+              
+              <div class="schedule_home" id="schedule_home">
+                  
+                  <div class="schedule_content"  id="schedule1">
+                      
+                      <h5 class="content-home">August 4</h5>
+                      
+                      <span class="content-home">NYSL Fundraiser</span>
+                      
+                  </div>
+                  
+                  <div class="schedule_content" id="schedule2">
+                      
+                      <h5 class="content-home">August 16</h5>
+                      
+                      <span class="content-home">Season kick-off: Meet the teams</span>
+                      
+                  </div>
+                  
+                  <div class="schedule_content" id="schedule3">
+                      
+                      <h5 class="content-home">September 1</h5>
+                      
+                      <span class="content-home">First Game of The Season!</span>
+                      
+                  </div>
+                  
+              </div >
             
                 <div class="u1 categories" id="u1">
 
@@ -171,7 +387,7 @@
                              
                              <ul>
                        
-                               <h5>SEPTbBER</h5>
+                               <h5>SEPTEMBER</h5>
 
                                 <li><b>9/01-Sunday</b><br>@ AJ Katzenmaier at 9:30 am</li>
                                 <li><b>9/08-Sunday</b><br>@ Marjorie P Hart at 1:00 pm</li>
@@ -198,6 +414,8 @@
                        <a href="#matchU1" data-toggle="collapse"><h3>Matches</h3></a>
                        
                        <div id="matchU1" class="collapse matches">
+                          
+                          <h5>September</h5>
                            
                            <table class="table table-striped">
                                
@@ -292,6 +510,8 @@
                                </tr>
   
                            </table>
+                           
+                           <h5>October</h5>
                            
                            <table class="table table-striped">
                               
@@ -406,7 +626,7 @@
                        
                        <div id="monthU2" class="collapse months">
                              
-                             <h5>SEPTbBER</h5>
+                             <h5>SEPTEMBER</h5>
                         
                             <ul>
 
@@ -434,6 +654,8 @@
                        <a href="#matchU2" data-toggle="collapse"><h3>Matches</h3></a>
                        
                        <div id="matchU2" class="collapse matches">
+                          
+                          <h5>September</h5>
                            
                            <table class="table table-striped">
                                
@@ -528,6 +750,8 @@
                                </tr>
   
                            </table>
+                           
+                           <h5>October</h5>
                            
                            <table class="table table-striped">
                               
@@ -614,7 +838,7 @@
                       
                       <div id="monthU3" class="collapse months">
                              
-                             <h5>SEPTbBER</h5>
+                             <h5>SEPTEMBER</h5>
                        
                            <ul>
 
@@ -642,6 +866,8 @@
                        <a href="#matchU3" data-toggle="collapse"><h3>Matches</h3></a>
                        
                        <div id="matchU3" class="collapse matches">
+                          
+                          <h5>September</h5>
                            
                            <table class="table table-striped">
                                
@@ -736,6 +962,8 @@
                                </tr>
   
                            </table>
+                           
+                           <h5>October</h5>
                            
                            <table class="table table-striped">
                               
@@ -849,7 +1077,7 @@
                       
                       <div id="monthU4" class="collapse months">
                              
-                            <h5>SEPTbBER</h5>
+                            <h5>SEPTEMBER</h5>
                        
                            <ul>
 
@@ -877,6 +1105,8 @@
                        <a href="#matchU4" data-toggle="collapse"><h3>Matches</h3></a>
                        
                        <div id="matchU4" class="collapse matches">
+                          
+                          <h5>September</h5>
                            
                            <table class="table table-striped">
                                
@@ -971,6 +1201,8 @@
                                </tr>
   
                            </table>
+                           
+                           <h5>October</h5>
                            
                            <table class="table table-striped">
                               
@@ -1057,7 +1289,7 @@
                          
                          <div id="monthU5" class="collapse months">
                             
-                            <h5>SEPTbBER</h5>
+                            <h5>SEPTEMBER</h5>
                              
                              <ul>
 
@@ -1086,6 +1318,8 @@
                        <a href="#matchU5" data-toggle="collapse"><h3>Matches</h3></a>
                        
                        <div id="matchU5" class="collapse matches">
+                          
+                          <h5>September</h5>
                            
                            <table class="table table-striped">
                                
@@ -1180,6 +1414,8 @@
                                </tr>
   
                            </table>
+                           
+                           <h5>October</h5>
                            
                            <table class="table table-striped">
                               
@@ -1293,7 +1529,7 @@
                          
                          <div id="monthU6" class="collapse months">
                             
-                            <h5>SEPTbBER</h5>
+                            <h5>SEPTEMBER</h5>
                              
                              <ul>
                                    
@@ -1322,6 +1558,8 @@
                            <a href="#matchU6" data-toggle="collapse"><h3>Matches</h3></a>
                        
                        <div id="matchU6" class="collapse matches">
+                          
+                          <h5>September</h5>
                            
                            <table class="table table-striped">
                                
@@ -1416,6 +1654,8 @@
                                </tr>
   
                            </table>
+                           
+                           <h5>October</h5>
                            
                            <table class="table table-striped">
                               
@@ -1519,11 +1759,11 @@
                         
                 </div>
                 
-                <div class="teams">
+                <div class="teams" id="teams">
                    
                    <h2 class="subtitle">Teams</h2>
                     
-                    <div class="calvary clearfix team">
+                    <div class="calvary clearfix team" id="calvary">
                         
                         <div class="content-team float-left">
                             
@@ -1541,7 +1781,7 @@
                         
                     </div>
                     
-                    <div class="edmonton clearfix team">
+                    <div class="edmonton clearfix team" id="edmonton">
                         
                         <div class="content-team float-left">
                             
@@ -1559,7 +1799,7 @@
                         
                     </div>
                     
-                    <div class="forge clearfix team">
+                    <div class="forge clearfix team" id="forge">
                         
                         <div class="content-team float-left">
                             
@@ -1577,7 +1817,7 @@
                         
                     </div>
                     
-                    <div class="pacific clearfix team">
+                    <div class="pacific clearfix team" id="pacific">
                         
                         <div class="content-team float-left">
                             
@@ -1595,7 +1835,7 @@
                         
                     </div>
                     
-                    <div class="york clearfix team">
+                    <div class="york clearfix team" id="york">
                         
                         <div class="content-team float-left">
                             
@@ -1613,7 +1853,7 @@
                         
                     </div>
                     
-                    <div class="valour clearfix team">
+                    <div class="valour clearfix team" id="valour">
                         
                         <div class="content-team float-left">
                             
@@ -1770,12 +2010,14 @@
                 
             </section>
             
-            <footer class="text-center">
+            <footer class="text-center" id="footer">
                 
                 <i class="far fa-copyright"></i> 2019 Mk. | All Rights Reserved
                 
             </footer>
         </div>
+        
+        <script src="main.js"></script>
     
         <script src="bootstrap-4.3.1-dist/js/jquery-3.3.1.slim.min.js"></script>
         

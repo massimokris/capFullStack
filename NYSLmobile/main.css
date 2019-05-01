@@ -195,7 +195,7 @@ header{
     display: flex;
     padding: 0;
     width: 500%;
-    height: 150px;
+    height: 140px;
     
     animation: change 25s infinite alternate;
 }
@@ -290,12 +290,12 @@ table{
 
 .schedule {
     
-    margin: 20px 0 15px 25px;
+    margin: 10px 5px 10px 15px;
 }
 
 .matches {
     
-    margin: 10px 0 10px 25px;
+    margin: 10px 5px 10px 15px;
 }
 
 .months {
@@ -364,10 +364,202 @@ table{
     padding: 2px;
 }
 
+.scoreboard{
+    
+    position: relative;
+    z-index: 1;
+    width: 100%;
+    height: 125px;
+    box-sizing: border-box;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    border-bottom-width: 1px;
+    border-bottom-style: solid;
+    border-bottom-color: #ccc;
+    margin: 15px 0px 10px 0px;
+}
 
+.scoreboard_wrapper{
+    
+    /*padding: 0 40px;*/
+    display: inline-flex;
+    width: 100%;
+}
 
+.scoreboard_scroller-left{
+    
+    left: 0;
+    top: 10px;
+    height: 111px;
+    padding: 22px 16px 0px;
+    border-right-width: 1px;
+    border-right-style: solid;
+    box-shadow: 2px 0px 5px rgba(0,0,0,0.1);
+    background-color: #fff;
+    color: #22356F;
+    border-top-color: #ccc;
+    border-right-color: #ccc;
+}
 
+.scoreboard_scroller-right{
+    
+    right: 0;
+    top: 10px;
+    height: 111px;
+    padding: 22px 18px 0px;
+    border-left-width: 1px;
+    border-left-style: solid;
+    box-shadow: -2px 0px 5px rgba(0,0,0,0.1);
+    background-color: #fff;
+    color: #22356F;
+    border-top-color: #ccc;
+    border-left-color: #ccc;
+}
 
+.scoreboard_games-wrapper{
+    
+    overflow-x: scroll;
+}
+
+.scoreboard_games {
+    position: relative;
+    display: inline-flex;
+    list-style: none;
+    list-style-type: none;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    white-space: nowrap;
+}
+
+.scoreboard_game {
+    position: relative;
+    overflow: hidden;
+    width: 140px;
+    height: 111px;
+    padding: 6px 10px 0 10px;
+    border: 1px solid #ccc;
+    vertical-align: top;
+    opacity: 1;
+    transition: all 0.2s ease-out;
+    -webkit-transition: all 0.2s ease-out;
+    /*margin-top: 10px;*/
+}
+
+.game_header {
+    font-size: 0.75em;
+    text-transform: uppercase;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 5px;
+    margin-top: 5px;
+}
+
+.game_info{
+    
+    display: grid;
+    grid-template-columns: 1fr 53px 1fr;
+    width: calc(100% + 20px);
+    margin-left: -10px;
+    margin-top: 10px;
+}
+
+.game_score{
+    
+    color: #22356F;
+    line-height: 2em;
+    text-align: center;
+}
+
+.team_home{
+    
+    width: 35px;
+    height: 35px;
+}
+
+.team_home img{
+    
+    width: 100%;
+    height: 100%;
+    margin-left: 15px;
+}
+
+.team_away{
+    
+    width: 35px;
+    height: 35px;
+}
+
+.team_away img{
+    
+    width: 100%;
+    height: 100%;
+    margin-left: -15px;
+}
+
+.schedule_home{
+    
+    width: 95%;
+    height: 700px;
+    border: 1px solid;
+    border-color: #ccc;
+    padding: 8px;
+    margin: 10px 0px 5px 8px;
+    
+}
+
+.schedule_content{
+    
+    width: 100%;
+    height: 220px;
+    padding: 12px;
+    margin: 0px 0px 10px 0px;
+}
+
+.content-home{
+    
+    margin-top: 135px;
+    color: white;
+}
+
+#schedule1{
+    
+    background-image: url(header_img2.jpg);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    opacity: ;    
+}
+
+#schedule2{
+    
+    background-image: url(header_img4.jpg);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    opacity: ;
+}
+
+#schedule3{
+    
+    background-image: url(header_img3.jpg);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    opacity: ;
+}
+
+#u1, #u2, #u3, #u4, #u5, #u6, #teams, #calvary, #edmonton, #forge, #pacific, #york, #valour, #maps, #contact, #topHeader, #navBar, #scoreboard, #sliderImg, #schedule_home, #footer{
+    
+    display: none;
+}
 
 
 

@@ -1,9 +1,0 @@
-La app de NYSL pensamos desarrollarla de manera simple y centrada 
-en la necesidades de nuestro usuarios haciendo mucho foco en la imagen de la marca de la liga 
-colocandola en la cabecera de cada seccion de la app,
-utilizamos un login de usuarios para saber quienes usan nuestra app
-y llevar un control sobre eso por temas de seguridad y estadistica para futuras mejoras 
-tambien filtramos la informacion de
-juegos por categorias para una vista mas centralizada de la informacion
-y hicimos una seccion de contacto donde podremos recibir dudas y sugerencias de los usuarios
-que usaremos para mejorar y correguir la app
