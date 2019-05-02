@@ -179,5 +179,91 @@ function ocultar(){
     document.getElementById('teams').style.display="none";
 }
 
+//funcion para agregar categorias al dropdown
+function tableCategories(){
+    
+    var category;
+    var tableCategories;
+    
+    category = data.categories;
+    
+    console.log(category);
+    
+    tableCategories = "<option id='category'>all</option>";
+    
+    for(var i = 0; i < category.length; i++){
+        
+        tableCategories += "<option id='category'>"+category[i]+"</option>";
+    }
+    
+    console.log(tableCategories);
+    
+    return tableCategories;
+}
 
+if(document.getElementById("categories-data")){
+    
+    //vinculamos esa funcion al html
+    document.getElementById("categories-data").innerHTML = tableCategories(); 
+}
+
+//funcion para agregar fechas al dropdown
+function tableDate(){
+    
+    var dates;
+    var tableDate;
+    
+    dates = data.allgames;
+    
+    tableDate = "<option id='category'>all</option>";
+    
+    for(var i = 0; i < dates.length; i++){
+        
+        tableDate += "<option id='category'>"+dates[i].date+"</option>";
+    }
+    
+    return tableDate;
+}
+
+if(document.getElementById("date")){
+    
+    //vinculamos esa funcion al html
+    document.getElementById("date").innerHTML = tableDate(); 
+}
+
+function matchesList(){
+    
+    var listCategories;
+    var listDates;
+    var list;
+    var printList;
+    
+    listCategoriesCategories = tableCategories();
+    listDatesDates = tableDate();
+    
+    list = data.allgames;
+    
+    console.log(list[0].games.length);
+    
+    for(var i = 0; i < list.length; i++){
+        
+        printList += "<li>"+list[i].date
+        
+            for(var j = 0; j < list[i].games.length; j++){
+                
+                "<ul>"+"<li>"+list[i].games[j].categories[0]+" "+list[i].games[j].categories[1]+"</li>"+
+                
+                "<li>"+list[i].games[j].place+"</li>"+
+                    
+                "<li>"+list[i].games[j].time+"</li>"+"</ul>"
+            }
+        
+            "</li>";
+    }
+    
+    
+    return printList;
+}
+
+console.log(matchesList());
 

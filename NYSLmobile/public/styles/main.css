@@ -186,7 +186,7 @@ header{
 .slider{
     
     width: 95%;
-    margin: 20px 10px 0px 10px;
+    margin: auto;
     overflow: hidden;
 }
 
@@ -511,7 +511,7 @@ table{
     border: 1px solid;
     border-color: #ccc;
     padding: 8px;
-    margin: 10px 0px 5px 8px;
+    margin: auto;
     
 }
 

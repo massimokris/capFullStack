@@ -62,12 +62,12 @@
                
                    <div class="team_logos">
 
-                       <div class="logo"><img src="images/minicalvari.png" alt=""></div>
-                       <div class="logo"><img src="images/miniedmonton.png" alt=""></div>
-                       <div class="logo"><img src="images/miniforge.png" alt=""></div>
-                       <div class="logo"><img src="images/minipacific.png" alt=""></div>
-                       <div class="logo"><img src="images/minivalour.png" alt=""></div>
-                       <div class="logo"><img src="images/miniyork.png" alt=""></div>
+                       <div class="logo"><a href="#" onclick="mostrarCalvary();"><img src="images/minicalvari.png" alt=""></a></div>
+                       <div class="logo"><a href="#" onclick="mostrarEdmonton();"><img src="images/miniedmonton.png" alt=""></a></div>
+                       <div class="logo"><a href="#" onclick="mostrarForge();"><img src="images/miniforge.png" alt=""></a></div>
+                       <div class="logo"><a href="#" onclick="mostrarPacific();"><img src="images/minipacific.png" alt=""></a></div>
+                       <div class="logo"><a href="#" onclick="mostrarValour();"><img src="images/minivalour.png" alt=""></a></div>
+                       <div class="logo"><a href="#" onclick="mostrarYork();"><img src="images/miniyork.png" alt=""></a></div>
 
                    </div>
 
@@ -84,7 +84,7 @@
                         
                         <section class="content-logo">
                             
-                            <img src="images/nysl_logo.png" alt="league logo" id="imgNavbar">
+                            <a href="#" onclick="mostrarSchedule2();"><img src="images/nysl_logo.png" alt="league logo" id="imgNavbar"></a>
                             
                         </section>
                         
@@ -132,7 +132,7 @@
                                        
                                        <ul>
                                            
-                                           <li><a href="#calvary"  onclick="mostrarCalvary();"><b>Calvary FC</b></a></li>
+                                           <li><a href="#" onclick="mostrarCalvary();"><b>Calvary FC</b></a></li>
                                            <li><a href="#" onclick="mostrarEdmonton();"><b>FC Edmonton</b></a></li>
                                            <li><a href="#" onclick="mostrarForge();"><b>Forge FC</b></a></li>
                                            <li><a href="#" onclick="mostrarPacific();"><b>Pacific FC</b></a></li>
@@ -1909,6 +1909,46 @@
                     
                 </div>
                 
+                <div class="fullMatches" id="fullMatches">
+                    
+                    <div class="fullSchedule" id="fullSchedule">
+                        
+                        <from action="#" method="post" class="clearfix">
+                            
+                           <div class="float-left">
+                               
+                               <label for="caterogies" text-rigth>Category:</label>
+                    
+                               <select name="categories" id="categories-data" class="category"></select>
+                               
+                           </div>
+                           
+                            <div class="float-left">
+                                
+                               <label for="date" text-rigth>Date:</label>
+                    
+                               <select name="date" id="date" class="date"></select> 
+                                
+                            </div> 
+                            
+                        </from>
+                        
+                        <div class="fullSchedule_info">
+                            
+                            <ul></ul>
+                            
+                        </div>    
+                        
+                    </div>
+                    
+                    <div class="fullInfo" id="fullInfo">
+                        
+                        
+                        
+                    </div>    
+                    
+                </div>
+                
                 <div class="maps" id="maps">
                    
                    <h2 class="subtitle">Game Locations</h2>
@@ -2050,6 +2090,8 @@
                 
             </footer>
         </div>
+        
+        <script src="scripts\schedule.js"></script>
         
         <script src="scripts\main.js"></script>
     
