@@ -265,7 +265,7 @@ function matchesList(){
                         
                     "<ul>"+"<li>"+list[i].games[j].categories[j]+"</li>"+
                 
-                    "<li>"+"<a href='#'>"+list[i].games[j].place+"</a"+"</li>"+
+                    "<li>"+"<a href='#' onclick='showMap("list[i].games[j].place")'>"+list[i].games[j].place+"</a"+"</li>"+
 
                     "<li>"+list[i].games[j].time+"</li>"+"</ul>"    
                 }
@@ -298,7 +298,10 @@ if(document.getElementById("schedule_info")){
     });  
 }
 
-function changeMaps(){
+function showMap(string){
     
-    
+    switch(string){
+            
+        //pasar case de mapas para cambiar el display a block
+    }
 }
