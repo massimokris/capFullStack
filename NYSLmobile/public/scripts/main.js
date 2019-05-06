@@ -236,10 +236,15 @@ function matchesList(){
     var listCategories;
     var listDates;
     var list;
-    var printList;
+    var printList = "";
+    var maps;
+    var place;
     
-    listCategoriesCategories = tableCategories();
-    listDatesDates = tableDate();
+    listCategories = document.getElementById("categories-data").value;
+    listDates = document.getElementById("date").value;
+    
+    console.log(document.getElementById("categories-data").value);
+    console.log(document.getElementById("date").value);
     
     list = data.allgames;
     
@@ -247,15 +252,23 @@ function matchesList(){
     
     for(var i = 0; i < list.length; i++){
         
-        printList += "<li>"+list[i].date
+        if(list[i].date == listDates || listDates == 'all'){
+            
+            //printList += "<li>"+"<b>"+list[i].date+"</b>"   
+        }
         
             for(var j = 0; j < list[i].games.length; j++){
                 
-                "<ul>"+"<li>"+list[i].games[j].categories[0]+" "+list[i].games[j].categories[1]+"</li>"+
-                
-                "<li>"+list[i].games[j].place+"</li>"+
+                if((list[i].games[j].categories[j] == listCategories || listCategories == 'all') && (list[i].date == listDates || listDates == 'all')){
                     
-                "<li>"+list[i].games[j].time+"</li>"+"</ul>"
+                    printList += "<li>"+"<b>"+list[i].date+"</b>"+
+                        
+                    "<ul>"+"<li>"+list[i].games[j].categories[j]+"</li>"+
+                
+                    "<li>"+"<a href='#'>"+list[i].games[j].place+"</a"+"</li>"+
+
+                    "<li>"+list[i].games[j].time+"</li>"+"</ul>"    
+                }
             }
         
             "</li>";
@@ -265,5 +278,27 @@ function matchesList(){
     return printList;
 }
 
-console.log(matchesList());
+if(document.getElementById("schedule_info")){
+    
+    //vinculamos esa funcion al html
+    document.getElementById("schedule_info").innerHTML = matchesList(); 
+}
 
+if(document.getElementById("schedule_info")){
+    /*cambiamos la tabla en base a el estado que elige el usuario*/ 
+      document.getElementById("date").addEventListener("change", function(){
+        document.getElementById("schedule_info").innerHTML = matchesList();
+    });  
+}
+
+if(document.getElementById("schedule_info")){
+    /*cambiamos la tabla en base a el estado que elige el usuario*/ 
+      document.getElementById("categories-data").addEventListener("change", function(){
+        document.getElementById("schedule_info").innerHTML = matchesList();
+    });  
+}
+
+function changeMaps(){
+    
+    
+}
