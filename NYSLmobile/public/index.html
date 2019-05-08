@@ -1,15 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        
+
         <meta charset="utf-8">
-        
+
         <title>Northside Youth Soccer League</title>
-        
+
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        
+
         <meta http-equiv="x-ua-compatible" content="ie-edge">
-        
+
         <script src="https://www.gstatic.com/firebasejs/5.11.0/firebase.js"></script>
         <script>
           // Initialize Firebase
@@ -23,404 +23,410 @@
           };
           firebase.initializeApp(config);
         </script>
-        
+
         <link rel="stylesheet" type="text/css" href="bootstrap-4.3.1-dist/css/bootstrap.css">
-        
+
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
-        
+
         <link rel="stylesheet" href="styles/main.css">
-        
+
         <!--meta icono de la app en iphone-->
         <link rel="apple-touch-icon" href="images/nysl_logo.png">
-        
+
         <!--meta imagen de muestra mientras carga la app en iphone-->
         <link rel="apple-touch-startup-image" href="images/nysl_logo.png">
-        
+
         <!--meta para sobreescrivir nombre de icono de la app en iphone-->
         <meta name="apple-mobile-web-app-title" content="NYSL by Mk.">
-        
+
         <!--meta para ocultar la barra de navegacion en iphone-->
         <meta name="apple-mobile-web-app-capable" content="yes">
-        
+
         <!--meta icono de la app en androir-->
         <link rel="shortcut icon" sizes="196x196" href="images/nysl_logo.png">
-        
+
         <!--meta para ocultar la barra de navegacion en android-->
         <meta name="mobile-web-app-capable" content="yes">
-        
+
         <!--meta imagen de muestra mientras carga la app en android-->
-        
+
     </head>
-    
+
     <body>
-    
+
         <div id="page">
-          
+
           <div class="topHeader" id="topHeader">
-              
+
               <div class="">
-               
+
                    <div class="team_logos">
 
-                       <div class="logo"><a href="#" onclick="mostrarCalvary();"><img src="images/minicalvari.png" alt=""></a></div>
-                       <div class="logo"><a href="#" onclick="mostrarEdmonton();"><img src="images/miniedmonton.png" alt=""></a></div>
-                       <div class="logo"><a href="#" onclick="mostrarForge();"><img src="images/miniforge.png" alt=""></a></div>
-                       <div class="logo"><a href="#" onclick="mostrarPacific();"><img src="images/minipacific.png" alt=""></a></div>
-                       <div class="logo"><a href="#" onclick="mostrarValour();"><img src="images/minivalour.png" alt=""></a></div>
-                       <div class="logo"><a href="#" onclick="mostrarYork();"><img src="images/miniyork.png" alt=""></a></div>
+                       <div class="logo"><a href="#" onclick="mostrarCalvary(); button();"><img src="images/minicalvari.png" alt=""></a></div>
+                       <div class="logo"><a href="#" onclick="mostrarEdmonton(); button();"><img src="images/miniedmonton.png" alt=""></a></div>
+                       <div class="logo"><a href="#" onclick="mostrarForge(); button();"><img src="images/miniforge.png" alt=""></a></div>
+                       <div class="logo"><a href="#" onclick="mostrarPacific(); button();"><img src="images/minipacific.png" alt=""></a></div>
+                       <div class="logo"><a href="#" onclick="mostrarValour(); button();"><img src="images/minivalour.png" alt=""></a></div>
+                       <div class="logo"><a href="#" onclick="mostrarYork(); button();"><img src="images/miniyork.png" alt=""></a></div>
 
                    </div>
 
                </div>
-              
+
             </div>
-            
+
             <header>
-              
+
               <div id="navBar">
-                
+
                    <nav class="navbar navbar-light navbar-expand-lg">
-                        
-                        
+
+
                         <section class="content-logo">
-                            
-                            <a href="#" onclick="mostrarSchedule2();"><img src="images/nysl_logo.png" alt="league logo" id="imgNavbar"></a>
-                            
+
+                            <a href="#" onclick="mostrarSchedule2(); button();"><img src="images/nysl_logo.png" alt="league logo" id="imgNavbar"></a>
+
                         </section>
-                        
-                        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navNavbar" >
+
+                        <button class="navbar-toggler" id="buttonNavbar" type="button" data-toggle="collapse" data-target="#navNavbar" aria-expanded="false">
                             <span class="fas fa-bars"></span>
-                            
+
                         </button>
-                        
+
                         <div class="collapse navbar-collapse" id="navNavbar">
-                            
+
                             <ul class="navbar-nav">
 
                                 <li class="nav-itb">
 
-                                   <a href="#" class="nav-link" onclick="mostrarSchedule2();"><h2>Schedule</h2></a>
+                                   <a href="#" class="nav-link" onclick="mostrarSchedule2(); button();"><h2>Schedule</h2></a>
 
                                 </li>
-                                   
+
                                 <li class="nav-itb">
 
                                    <a href="#categoriesMenu" class="nav-link" data-toggle="collapse"><h2>Categories</h2></a>
-                                   
+
                                    <div id="categoriesMenu" class="collapse">
-                                       
+
                                        <ul>
-                                           
-                                           <li><a href="#" onclick="mostrarU1();"><b>Under one</b></a></li>
-                                           <li><a href="#" onclick="mostrarU2();"><b>Under two</b></a></li>
-                                           <li><a href="#" onclick="mostrarU3();"><b>Under three</b></a></li>
-                                           <li><a href="#" onclick="mostrarU4();"><b>Under four</b></a></li>
-                                           <li><a href="#" onclick="mostrarU5();"><b>Under five</b></a></li>
-                                           <li><a href="#" onclick="mostrarU6();"><b>Under six</b></a></li>
-                                           
+
+                                           <li><a href="#" onclick="mostrarU1(); button();"><b>Under one</b></a></li>
+                                           <li><a href="#" onclick="mostrarU2(); button();"><b>Under two</b></a></li>
+                                           <li><a href="#" onclick="mostrarU3(); button();"><b>Under three</b></a></li>
+                                           <li><a href="#" onclick="mostrarU4(); button();"><b>Under four</b></a></li>
+                                           <li><a href="#" onclick="mostrarU5(); button();"><b>Under five</b></a></li>
+                                           <li><a href="#" onclick="mostrarU6(); button();"><b>Under six</b></a></li>
+
                                        </ul>
-                                       
+
                                    </div>
 
                                 </li>
-                                
+
                                 <li class="nav-itb">
 
                                    <a href="#teamsMenu" class="nav-link" data-toggle="collapse"><h2>Teams</h2></a>
-                                   
+
                                    <div id="teamsMenu" class="collapse">
-                                       
+
                                        <ul>
-                                           
-                                           <li><a href="#" onclick="mostrarCalvary();"><b>Calvary FC</b></a></li>
-                                           <li><a href="#" onclick="mostrarEdmonton();"><b>FC Edmonton</b></a></li>
-                                           <li><a href="#" onclick="mostrarForge();"><b>Forge FC</b></a></li>
-                                           <li><a href="#" onclick="mostrarPacific();"><b>Pacific FC</b></a></li>
-                                           <li><a href="#" onclick="mostrarYork();"><b>York 9 FC</b></a></li>
-                                           <li><a href="#" onclick="mostrarValour();"><b>Valour FC</b></a></li>
-                                           
+
+                                           <li><a href="#" onclick="mostrarCalvary(); button();"><b>Calvary FC</b></a></li>
+                                           <li><a href="#" onclick="mostrarEdmonton(); button();"><b>FC Edmonton</b></a></li>
+                                           <li><a href="#" onclick="mostrarForge(); button();"><b>Forge FC</b></a></li>
+                                           <li><a href="#" onclick="mostrarPacific(); button();"><b>Pacific FC</b></a></li>
+                                           <li><a href="#" onclick="mostrarYork(); button();"><b>York 9 FC</b></a></li>
+                                           <li><a href="#" onclick="mostrarValour(); button();"><b>Valour FC</b></a></li>
+
                                        </ul>
-                                       
+
                                    </div>
 
                                 </li>
 
                                 <li class="li nav-itb">
 
-                                    <a href="#" class="nav-link" onclick="mostrarMaps();"><h2>Maps</h2></a>
+                                    <a href="#" class="nav-link" onclick="mostrarMaps(); button();"><h2>Maps</h2></a>
 
                                 </li>
 
                                 <li class="li nav-itb">
 
-                                    <a href="#" class="nav-link" onclick="mostrarContact();"><h2>Contact</h2></a>
+                                    <a href="#" class="nav-link" onclick="mostrarContact(); button();"><h2>Contact</h2></a>
+
+                                </li>
+
+                                <li class="li nav-itb">
+
+                                    <a href="#" class="nav-link" onclick="fullMatch(); button();"><h2>Matches</h2></a>
 
                                 </li>
 
                             </ul>
-                            
+
                         </div>
 
                     </nav>
-                  
+
               </div>
-                 
+
             </header>
-            
+
             <section>
-             
+
              <div class="scoreboard" id="scoreboard">
-                 
+
                  <div class="scoreboard_wrapper">
-                     
+
                      <a href="" class="scoreboard_scroller-left"><i class="fas fa-chevron-left"></i></a>
-                     
+
                      <div class="scoreboard_games-wrapper">
-                         
+
                         <div class="scoreboard_games">
-                            
+
                             <div class="scoreboard_game">
-                                
+
                                 <div class="game_header">
-                                    
+
                                     09/01-SUN
                                     <br>9:30 am
-                                    
+
                                 </div>
-                                
+
                                 <div class="game_info">
-                                    
+
                                     <div class="team_home">
-                                        
+
                                         <img src="images/calvary.png" alt="">
-                                        
+
                                     </div>
-                                    
+
                                     <span class="game_score">vs.</span>
-                                    
+
                                     <div class="team_away">
-                                        
+
                                         <img src="images/forge.png" alt="">
-                                        
+
                                     </div>
-                                    
+
                                 </div>
-                                
+
                             </div>
-                            
+
                             <div class="scoreboard_game">
-                                
+
                                 <div class="game_header">
-                                    
+
                                     9/01-sun <br>
                                     9:30 am
-                                    
+
                                 </div>
-                                
+
                                 <div class="game_info">
-                                    
+
                                     <div class="team_home">
-                                        
+
                                         <img src="images/edmonton.png" alt="">
-                                        
+
                                     </div>
-                                    
+
                                     <span class="game_score">vs.</span>
-                                    
+
                                     <div class="team_away">
-                                        
+
                                         <img src="images/york.png" alt="">
-                                        
+
                                     </div>
-                                    
+
                                 </div>
-                                
+
                             </div>
-                            
+
                             <div class="scoreboard_game">
-                                
+
                                 <div class="game_header">
-                                    
+
                                     9/01-sun <br>
                                     9:30am
-                                    
+
                                 </div>
-                                
+
                                 <div class="game_info">
-                                    
+
                                     <div class="team_home">
-                                        
+
                                         <img src="images/valour.png" alt="">
-                                        
+
                                     </div>
-                                    
+
                                     <span class="game_score">vs.</span>
-                                    
+
                                     <div class="team_away">
-                                        
+
                                         <img src="images/pacific.png" alt="">
-                                        
+
                                     </div>
-                                    
+
                                 </div>
-                                
+
                             </div>
-                            
+
                             <div class="scoreboard_game">
-                                
+
                                 <div class="game_header">
-                                    
+
                                     10/06-sun<br>
                                     1:00 pm
-                                    
+
                                 </div>
-                                
+
                                 <div class="game_info">
-                                    
+
                                     <div class="team_home">
-                                        
+
                                         <img src="images/valour.png" alt="">
-                                        
+
                                     </div>
-                                    
+
                                     <span class="game_score">vs.</span>
-                                    
+
                                     <div class="team_away">
-                                        
+
                                         <img src="images/calvary.png" alt="">
-                                        
+
                                     </div>
-                                    
+
                                 </div>
-                                
+
                             </div>
-                            
+
                             <div class="scoreboard_game">
-                                
+
                                 <div class="game_header">
-                                    
+
                                     10/06-sun<br>
                                     1:00 pm
-                                    
+
                                 </div>
-                                
+
                                 <div class="game_info">
-                                    
+
                                     <div class="team_home">
-                                        
+
                                         <img src="images/forge.png" alt="">
-                                        
+
                                     </div>
-                                    
+
                                     <span class="game_score">vs.</span>
-                                    
+
                                     <div class="team_away">
-                                        
+
                                         <img src="images/york.png" alt="">
-                                        
+
                                     </div>
-                                    
+
                                 </div>
-                                
+
                             </div>
-                            
+
                             <div class="scoreboard_game">
-                                
+
                                 <div class="game_header">
-                                    
+
                                     10/06-sun<br>
                                     1:00 pm
-                                    
+
                                 </div>
-                                
+
                                 <div class="game_info">
-                                    
+
                                     <div class="team_home">
-                                        
+
                                         <img src="images/pacific.png" alt="">
-                                        
+
                                     </div>
-                                    
+
                                     <span class="game_score">vs.</span>
-                                    
+
                                     <div class="team_away">
-                                        
+
                                         <img src="images/edmonton.png" alt="">
-                                        
+
                                     </div>
-                                    
+
                                 </div>
-                                
+
                             </div>
-                            
-                        </div>  
-                         
+
+                        </div>
+
                      </div>
-                     
+
                      <a href="" class="scoreboard_scroller-right"><i class="fas fa-chevron-right"></i></a>
-                     
+
                  </div>
-                 
+
              </div>
-              
+
               <div class="slider" id="sliderImg">
-                  
+
                   <ul>
-                      
+
                       <li><img src="images/img2.jpg" alt=""></li>
-                      
+
                       <li><img src="images/img4.jpg" alt=""></li>
-                      
+
                       <li><img src="images/img3.jpg" alt=""></li>
-                      
+
                       <li><img src="images/img1.jpg" alt=""></li>
-                      
+
                       <li><img src="images/img6.jpg" alt=""></li>
-                      
+
                   </ul>
-                  
+
               </div>
-              
+
               <div class="schedule_home" id="schedule_home">
-                  
+
                   <div class="schedule_content"  id="schedule1">
-                      
+
                       <h5 class="content-home">August 4</h5>
-                      
+
                       <span class="content-home">NYSL Fundraiser</span>
-                      
+
                   </div>
-                  
+
                   <div class="schedule_content" id="schedule2">
-                      
+
                       <h5 class="content-home">August 16</h5>
-                      
+
                       <span class="content-home">Season kick-off: Meet the teams</span>
-                      
+
                   </div>
-                  
+
                   <div class="schedule_content" id="schedule3">
-                      
+
                       <h5 class="content-home">September 1</h5>
-                      
+
                       <span class="content-home">First Game of The Season!</span>
-                      
+
                   </div>
-                  
+
               </div >
-            
+
                 <div class="u1 categories" id="u1">
 
                    <h2 class="subtitle">Under 1</h2>
-                   
+
                    <div class="schedule">
-                     
+
                      <a href="#monthU1" data-toggle="collapse"><h3>Schedule</h3></a>
-                      
+
                       <div id="monthU1" class="collapse months">
-                             
+
                              <ul>
-                       
+
                                <h5>SEPTEMBER</h5>
 
                                 <li><b>9/01-Sunday</b><br>@ AJ Katzenmaier at 9:30 am</li>
@@ -438,213 +444,213 @@
                                 <li><b>10/20-Sunday</b><br>@ AJ Katzenmaier at 9:30 am</li>
 
                             </ul>
-                             
+
                          </div>
-                       
+
                    </div>
-                    
+
                     <div class="matches">
-                       
+
                        <a href="#matchU1" data-toggle="collapse"><h3>Matches</h3></a>
-                       
+
                        <div id="matchU1" class="collapse matches">
-                          
+
                           <h5>September</h5>
-                           
+
                            <table class="table table-striped">
-                               
+
                                <tr>
-                                   
+
                                    <th>Date</th>
                                    <th>Home</th>
                                    <th></th>
                                    <th>Away</th>
-                                   
+
                                </tr>
-                               
+
                                <tr>
-                                   
+
                                    <td><b>9/01-Sunday</b><br>9:30 am</td>
                                    <td><div class="table_img_logo prueba"><img src="images/calvary.png" alt=""></div></td>
                                    <td><span class="table_vs">vs.</span></td>
                                    <td><div class="table_img_logo"><img src="images/forge.png" alt=""></div></td>
-                                   
+
                                </tr>
-                               
+
                                <tr>
-                                   
+
                                    <td><b>9/01-Sunday</b><br>9:30 am</td>
                                    <td><div class="table_img_logo"><img src="images/edmonton.png" alt=""></div></td>
                                    <td><span class="table_vs">vs.</span></td>
                                    <td><div class="table_img_logo"><div class="table_img_logo"><img src="images/york.png" alt=""></div></div></td>
-                                   
+
                                </tr>
-                               
+
                                <tr>
-                                   
+
                                    <td><b>9/01-Sunday</b><br>9:30 am</td>
                                    <td><div class="table_img_logo"><div class="table_img_logo"><img src="images/valour.png" alt=""></div></div></td>
                                    <td><span class="table_vs">vs.</span></td>
                                    <td><div class="table_img_logo"><img src="images/pacific.png" alt=""></div></td>
-                                   
+
                                </tr>
-                               
+
                                <tr>
-                                   
+
                                    <td><b>9/08-Sunday</b><br>1:00 pm</td>
                                    <td><div class="table_img_logo"><img src="images/forge.png" alt=""></div></td>
                                    <td><span class="table_vs">vs.</span></td>
                                    <td><div class="table_img_logo"><img src="images/pacific.png" alt=""></div></td>
-                                   
+
                                </tr>
-                               
+
                                <tr>
-                                   
+
                                    <td><b>9/08-Sunday</b><br>1:00 pm</td>
                                    <td><div class="table_img_logo"><img src="images/valour.png" alt=""></div></td>
                                    <td><span class="table_vs">vs.</span></td>
                                    <td><div class="table_img_logo"><img src="images/edmonton.png" alt=""></div></td>
-                                   
+
                                </tr>
-                               
+
                                <tr>
-                                   
+
                                    <td><b>9/08-Sunday</b><br>1:00 pm</td>
                                    <td><div class="table_img_logo"><img src="images/york.png" alt=""></div></td>
                                    <td><span class="table_vs">vs.</span></td>
                                    <td><div class="table_img_logo"><img src="images/calvary.png" alt=""></div></td>
-                                   
+
                                </tr>
-                               
+
                                <tr>
-                                   
+
                                    <td><b>9/15-Sunday</b><br>9:30 am</td>
                                    <td><div class="table_img_logo"><img src="images/york.png" alt=""></div></td>
                                    <td><span class="table_vs">vs.</span></td>
                                    <td><div class="table_img_logo"><img src="images/valour.png" alt=""></div></td>
-                                   
+
                                </tr>
-                               
+
                                <tr>
-                                   
+
                                    <td><b>9/15-Sunday</b><br>9:30 am</td>
                                    <td><div class="table_img_logo"><img src="images/pacific.png" alt=""></div></td>
                                    <td><span class="table_vs">vs.</span></td>
                                    <td><div class="table_img_logo"><img src="images/calvary.png" alt=""></div></td>
-                                   
+
                                </tr>
-                               
+
                                <tr>
-                                   
+
                                    <td><b>9/15-Sunday</b><br>9:30 am</td>
                                    <td><div class="table_img_logo"><img src="images/edmonton.png" alt=""></div></td>
                                    <td><span class="table_vs">vs.</span></td>
                                    <td><div class="table_img_logo"><img src="images/forge.png" alt=""></div></td>
-                                   
+
                                </tr>
-  
+
                            </table>
-                           
+
                            <h5>October</h5>
-                           
+
                            <table class="table table-striped">
-                              
+
                               <tr>
-                                  
+
                                   <th>Date&nbsp</th>
                                    <th>Home</th>
                                    <th></th>
                                    <th>Away</th>
-                                  
+
                               </tr>
-                               
+
                               <tr>
-                                   
+
                                    <td><b>10/06-Sunday</b><br>1:00 pm</td>
                                    <td><div class="table_img_logo"><img src="images/valour.png" alt=""></div></td>
                                    <td><span class="table_vs">vs.</span></td>
                                    <td><div class="table_img_logo"><img src="images/calvary.png" alt=""></div></td>
-                                   
+
                               </tr>
-                               
+
                               <tr>
-                                  
+
                                   <td><b>10/06-Sunday</b><br>1:00 pm</td>
                                    <td><div class="table_img_logo"><img src="images/forge.png" alt=""></div></td>
                                    <td><span class="table_vs">vs.</span></td>
                                    <td><div class="table_img_logo"><img src="images/york.png" alt=""></div></td>
-                                  
+
                               </tr>
-                               
+
                                <tr>
-                                   
+
                                    <td><b>10/06-Sunday</b><br>1:00 pm</td>
                                    <td><div class="table_img_logo"><img src="images/valour.png" alt=""></div></td>
                                    <td><span class="table_vs">vs.</span></td>
                                    <td><div class="table_img_logo"><img src="images/pacific.png" alt=""></div></td>
-                                   
+
                                </tr>
-                               
+
                                <tr>
-                                   
+
                                    <td>10/08-Tuesday<br>1:00 pm</td>
                                    <td><div class="table_img_logo"><img src="images/forge.png" alt=""></div></td>
                                    <td><span class="table_vs">vs.</span></td>
-                                   <td><div class="table_img_logo"><img src="images/edmonton.png" alt=""></div></td> 
-                                   
+                                   <td><div class="table_img_logo"><img src="images/edmonton.png" alt=""></div></td>
+
                                </tr>
-                               
+
                                <tr>
-                                   
+
                                    <td>10/08-Tuesday<br>1:00 pm</td>
                                    <td><div class="table_img_logo"><img src="images/edmonton.png" alt=""></div></td>
                                    <td><span class="table_vs">vs.</span></td>
                                    <td><div class="table_img_logo"><img src="images/calvary.png" alt=""></div></td>
 
                                </tr>
-                               
+
                                <tr>
-                                   
+
                                    <td>10/08-Tuesday<br>1:00 pm</td>
                                    <td><div class="table_img_logo"><img src="images/york.png" alt=""></div></td>
                                    <td><span class="table_vs">vs.</span></td>
                                    <td><div class="table_img_logo"><img src="images/pacific.png" alt=""></div></td>
-                                   
+
                                </tr>
-                               
+
                                <tr>
-                                   
+
                                    <td><b>10/20-Sunday</b><br>9:30 am</td>
                                    <td><div class="table_img_logo"><img src="images/york.png" alt=""></div></td>
                                    <td><span class="table_vs">vs.</span></td>
                                    <td><div class="table_img_logo"><img src="images/valour.png" alt=""></div></td>
-                                   
+
                                </tr>
-                               
+
                                <tr>
-                                   
+
                                    <td><b>10/20-Sunday</b><br>9:30 am</td>
                                    <td><div class="table_img_logo"><img src="images/pacific.png" alt=""></div></td>
                                    <td><span class="table_vs">vs.</span></td>
                                    <td><div class="table_img_logo"><img src="images/edmonton.png" alt=""></div></td>
-                                   
+
                                </tr>
-                               
+
                                <tr>
-                                   
+
                                    <td><b>10/20-Sunday</b><br>9:30 am</td>
                                    <td><div class="table_img_logo"><img src="images/calvary.png" alt=""></div></td>
                                    <td><span class="table_vs">vs.</span></td>
                                    <td><div class="table_img_logo"><img src="images/forge.png" alt=""></div></td>
-                                   
+
                                </tr>
-                               
+
                            </table>
-                           
+
                        </div>
-                       
+
                    </div>
-                     
+
 
                     <button class="btn btn-md btn-circle"><i class="fas fa-arrow-left"></i></button>
 
@@ -653,15 +659,15 @@
                 <div class="u2 categories" id="u2">
 
                     <h2 class="subtitle">Under 2</h2>
-                    
+
                     <div class="schedule">
-                      
+
                       <a href="#monthU2" data-toggle="collapse"><h3>Schedule</h3></a>
-                       
+
                        <div id="monthU2" class="collapse months">
-                             
+
                              <h5>SEPTEMBER</h5>
-                        
+
                             <ul>
 
                                 <li><b>9/01-Sunday</b><br>@ Greenbay at 1:00 pm</li>
@@ -678,185 +684,185 @@
                                 <li><b>10/20-Sunday</b><br>@ Marjorie P Hart at 1:00 pm</li>
 
                             </ul>
-                             
+
                          </div>
-                        
+
                     </div>
-                    
+
                     <div class="matches">
-                       
+
                        <a href="#matchU2" data-toggle="collapse"><h3>Matches</h3></a>
-                       
+
                        <div id="matchU2" class="collapse matches">
-                          
+
                           <h5>September</h5>
-                           
+
                            <table class="table table-striped">
-                               
+
                                <tr>
-                                   
+
                                    <th>Date</th>
                                    <th>Home</th>
                                    <th></th>
                                    <th>Away</th>
-                                   
+
                                </tr>
-                               
+
                                <tr>
-                                   
+
                                    <td><b>9/01-Sunday</b><br>1:00 pm</td>
                                    <td><div class="table_img_logo"><img src="images/calvary.png" alt=""></div></td>
                                    <td><span class="table_vs">vs.</span></td>
                                    <td><div class="table_img_logo"><img src="images/forge.png" alt=""></div></td>
-                                   
+
                                </tr>
-                               
+
                                <tr>
-                                   
+
                                    <td><b>9/01-Sunday</b><br>1:00 pm</td>
                                    <td><div class="table_img_logo"><img src="images/edmonton.png" alt=""></div></td>
                                    <td><span class="table_vs">vs.</span></td>
                                    <td><div class="table_img_logo"><img src="images/york.png" alt=""></div></td>
-                                   
+
                                </tr>
-                               
+
                                <tr>
-                                   
+
                                    <td><b>9/01-Sunday</b><br>1:00 pm</td>
                                    <td><div class="table_img_logo"><img src="images/valour.png" alt=""></div></td>
                                    <td><span class="table_vs">vs.</span></td>
                                    <td><div class="table_img_logo"><img src="images/pacific.png" alt=""></div></td>
-                                   
+
                                </tr>
-                               
+
                                <tr>
-                                   
+
                                    <td><b>9/15-Sunday</b><br>9:30 am</td>
                                    <td><div class="table_img_logo"><img src="images/forge.png" alt=""></div></td>
                                    <td><span class="table_vs">vs.</span></td>
                                    <td><div class="table_img_logo"><img src="images/pacific.png" alt=""></div></td>
-                                   
+
                                </tr>
-                               
+
                                <tr>
-                                   
+
                                    <td><b>9/15-Sunday</b><br>9:30 am</td>
                                    <td><div class="table_img_logo"><img src="images/valour.png" alt=""></div></td>
                                    <td><span class="table_vs">vs.</span></td>
                                    <td><div class="table_img_logo"><img src="images/edmonton.png" alt=""></div></td>
-                                   
+
                                </tr>
-                               
+
                                <tr>
-                                   
+
                                    <td><b>9/15-Sunday</b><br>9:30 am</td>
                                    <td><div class="table_img_logo"><img src="images/york.png" alt=""></div></td>
                                    <td><span class="table_vs">vs.</span></td>
                                    <td><div class="table_img_logo"><img src="images/calvary.png" alt=""></div></td>
-                                   
+
                                </tr>
-                               
+
                                <tr>
-                                   
+
                                    <td><b>9/22-Sunday</b><br>1:00 pm</td>
                                    <td><div class="table_img_logo"><img src="images/york.png" alt=""></div></td>
                                    <td><span class="table_vs">vs.</span></td>
                                    <td><div class="table_img_logo"><img src="images/valour.png" alt=""></div></td>
-                                   
+
                                </tr>
-                               
+
                                <tr>
-                                   
+
                                    <td><b>9/22-Sunday</b><br>1:00 pm</td>
                                    <td><div class="table_img_logo"><img src="images/pacific.png" alt=""></div></td>
                                    <td><span class="table_vs">vs.</span></td>
                                    <td><div class="table_img_logo"><img src="images/calvary.png" alt=""></div></td>
-                                   
+
                                </tr>
-                               
+
                                <tr>
-                                   
+
                                    <td><b>9/22-Sunday</b><br>1:00 pm</td>
                                    <td><div class="table_img_logo"><img src="images/edmonton.png" alt=""></div></td>
                                    <td><span class="table_vs">vs.</span></td>
                                    <td><div class="table_img_logo"><img src="images/forge.png" alt=""></div></td>
-                                   
+
                                </tr>
-  
+
                            </table>
-                           
+
                            <h5>October</h5>
-                           
+
                            <table class="table table-striped">
-                              
+
                               <tr>
-                                  
+
                                   <th>Date&nbsp</th>
                                    <th>Home</th>
                                    <th></th>
                                    <th>Away</th>
-                                  
+
                               </tr>
-                               
+
                               <tr>
-                                   
+
                                    <td><b>10/06-Sunday</b><br>9:30 am</td>
                                    <td><div class="table_img_logo"><img src="images/valour.png" alt=""></div></td>
                                    <td><span class="table_vs">vs.</span></td>
                                    <td><div class="table_img_logo"><img src="images/calvary.png" alt=""></div></td>
-                                   
+
                               </tr>
-                               
+
                               <tr>
-                                  
+
                                   <td><b>10/06-Sunday</b><br>9:30 am</td>
                                    <td><div class="table_img_logo"><img src="images/forge.png" alt=""></div></td>
                                    <td><span class="table_vs">vs.</span></td>
                                    <td><div class="table_img_logo"><img src="images/york.png" alt=""></div></td>
-                                  
+
                               </tr>
-                               
+
                                <tr>
-                                   
+
                                    <td><b>10/06-Sunday</b><br>9:30 am</td>
                                    <td><div class="table_img_logo"><img src="images/valour.png" alt=""></div></td>
                                    <td><span class="table_vs">vs.</span></td>
                                    <td><div class="table_img_logo"><img src="images/pacific.png" alt=""></div></td>
-                                   
+
                                </tr>
-                               
+
                                <tr>
-                                   
+
                                    <td><b>10/20-Sunday</b><br>1:00 pm</td>
                                    <td><div class="table_img_logo"><img src="images/forge.png" alt=""></div></td>
                                    <td><span class="table_vs">vs.</span></td>
-                                   <td><div class="table_img_logo"><img src="images/edmonton.png" alt=""></div></td> 
-                                   
+                                   <td><div class="table_img_logo"><img src="images/edmonton.png" alt=""></div></td>
+
                                </tr>
-                               
+
                                <tr>
-                                   
+
                                    <td><b>10/20-Sunday</b><br>1:00 pm</td>
                                    <td><div class="table_img_logo"><img src="images/edmonton.png" alt=""></div></td>
                                    <td><span class="table_vs">vs.</span></td>
                                    <td><div class="table_img_logo"><img src="images/calvary.png" alt=""></div></td>
 
                                </tr>
-                               
+
                                <tr>
-                                   
+
                                    <td><b>10/20-Sunday</b><br>1:00 pm</td>
                                    <td><div class="table_img_logo"><img src="images/york.png" alt=""></div></td>
                                    <td><span class="table_vs">vs.</span></td>
                                    <td><div class="table_img_logo"><img src="images/pacific.png" alt=""></div></td>
-                                   
+
                                </tr>
-                               
+
                            </table>
-                           
+
                        </div>
-                       
-                    </div> 
+
+                    </div>
 
                     <button class="btn btn-md btn-circle"><i class="fas fa-arrow-left"></i></button>
 
@@ -865,15 +871,15 @@
                 <div class="u3 categories" id="u3">
 
                    <h2 class="subtitle">Under 3</h2>
-                   
+
                    <div class="schedule">
-                     
+
                      <a href="#monthU3" data-toggle="collapse"><h3>Schedule</h3></a>
-                      
+
                       <div id="monthU3" class="collapse months">
-                             
+
                              <h5>SEPTEMBER</h5>
-                       
+
                            <ul>
 
                                 <li><b>9/01-Sunday</b><br>@ Greenbay at 1:00 pm</li>
@@ -890,211 +896,211 @@
                                 <li><b>10/20-Sunday</b> @ AJ Katzenmaier at 9:30 am</li>
 
                             </ul>
-                             
+
                          </div>
-                       
+
                    </div>
-                    
+
                     <div class="matches">
-                       
+
                        <a href="#matchU3" data-toggle="collapse"><h3>Matches</h3></a>
-                       
+
                        <div id="matchU3" class="collapse matches">
-                          
+
                           <h5>September</h5>
-                           
+
                            <table class="table table-striped">
-                               
+
                                <tr>
-                                   
+
                                    <th>Date</th>
                                    <th>Home</th>
                                    <th></th>
                                    <th>Away</th>
-                                   
+
                                </tr>
-                               
+
                                <tr>
-                                   
+
                                    <td><b>9/01-Sunday</b><br>1:00 pm</td>
                                    <td><div class="table_img_logo"><img src="images/calvary.png" alt=""></div></td>
                                    <td><span class="table_vs">vs.</span></td>
                                    <td><div class="table_img_logo"><img src="images/forge.png" alt=""></div></td>
-                                   
+
                                </tr>
-                               
+
                                <tr>
-                                   
+
                                    <td><b>9/01-Sunday</b><br>1:00 pm</td>
                                    <td><div class="table_img_logo"><img src="images/edmonton.png" alt=""></div></td>
                                    <td><span class="table_vs">vs.</span></td>
                                    <td><div class="table_img_logo"><img src="images/york.png" alt=""></div></td>
-                                   
+
                                </tr>
-                               
+
                                <tr>
-                                   
+
                                    <td><b>9/01-Sunday</b><br>1:00 pm</td>
                                    <td><div class="table_img_logo"><img src="images/valour.png" alt=""></div></td>
                                    <td><span class="table_vs">vs.</span></td>
                                    <td><div class="table_img_logo"><img src="images/pacific.png" alt=""></div></td>
-                                   
+
                                </tr>
-                               
+
                                <tr>
-                                   
+
                                    <td><b>9/15-Sunday</b><br>1:00 pm</td>
                                    <td><div class="table_img_logo"><img src="images/forge.png" alt=""></div></td>
                                    <td><span class="table_vs">vs.</span></td>
                                    <td><div class="table_img_logo"><img src="images/pacific.png" alt=""></div></td>
-                                   
+
                                </tr>
-                               
+
                                <tr>
-                                   
+
                                    <td><b>9/15-Sunday</b><br>1:00 pm</td>
                                    <td><div class="table_img_logo"><img src="images/valour.png" alt=""></div></td>
                                    <td><span class="table_vs">vs.</span></td>
                                    <td><div class="table_img_logo"><img src="images/edmonton.png" alt=""></div></td>
-                                   
+
                                </tr>
-                               
+
                                <tr>
-                                   
+
                                    <td><b>9/15-Sunday</b><br>1:00 pm</td>
                                    <td><div class="table_img_logo"><img src="images/york.png" alt=""></div></td>
                                    <td><span class="table_vs">vs.</span></td>
                                    <td><div class="table_img_logo"><img src="images/calvary.png" alt=""></div></td>
-                                   
+
                                </tr>
-                               
+
                                <tr>
-                                   
+
                                    <td><b>9/15-Sunday</b><br>9:30 am</td>
                                    <td><div class="table_img_logo"><img src="images/york.png" alt=""></div></td>
                                    <td><span class="table_vs">vs.</span></td>
                                    <td><div class="table_img_logo"><img src="images/valour.png" alt=""></div></td>
-                                   
+
                                </tr>
-                               
+
                                <tr>
-                                   
+
                                    <td><b>9/15-Sunday</b><br>9:30 am</td>
                                    <td><div class="table_img_logo"><img src="images/pacific.png" alt=""></div></td>
                                    <td><span class="table_vs">vs.</span></td>
                                    <td><div class="table_img_logo"><img src="images/calvary.png" alt=""></div></td>
-                                   
+
                                </tr>
-                               
+
                                <tr>
-                                   
+
                                    <td><b>9/15-Sunday</b><br>9:30 am</td>
                                    <td><div class="table_img_logo"><img src="images/edmonton.png" alt=""></div></td>
                                    <td><span class="table_vs">vs.</span></td>
                                    <td><div class="table_img_logo"><img src="images/forge.png" alt=""></div></td>
-                                   
+
                                </tr>
-  
+
                            </table>
-                           
+
                            <h5>October</h5>
-                           
+
                            <table class="table table-striped">
-                              
+
                               <tr>
-                                  
+
                                   <th>Date&nbsp</th>
                                    <th>Home</th>
                                    <th></th>
                                    <th>Away</th>
-                                  
+
                               </tr>
-                               
+
                               <tr>
-                                   
+
                                    <td><b>10/06-Sunday</b><br>1:00 pm</td>
                                    <td><div class="table_img_logo"><img src="images/valour.png" alt=""></div></td>
                                    <td><span class="table_vs">vs.</span></td>
                                    <td><div class="table_img_logo"><img src="images/calvary.png" alt=""></div></td>
-                                   
+
                               </tr>
-                               
+
                               <tr>
-                                  
+
                                   <td><b>10/06-Sunday</b><br>1:00 pm</td>
                                    <td><div class="table_img_logo"><img src="images/forge.png" alt=""></div></td>
                                    <td><span class="table_vs">vs.</span></td>
                                    <td><div class="table_img_logo"><img src="images/york.png" alt=""></div></td>
-                                  
+
                               </tr>
-                               
+
                                <tr>
-                                   
+
                                    <td><b>10/06-Sunday</b><br>1:00 pm</td>
                                    <td><div class="table_img_logo"><img src="images/valour.png" alt=""></div></td>
                                    <td><span class="table_vs">vs.</span></td>
                                    <td><div class="table_img_logo"><img src="images/pacific.png" alt=""></div></td>
-                                   
+
                                </tr>
-                               
+
                                <tr>
-                                   
+
                                    <td>10/08-Tuesday<br>9:30 am</td>
                                    <td><div class="table_img_logo"><img src="images/forge.png" alt=""></div></td>
                                    <td><span class="table_vs">vs.</span></td>
-                                   <td><div class="table_img_logo"><img src="images/edmonton.png" alt=""></div></td> 
-                                   
+                                   <td><div class="table_img_logo"><img src="images/edmonton.png" alt=""></div></td>
+
                                </tr>
-                               
+
                                <tr>
-                                   
+
                                    <td>10/08-Tuesday<br>9:30 am</td>
                                    <td><div class="table_img_logo"><img src="images/edmonton.png" alt=""></div></td>
                                    <td><span class="table_vs">vs.</span></td>
                                    <td><div class="table_img_logo"><img src="images/calvary.png" alt=""></div></td>
 
                                </tr>
-                               
+
                                <tr>
-                                   
+
                                    <td>10/08-Tuesday<br>9:30 am</td>
                                    <td><div class="table_img_logo"><img src="images/york.png" alt=""></div></td>
                                    <td><span class="table_vs">vs.</span></td>
                                    <td><div class="table_img_logo"><img src="images/pacific.png" alt=""></div></td>
-                                   
+
                                </tr>
-                               
+
                                <tr>
-                                   
+
                                    <td><b>10/20-Sunday</b><br>9:30 am</td>
                                    <td><div class="table_img_logo"><img src="images/york.png" alt=""></div></td>
                                    <td><span class="table_vs">vs.</span></td>
                                    <td><div class="table_img_logo"><img src="images/valour.png" alt=""></div></td>
-                                   
+
                                </tr>
-                               
+
                                <tr>
-                                   
+
                                    <td><b>10/20-Sunday</b><br>9:30 am</td>
                                    <td><div class="table_img_logo"><img src="images/pacific.png" alt=""></div></td>
                                    <td><span class="table_vs">vs.</span></td>
                                    <td><div class="table_img_logo"><img src="images/edmonton.png" alt=""></div></td>
-                                   
+
                                </tr>
-                               
+
                                <tr>
-                                   
+
                                    <td><b>10/20-Sunday</b><br>9:30 am</td>
                                    <td><div class="table_img_logo"><img src="images/calvary.png" alt=""></div></td>
                                    <td><span class="table_vs">vs.</span></td>
                                    <td><div class="table_img_logo"><img src="images/forge.png" alt=""></div></td>
-                                   
+
                                </tr>
-                               
+
                            </table>
-                           
+
                        </div>
-                       
+
                    </div>
 
                     <button class="btn btn-md btn-circle"><i class="fas fa-arrow-left"></i></button>
@@ -1104,15 +1110,15 @@
                 <div class="u4 categories" id="u4">
 
                    <h2 class="subtitle">Under 4</h2>
-                   
+
                    <div class="schedule">
-                     
+
                      <a href="#monthU4" data-toggle="collapse"><h3>Schedule</h3></a>
-                      
+
                       <div id="monthU4" class="collapse months">
-                             
+
                             <h5>SEPTEMBER</h5>
-                       
+
                            <ul>
 
                                 <li><b>9/01-Sunday</b><br>@ AJ Katzenmaier at 9:30 am</li>
@@ -1128,203 +1134,203 @@
                                 <li><b>10/06-Sunday</b><br>@ Howardd A Yeager at 9:30 am</li>
                                 <li><b>10/08-Tuesay</b><br>@ Marjorie P Hart at 1:00 pm</li>
 
-                            </ul> 
-                             
+                            </ul>
+
                       </div>
-                       
+
                    </div>
-                    
+
                     <div class="matches">
-                       
+
                        <a href="#matchU4" data-toggle="collapse"><h3>Matches</h3></a>
-                       
+
                        <div id="matchU4" class="collapse matches">
-                          
+
                           <h5>September</h5>
-                           
+
                            <table class="table table-striped">
-                               
+
                                <tr>
-                                   
+
                                    <th>Date</th>
                                    <th>Home</th>
                                    <th></th>
                                    <th>Away</th>
-                                   
+
                                </tr>
-                               
+
                                <tr>
-                                   
+
                                    <td><b>9/01-Sunday</b><br>9:30 am</td>
                                    <td><div class="table_img_logo"><img src="images/calvary.png" alt=""></div></td>
                                    <td><span class="table_vs">vs.</span></td>
                                    <td><div class="table_img_logo"><img src="images/forge.png" alt=""></div></td>
-                                   
+
                                </tr>
-                               
+
                                <tr>
-                                   
+
                                    <td><b>9/01-Sunday</b><br>9:30 am</td>
                                    <td><div class="table_img_logo"><img src="images/edmonton.png" alt=""></div></td>
                                    <td><span class="table_vs">vs.</span></td>
                                    <td><div class="table_img_logo"><img src="images/york.png" alt=""></div></td>
-                                   
+
                                </tr>
-                               
+
                                <tr>
-                                   
+
                                    <td><b>9/01-Sunday</b><br>9:30 am</td>
                                    <td><div class="table_img_logo"><img src="images/valour.png" alt=""></div></td>
                                    <td><span class="table_vs">vs.</span></td>
                                    <td><div class="table_img_logo"><img src="images/pacific.png" alt=""></div></td>
-                                   
+
                                </tr>
-                               
+
                                <tr>
-                                   
+
                                    <td><b>9/08-Sunday</b><br>9:30 am</td>
                                    <td><div class="table_img_logo"><img src="images/forge.png" alt=""></div></td>
                                    <td><span class="table_vs">vs.</span></td>
                                    <td><div class="table_img_logo"><img src="images/pacific.png" alt=""></div></td>
-                                   
+
                                </tr>
-                               
+
                                <tr>
-                                   
+
                                    <td><b>9/08-Sunday</b><br>9:30 am</td>
                                    <td><div class="table_img_logo"><img src="images/valour.png" alt=""></div></td>
                                    <td><span class="table_vs">vs.</span></td>
                                    <td><div class="table_img_logo"><img src="images/edmonton.png" alt=""></div></td>
-                                   
+
                                </tr>
-                               
+
                                <tr>
-                                   
+
                                    <td><b>9/08-Sunday</b><br>9:30 am</td>
                                    <td><div class="table_img_logo"><img src="images/york.png" alt=""></div></td>
                                    <td><span class="table_vs">vs.</span></td>
                                    <td><div class="table_img_logo"><img src="images/calvary.png" alt=""></div></td>
-                                   
+
                                </tr>
-                               
+
                                <tr>
-                                   
+
                                    <td><b>9/29-Sunday</b><br>9:30 am</td>
                                    <td><div class="table_img_logo"><img src="images/york.png" alt=""></div></td>
                                    <td><span class="table_vs">vs.</span></td>
                                    <td><div class="table_img_logo"><img src="images/valour.png" alt=""></div></td>
-                                   
+
                                </tr>
-                               
+
                                <tr>
-                                   
+
                                    <td><b>9/29-Sunday</b><br>9:30 am</td>
                                    <td><div class="table_img_logo"><img src="images/pacific.png" alt=""></div></td>
                                    <td><span class="table_vs">vs.</span></td>
                                    <td><div class="table_img_logo"><img src="images/calvary.png" alt=""></div></td>
-                                   
+
                                </tr>
-                               
+
                                <tr>
-                                   
+
                                    <td><b>9/29-Sunday</b><br>9:30 am</td>
                                    <td><div class="table_img_logo"><img src="images/edmonton.png" alt=""></div></td>
                                    <td><span class="table_vs">vs.</span></td>
                                    <td><div class="table_img_logo"><img src="images/forge.png" alt=""></div></td>
-                                   
+
                                </tr>
-  
+
                            </table>
-                           
+
                            <h5>October</h5>
-                           
+
                            <table class="table table-striped">
-                              
+
                               <tr>
-                                  
+
                                   <th>Date&nbsp</th>
                                    <th>Home</th>
                                    <th></th>
                                    <th>Away</th>
-                                  
+
                               </tr>
-                               
+
                               <tr>
-                                   
+
                                    <td><b>10/06-Sunday</b><br>9:30 am</td>
                                    <td><div class="table_img_logo"><img src="images/valour.png" alt=""></div></td>
                                    <td><span class="table_vs">vs.</span></td>
                                    <td><div class="table_img_logo"><img src="images/calvary.png" alt=""></div></td>
-                                   
+
                               </tr>
-                               
+
                               <tr>
-                                  
+
                                   <td><b>10/06-Sunday</b><br>9:30 am</td>
                                    <td><div class="table_img_logo"><img src="images/forge.png" alt=""></div></td>
                                    <td><span class="table_vs">vs.</span></td>
                                    <td><div class="table_img_logo"><img src="images/york.png" alt=""></div></td>
-                                  
+
                               </tr>
-                               
+
                                <tr>
-                                   
+
                                    <td><b>10/06-Sunday</b><br>9:30 am</td>
                                    <td><div class="table_img_logo"><img src="images/valour.png" alt=""></div></td>
                                    <td><span class="table_vs">vs.</span></td>
                                    <td><div class="table_img_logo"><img src="images/pacific.png" alt=""></div></td>
-                                   
+
                                </tr>
-                               
+
                                <tr>
-                                   
+
                                    <td>10/08-Tuesday<br>1:00 pm</td>
                                    <td><div class="table_img_logo"><img src="images/forge.png" alt=""></div></td>
                                    <td><span class="table_vs">vs.</span></td>
-                                   <td><div class="table_img_logo"><img src="images/edmonton.png" alt=""></div></td> 
-                                   
+                                   <td><div class="table_img_logo"><img src="images/edmonton.png" alt=""></div></td>
+
                                </tr>
-                               
+
                                <tr>
-                                   
+
                                    <td>10/08-Tuesday<br>1:00 pm</td>
                                    <td><div class="table_img_logo"><img src="images/edmonton.png" alt=""></div></td>
                                    <td><span class="table_vs">vs.</span></td>
                                    <td><div class="table_img_logo"><img src="images/calvary.png" alt=""></div></td>
 
                                </tr>
-                               
+
                                <tr>
-                                   
+
                                    <td>10/08-Tuesday<br>1:00 pm</td>
                                    <td><div class="table_img_logo"><img src="images/york.png" alt=""></div></td>
                                    <td><span class="table_vs">vs.</span></td>
                                    <td><div class="table_img_logo"><img src="images/pacific.png" alt=""></div></td>
-                                   
+
                                </tr>
-                               
+
                            </table>
-                           
+
                        </div>
-                       
+
                    </div>
-                    
+
                     <button class="btn btn-md btn-circle"><i class="fas fa-arrow-left"></i></button>
-                        
+
                 </div>
-                    
+
                 <div class="u5 categories" id="u5">
-                       
+
                     <h2 class="subtitle">Under 5</h2>
-                      
+
                       <div class="schedule">
-                        
+
                         <a href="#monthU5" data-toggle="collapse"><h3>Schedule</h3></a>
-                         
+
                          <div id="monthU5" class="collapse months">
-                            
+
                             <h5>SEPTEMBER</h5>
-                             
+
                              <ul>
 
                                 <li><b>9/01-Sunday</b><br>@ Howard A Yeager at 9:30 am</li>
@@ -1332,7 +1338,7 @@
                                 <li><b>9/29-Sunday</b><br>@ Greenbay at 9:30 am</li>
 
                             </ul>
-                            
+
                             <h5>OCTOBER</h5>
 
                             <ul>
@@ -1342,239 +1348,239 @@
                                 <li><b>10/20-Sunday</b><br>@ Howard A Yeager at 1:00 pm</li>
 
                             </ul>
-                             
+
                          </div>
-                          
+
                       </div>
-                       
+
                        <div class="matches">
-                       
+
                        <a href="#matchU5" data-toggle="collapse"><h3>Matches</h3></a>
-                       
+
                        <div id="matchU5" class="collapse matches">
-                          
+
                           <h5>September</h5>
-                           
+
                            <table class="table table-striped">
-                               
+
                                <tr>
-                                   
+
                                    <th>Date</th>
                                    <th>Home</th>
                                    <th></th>
                                    <th>Away</th>
-                                   
+
                                </tr>
-                               
+
                                <tr>
-                                   
+
                                    <td><b>9/01-Sunday</b><br>9:30 am</td>
                                    <td><div class="table_img_logo"><img src="images/calvary.png" alt=""></div></td>
                                    <td><span class="table_vs">vs.</span></td>
                                    <td><div class="table_img_logo"><img src="images/forge.png" alt=""></div></td>
-                                   
+
                                </tr>
-                               
+
                                <tr>
-                                   
+
                                    <td><b>9/01-Sunday</b><br>9:30 am</td>
                                    <td><div class="table_img_logo"><img src="images/edmonton.png" alt=""></div></td>
                                    <td><span class="table_vs">vs.</span></td>
                                    <td><div class="table_img_logo"><img src="images/york.png" alt=""></div></td>
-                                   
+
                                </tr>
-                               
+
                                <tr>
-                                   
+
                                    <td><b>9/01-Sunday</b><br>9:30 am</td>
                                    <td><div class="table_img_logo"><img src="images/valour.png" alt=""></div></td>
                                    <td><span class="table_vs">vs.</span></td>
                                    <td><div class="table_img_logo"><img src="images/pacific.png" alt=""></div></td>
-                                   
+
                                </tr>
-                               
+
                                <tr>
-                                   
+
                                    <td><b>9/15-Sunday</b><br>1:00 pm</td>
                                    <td><div class="table_img_logo"><img src="images/forge.png" alt=""></div></td>
                                    <td><span class="table_vs">vs.</span></td>
                                    <td><div class="table_img_logo"><img src="images/pacific.png" alt=""></div></td>
-                                   
+
                                </tr>
-                               
+
                                <tr>
-                                   
+
                                    <td><b>9/15-Sunday</b><br>1:00 pm</td>
                                    <td><div class="table_img_logo"><img src="images/valour.png" alt=""></div></td>
                                    <td><span class="table_vs">vs.</span></td>
                                    <td><div class="table_img_logo"><img src="images/edmonton.png" alt=""></div></td>
-                                   
+
                                </tr>
-                               
+
                                <tr>
-                                   
+
                                    <td><b>9/15-Sunday</b><br>1:00 pm</td>
                                    <td><div class="table_img_logo"><img src="images/york.png" alt=""></div></td>
                                    <td><span class="table_vs">vs.</span></td>
                                    <td><div class="table_img_logo"><img src="images/calvary.png" alt=""></div></td>
-                                   
+
                                </tr>
-                               
+
                                <tr>
-                                   
+
                                    <td><b>9/29-Sunday</b><br>9:30 am</td>
                                    <td><div class="table_img_logo"><img src="images/york.png" alt=""></div></td>
                                    <td><span class="table_vs">vs.</span></td>
                                    <td><div class="table_img_logo"><img src="images/valour.png" alt=""></div></td>
-                                   
+
                                </tr>
-                               
+
                                <tr>
-                                   
+
                                    <td><b>9/29-Sunday</b><br>9:30 am</td>
                                    <td><div class="table_img_logo"><img src="images/pacific.png" alt=""></div></td>
                                    <td><span class="table_vs">vs.</span></td>
                                    <td><div class="table_img_logo"><img src="images/calvary.png" alt=""></div></td>
-                                   
+
                                </tr>
-                               
+
                                <tr>
-                                   
+
                                    <td><b>9/29-Sunday</b><br>9:30 am</td>
                                    <td><div class="table_img_logo"><img src="images/edmonton.png" alt=""></div></td>
                                    <td><span class="table_vs">vs.</span></td>
                                    <td><div class="table_img_logo"><img src="images/forge.png" alt=""></div></td>
-                                   
+
                                </tr>
-  
+
                            </table>
-                           
+
                            <h5>October</h5>
-                           
+
                            <table class="table table-striped">
-                              
+
                               <tr>
-                                  
+
                                   <th>Date&nbsp</th>
                                    <th>Home</th>
                                    <th></th>
                                    <th>Away</th>
-                                  
+
                               </tr>
-                               
+
                               <tr>
-                                   
+
                                    <td><b>10/06-Sunday</b><br>9:30 am</td>
                                    <td><div class="table_img_logo"><img src="images/valour.png" alt=""></div></td>
                                    <td><span class="table_vs">vs.</span></td>
                                    <td><div class="table_img_logo"><img src="images/calvary.png" alt=""></div></td>
-                                   
+
                               </tr>
-                               
+
                               <tr>
-                                  
+
                                   <td><b>10/06-Sunday</b><br>9:30 am</td>
                                    <td><div class="table_img_logo"><img src="images/forge.png" alt=""></div></td>
                                    <td><span class="table_vs">vs.</span></td>
                                    <td><div class="table_img_logo"><img src="images/york.png" alt=""></div></td>
-                                  
+
                               </tr>
-                               
+
                                <tr>
-                                   
+
                                    <td><b>10/06-Sunday</b><br>9:30 am</td>
                                    <td><div class="table_img_logo"><img src="images/valour.png" alt=""></div></td>
                                    <td><span class="table_vs">vs.</span></td>
                                    <td><div class="table_img_logo"><img src="images/pacific.png" alt=""></div></td>
-                                   
+
                                </tr>
-                               
+
                                <tr>
-                                   
+
                                    <td>10/08-Tuesday<br>1:00 pm</td>
                                    <td><div class="table_img_logo"><img src="images/forge.png" alt=""></div></td>
                                    <td><span class="table_vs">vs.</span></td>
-                                   <td><div class="table_img_logo"><img src="images/edmonton.png" alt=""></div></td> 
-                                   
+                                   <td><div class="table_img_logo"><img src="images/edmonton.png" alt=""></div></td>
+
                                </tr>
-                               
+
                                <tr>
-                                   
+
                                    <td>10/08-Tuesday<br>1:00 pm</td>
                                    <td><div class="table_img_logo"><img src="images/edmonton.png" alt=""></div></td>
                                    <td><span class="table_vs">vs.</span></td>
                                    <td><div class="table_img_logo"><img src="images/calvary.png" alt=""></div></td>
 
                                </tr>
-                               
+
                                <tr>
-                                   
+
                                    <td>10/08-Tuesday<br>1:00 pm</td>
                                    <td><div class="table_img_logo"><img src="images/york.png" alt=""></div></td>
                                    <td><span class="table_vs">vs.</span></td>
                                    <td><div class="table_img_logo"><img src="images/pacific.png" alt=""></div></td>
-                                   
+
                                </tr>
-                               
+
                                <tr>
-                                   
+
                                    <td><b>10/20-Sunday</b><br>1:00 pm</td>
                                    <td><div class="table_img_logo"><img src="images/york.png" alt=""></div></td>
                                    <td><span class="table_vs">vs.</span></td>
                                    <td><div class="table_img_logo"><img src="images/valour.png" alt=""></div></td>
-                                   
+
                                </tr>
-                               
+
                                <tr>
-                                   
+
                                    <td><b>10/20-Sunday</b><br>1:00 pm</td>
                                    <td><div class="table_img_logo"><img src="images/pacific.png" alt=""></div></td>
                                    <td><span class="table_vs">vs.</span></td>
                                    <td><div class="table_img_logo"><img src="images/edmonton.png" alt=""></div></td>
-                                   
+
                                </tr>
-                               
+
                                <tr>
-                                   
+
                                    <td><b>10/20-Sunday</b><br>1:00 pm</td>
                                    <td><div class="table_img_logo"><img src="images/calvary.png" alt=""></div></td>
                                    <td><span class="table_vs">vs.</span></td>
                                    <td><div class="table_img_logo"><img src="images/forge.png" alt=""></div></td>
-                                   
+
                                </tr>
-                               
+
                            </table>
-                           
+
                        </div>
-                       
+
                        </div>
-                        
+
                     <button class="btn btn-md btn-circle"><i class="fas fa-arrow-left"></i></button>
-                        
+
                 </div>
-                    
+
                 <div class="u6 categories" id="u6">
-                       
+
                     <h2 class="subtitle">Under 6</h2>
-                      
+
                       <div class="schedule">
-                         
+
                          <a href="#monthU6" data-toggle="collapse"><h3>Schedule</h3></a>
-                         
+
                          <div id="monthU6" class="collapse months">
-                            
+
                             <h5>SEPTEMBER</h5>
-                             
+
                              <ul>
-                                   
+
                                 <li><b>9/01-Sunday</b><br>@ Howard A Yeager at 9:30 am</li>
                                 <li><b>9/08-Sunday</b><br>@ Marjorie P Hart at 1:00 pm</li>
                                 <li><b>9/22-Sunday</b><br>@ Howard A Yeager at 1:00 pm</li>
 
                             </ul>
-                            
+
                             <h5>OCTOBER</h5>
-                            
+
                             <ul>
 
                                 <li><b>10/06-Sunday</b><br>@ South at 1:00 pm</li>
@@ -1582,339 +1588,339 @@
                                 <li><b>10/20-Sunday</b><br>@ Howard A Yeager at 1:00 pm</li>
 
                             </ul>
-                             
+
                          </div>
-                          
+
                       </div>
-                       
+
                        <div class="matches">
-                       
+
                            <a href="#matchU6" data-toggle="collapse"><h3>Matches</h3></a>
-                       
+
                        <div id="matchU6" class="collapse matches">
-                          
+
                           <h5>September</h5>
-                           
+
                            <table class="table table-striped">
-                               
+
                                <tr>
-                                   
+
                                    <th>Date</th>
                                    <th>Home</th>
                                    <th></th>
                                    <th>Away</th>
-                                   
+
                                </tr>
-                               
+
                                <tr>
-                                   
+
                                    <td><b>9/01-Sunday</b><br>9:30 am</td>
                                    <td><div class="table_img_logo"><img src="images/calvary.png" alt=""></div></td>
                                    <td><span class="table_vs">vs.</span></td>
                                    <td><div class="table_img_logo"><img src="images/forge.png" alt=""></div></td>
-                                   
+
                                </tr>
-                               
+
                                <tr>
-                                   
+
                                    <td><b>9/01-Sunday</b><br>9:30 am</td>
                                    <td><div class="table_img_logo"><img src="images/edmonton.png" alt=""></div></td>
                                    <td><span class="table_vs">vs.</span></td>
                                    <td><div class="table_img_logo"><img src="images/york.png" alt=""></div></td>
-                                   
+
                                </tr>
-                               
+
                                <tr>
-                                   
+
                                    <td><b>9/01-Sunday</b><br>9:30 am</td>
                                    <td><div class="table_img_logo"><img src="images/valour.png" alt=""></div></td>
                                    <td><span class="table_vs">vs.</span></td>
                                    <td><div class="table_img_logo"><img src="images/pacific.png" alt=""></div></td>
-                                   
+
                                </tr>
-                               
+
                                <tr>
-                                   
+
                                    <td><b>9/08-Sunday</b><br>1:00 pm</td>
                                    <td><div class="table_img_logo"><img src="images/forge.png" alt=""></div></td>
                                    <td><span class="table_vs">vs.</span></td>
                                    <td><div class="table_img_logo"><img src="images/pacific.png" alt=""></div></td>
-                                   
+
                                </tr>
-                               
+
                                <tr>
-                                   
+
                                    <td><b>9/08-Sunday</b><br>1:00 pm</td>
                                    <td><div class="table_img_logo"><img src="images/valour.png" alt=""></div></td>
                                    <td><span class="table_vs">vs.</span></td>
                                    <td><div class="table_img_logo"><img src="images/edmonton.png" alt=""></div></td>
-                                   
+
                                </tr>
-                               
+
                                <tr>
-                                   
+
                                    <td><b>9/08-Sunday</b><br>1:00 pm</td>
                                    <td><div class="table_img_logo"><img src="images/york.png" alt=""></div></td>
                                    <td><span class="table_vs">vs.</span></td>
                                    <td><div class="table_img_logo"><img src="images/calvary.png" alt=""></div></td>
-                                   
+
                                </tr>
-                               
+
                                <tr>
-                                   
+
                                    <td><b>9/22-Sunday</b><br>1:00 pm</td>
                                    <td><div class="table_img_logo"><img src="images/york.png" alt=""></div></td>
                                    <td><span class="table_vs">vs.</span></td>
                                    <td><div class="table_img_logo"><img src="images/valour.png" alt=""></div></td>
-                                   
+
                                </tr>
-                               
+
                                <tr>
-                                   
+
                                    <td><b>9/22-Sunday</b><br>1:00 pm</td>
                                    <td><div class="table_img_logo"><img src="images/pacific.png" alt=""></div></td>
                                    <td><span class="table_vs">vs.</span></td>
                                    <td><div class="table_img_logo"><img src="images/calvary.png" alt=""></div></td>
-                                   
+
                                </tr>
-                               
+
                                <tr>
-                                   
+
                                    <td><b>9/22-Sunday</b><br>1:00 pm</td>
                                    <td><div class="table_img_logo"><img src="images/edmonton.png" alt=""></div></td>
                                    <td><span class="table_vs">vs.</span></td>
                                    <td><div class="table_img_logo"><img src="images/forge.png" alt=""></div></td>
-                                   
+
                                </tr>
-  
+
                            </table>
-                           
+
                            <h5>October</h5>
-                           
+
                            <table class="table table-striped">
-                              
+
                               <tr>
-                                  
+
                                   <th>Date&nbsp</th>
                                    <th>Home</th>
                                    <th></th>
                                    <th>Away</th>
-                                  
+
                               </tr>
-                               
+
                               <tr>
-                                   
+
                                    <td><b>10/06-Sunday</b><br>1:00 pm</td>
                                    <td><div class="table_img_logo"><img src="images/valour.png" alt=""></div></td>
                                    <td><span class="table_vs">vs.</span></td>
                                    <td><div class="table_img_logo"><img src="images/calvary.png" alt=""></div></td>
-                                   
+
                               </tr>
-                               
+
                               <tr>
-                                  
+
                                   <td><b>10/06-Sunday</b><br>1:00 pm</td>
                                    <td><div class="table_img_logo"><img src="images/forge.png" alt=""></div></td>
                                    <td><span class="table_vs">vs.</span></td>
                                    <td><div class="table_img_logo"><img src="images/york.png" alt=""></div></td>
-                                  
+
                               </tr>
-                               
+
                                <tr>
-                                   
+
                                    <td><b>10/06-Sunday</b><br>1:00 pm</td>
                                    <td><div class="table_img_logo"><img src="images/valour.png" alt=""></div></td>
                                    <td><span class="table_vs">vs.</span></td>
                                    <td><div class="table_img_logo"><img src="images/pacific.png" alt=""></div></td>
-                                   
+
                                </tr>
-                               
+
                                <tr>
-                                   
+
                                    <td>10/08-Tuesday<br>9:30 am</td>
                                    <td><div class="table_img_logo"><img src="images/forge.png" alt=""></div></td>
                                    <td><span class="table_vs">vs.</span></td>
-                                   <td><div class="table_img_logo"><img src="images/edmonton.png" alt=""></div></td> 
-                                   
+                                   <td><div class="table_img_logo"><img src="images/edmonton.png" alt=""></div></td>
+
                                </tr>
-                               
+
                                <tr>
-                                   
+
                                    <td>10/08-Tuesday<br>9:30 am</td>
                                    <td><div class="table_img_logo"><img src="images/edmonton.png" alt=""></div></td>
                                    <td><span class="table_vs">vs.</span></td>
                                    <td><div class="table_img_logo"><img src="images/calvary.png" alt=""></div></td>
 
                                </tr>
-                               
+
                                <tr>
-                                   
+
                                    <td>10/08-Tuesday<br>9:30 am</td>
                                    <td><div class="table_img_logo"><img src="images/york.png" alt=""></div></td>
                                    <td><span class="table_vs">vs.</span></td>
                                    <td><div class="table_img_logo"><img src="images/pacific.png" alt=""></div></td>
-                                   
+
                                </tr>
-                               
+
                                <tr>
-                                   
+
                                    <td><b>10/20-Sunday</b><br>1:00 pm</td>
                                    <td><div class="table_img_logo"><img src="images/york.png" alt=""></div></td>
                                    <td><span class="table_vs">vs.</span></td>
                                    <td><div class="table_img_logo"><img src="images/valour.png" alt=""></div></td>
-                                   
+
                                </tr>
-                               
+
                                <tr>
-                                   
+
                                    <td><b>10/20-Sunday</b><br>1:00 pm</td>
                                    <td><div class="table_img_logo"><img src="images/pacific.png" alt=""></div></td>
                                    <td><span class="table_vs">vs.</span></td>
                                    <td><div class="table_img_logo"><img src="images/edmonton.png" alt=""></div></td>
-                                   
+
                                </tr>
-                               
+
                                <tr>
-                                   
+
                                    <td><b>10/20-Sunday</b><br>1:00 pm</td>
                                    <td><div class="table_img_logo"><img src="images/calvary.png" alt=""></div></td>
                                    <td><span class="table_vs">vs.</span></td>
                                    <td><div class="table_img_logo"><img src="images/forge.png" alt=""></div></td>
-                                   
+
                                </tr>
-                               
+
                            </table>
-                           
+
                        </div>
-                       
+
                        </div>
-                        
+
                     <button class="btn btn-md btn-circle"><i class="fas fa-arrow-left"></i></button>
-                        
+
                 </div>
-                
+
                 <div class="teams" id="teams">
-                   
+
                    <h2 class="subtitle">Teams</h2>
-                    
+
                     <div class="calvary clearfix team" id="calvary">
-                        
+
                         <div class="content-team float-left">
-                            
+
                             <img src="images/calvary.png" alt="">
-                            
+
                         </div>
-                        
+
                         <div class="float-left">
-                           
+
                            <h5>Calvary FC</h5>
-                            
+
                             <p><b>Stadium: </b>AJ Katzen<br><b>Founded: </b>2009<br><b>Coach: </b>Tommy Wheeldn</p>
-                            
+
                         </div>
-                        
+
                     </div>
-                    
+
                     <div class="edmonton clearfix team" id="edmonton">
-                        
+
                         <div class="content-team float-left">
-                            
+
                             <img src="images/edmonton.png" alt="">
-                            
+
                         </div>
-                        
+
                         <div class="float-left">
-                           
+
                            <h5>FC Edmonton</h5>
-                            
+
                             <p><b>Stadium: </b>Greenbay<br><b>Founded: </b>2005<br><b>Coach: </b>Jeff Paulus</p>
-                            
+
                         </div>
-                        
+
                     </div>
-                    
+
                     <div class="forge clearfix team" id="forge">
-                        
+
                         <div class="content-team float-left">
-                            
+
                             <img src="images/forge.png" alt="">
-                            
+
                         </div>
-                        
+
                         <div class="float-left">
-                           
+
                            <h5>Forge FC</h5>
-                            
+
                             <p><b>Stadium: </b>Howard Yeager<br><b>Founded: </b>2013<br><b>Coach: </b>Bobby Smyrniotis</p>
-                            
+
                         </div>
-                        
+
                     </div>
-                    
+
                     <div class="pacific clearfix team" id="pacific">
-                        
+
                         <div class="content-team float-left">
-                            
+
                             <img src="images/pacific.png" alt="">
-                            
+
                         </div>
-                        
+
                         <div class="float-left">
-                           
+
                            <h5>Pacific FC</h5>
-                            
+
                             <p><b>Stadium: </b> Marjorie P Hart<br><b>Founded: </b>2015<br><b>Coach: </b>Michael Silver</p>
-                            
+
                         </div>
-                        
+
                     </div>
-                    
+
                     <div class="york clearfix team" id="york">
-                        
+
                         <div class="content-team float-left">
-                            
+
                             <img src="images/york.png" alt="">
-                        
+
                         </div>
-                        
+
                         <div class="float-left">
-                           
+
                            <h5>York 9 FC</h5>
-                            
+
                             <p><b>Stadium: </b>North Field<br><b>Founded: </b>2010<br><b>Coach: </b>Jimmy Brennan</p>
-                            
+
                         </div>
-                        
+
                     </div>
-                    
+
                     <div class="valour clearfix team" id="valour">
-                        
+
                         <div class="content-team float-left">
-                            
+
                             <img src="images/valour.png" alt="">
-                            
+
                         </div>
-                        
+
                         <div class="float-left">
-                           
+
                            <h5>Valour FC</h5>
-                            
+
                             <p><b>Stadium: </b>South Field<br><b>Founded:</b> 2001<br><b>Coach: </b>Rob Gale</p>
-                            
+
                         </div>
-                        
+
                     </div>
-                    
+
                     <button class="btn btn-md btn-circle"><i class="fas fa-arrow-left"></i></button>
-                    
+
                 </div>
-                
+
                 <div class="fullMatches" id="fullMatches">
-                   
+
                    <h2 class="subtitle">Matches</h2>
-                    
+
                     <from action="#" method="post" class="clearfix">
-                            
+
                        <div class="float-left"  style="margin: 10px 0px 0px 20px;">
 
                            <label for="caterogies" text-rigth>Category:</label>
@@ -1927,202 +1933,202 @@
 
                            <label for="date" text-rigth>Date:</label>
 
-                           <select name="date" id="date" class="date"></select> 
+                           <select name="date" id="date" class="date"></select>
 
-                        </div> 
+                        </div>
 
                     </from>
-                    
+
                     <div class="row">
-                        
+
                         <div class="fullSchedule col-sm-3 col-12" id="fullSchedule">
-                        
+
                         <h3>Schedule</h3>
-                        
+
                         <div class="fullSchedule_info" style="width: 100%; height: 200px; overflow-y: scroll;">
-                            
+
                             <ul id="schedule_info" class="schedule_info"></ul>
-                            
-                        </div>    
-                        
+
                         </div>
 
-                        <div class="fullInfo col-sm-7 col-12" id="fullInfo">
+                        </div>
 
-                            <h3>Game Locations</h3>
-                            
-                            <div class="fullInfo_maps" style="width: 100%; height: 200px; overflow-y: scroll;">
-                               
-                               <div class="katzen" style="display: none">
-                                   
-                                   <p>AJ Katzenmaier Elbentary</p>
-                            
-                                    <iframe src="https://www.google.com/maps/bbed?pb=!1m14!1m12!1m3!1d2969.6540604261627!2d-87.63123908505526!3d41.900296372004725!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses-419!2sar!4v1552323767908" style="border:0" allowfullscreen></iframe>
-                                   
+                        <div class="fullInfo col-sm-7 col-none" id="fullInfo">
+
+                            <h3 style="color: white">Game Locations</h3>
+
+                            <div class="fullInfo_maps" id="fullInfo_maps" style="width: 100%; height: 200px; overflow-y: scroll;">
+
+                               <div id="katzen" style="display: none">
+
+                                   <p style="color: white"><b>AJ Katzenmaier Elementary</b></p>
+
+                                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2949.7808660976257!2d-87.86492878504059!3d42.325872445253424!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x880f932fbc6ba7cd%3A0xcf2bbe275c6da815!2sA+J+Katzenmaier+Elementary+School!5e0!3m2!1ses-419!2sar!4v1557301440447!5m2!1ses-419!2sar" style="border:0" allowfullscreen></iframe>
+
                                </div>
-                                
-                                <div class="green" style="display: none">
-                                    
-                                    <p>Greenbay Elbentary</p>
 
-                                    <iframe src="https://www.google.com/maps/bbed?pb=!1m18!1m12!1m3!1d2969.0256986745426!2d-87.64002798505479!3d41.91380627115881!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x880fd34073f306a3%3A0x9e1726bbf8f23f0e!2s1734+N+Orleans+St%2C+Chicago%2C+IL+60614%2C+EE.+UU.!5e0!3m2!1ses-419!2sar!4v1552323731212" style="border:0" allowfullscreen></iframe>
-                                    
-                                </div>
-                                
-                                <div class="howard" style="display: none">
-                                    
-                                    <p>Howard A Yeager Elbentary</p>
+                                <div id="green" style="display: none">
 
-                                    <iframe src="https://www.google.com/maps/bbed?pb=!1m18!1m12!1m3!1d2968.5854973846845!2d-87.66511458505448!3d41.92326857056615!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x880fd2e37f9b8d2d%3A0x62ad8b907dd755d6!2s2245+N+Southport+Ave%2C+Chicago%2C+IL+60614%2C+EE.+UU.!5e0!3m2!1ses-419!2sar!4v1552323695495" style="border:0" allowfullscreen></iframe>
-                                    
-                                </div>
-                                
-                                <div class="hart" style="display: none">
-                                    
-                                    <p>Marjorie P Hart Elbentary</p>
+                                    <p style="color: white"><b>Greenbay Elementary</b></p>
 
-                                    <iframe src="https://www.google.com/maps/bbed?pb=!1m18!1m12!1m3!1d2968.291728953083!2d-87.64808628505428!3d41.92958227017081!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x880fd30f2630e551%3A0x3e719e44a5cef714!2s2625+N+Orchard+St%2C+Chicago%2C+IL+60614%2C+EE.+UU.!5e0!3m2!1ses-419!2sar!4v1552323643440" style="border:0" allowfullscreen></iframe>
+                                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2969.0256986745426!2d-87.64002798505479!3d41.91380627115881!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x880fd34073f306a3%3A0x9e1726bbf8f23f0e!2s1734+N+Orleans+St%2C+Chicago%2C+IL+60614%2C+EE.+UU.!5e0!3m2!1ses-419!2sar!4v1557301689459!5m2!1ses-419!2sar" style="border:0" allowfullscreen></iframe>
 
                                 </div>
-                                
-                                <div class="north" style="display: none">
-                                    
-                                    <p>North Elbentary</p>
 
-                                    <iframe src="https://www.google.com/maps/bbed?pb=!1m18!1m12!1m3!1d2969.336302541957!2d-87.64835588505505!3d41.90712867157695!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x880fd33af13a8945%3A0xb6ad1ec2b6f379ba!2s1409+N+Ogden+Ave%2C+Chicago%2C+IL+60610%2C+EE.+UU.!5e0!3m2!1ses-419!2sar!4v1552323556043" style="border:0" allowfullscreen></iframe>
-                                    
-                                </div>
-                                
-                                <div class="south" style="display: none">
-                                    
-                                    <p>South Elbentary</p>
+                                <div id="howard" style="display: none">
 
-                                    <iframe src="https://www.google.com/maps/bbed?pb=!1m18!1m12!1m3!1d2968.7477648265644!2d-87.65355538505459!3d41.91978077078475!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x880fd3196fb41dc7%3A0x970be7f7d6336df5!2s2101+N+Frbont+St%2C+Chicago%2C+IL+60614%2C+EE.+UU.!5e0!3m2!1ses-419!2sar!4v1552323597566" style="border:0" allowfullscreen></iframe>
-                                    
+                                    <p style="color: white"><b>Howard A Yeager Elementary</b></p>
+
+                                    <iframe src="https://www.google.com/maps/embed?pb=" style="border:0" allowfullscreen></iframe>
+
                                 </div>
-                                
+
+                                <div id="hart" style="display: none">
+
+                                    <p style="color: white"><b>Marjorie P Hart Elementary</b></p>
+
+                                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2968.2917289530833!2d-87.64808628505426!3d41.929582270170805!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x880fd30f2630e551%3A0x3e719e44a5cef714!2s2625+N+Orchard+St%2C+Chicago%2C+IL+60614%2C+EE.+UU.!5e0!3m2!1ses-419!2sar!4v1557302155291!5m2!1ses-419!2sar" style="border:0" allowfullscreen></iframe>
+
+                                </div>
+
+                                <div id="north" style="display: none">
+
+                                    <p style="color: white"><b>North Elementary</b></p>
+
+                                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2969.337614159601!2d-87.64837698505504!3d41.907100471578765!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x880fd33af0e6ccc3%3A0x26c81c1d557667da!2s1409+N+Ogden+Ave%2C+Chicago%2C+IL+60610%2C+EE.+UU.!5e0!3m2!1ses-419!2sar!4v1557302266881!5m2!1ses-419!2sar" style="border:0" allowfullscreen></iframe>
+
+                                </div>
+
+                                <div id="south" style="display: none">
+
+                                    <p style="color: white"><b>South Elementary</b></p>
+
+                                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2968.7477648265644!2d-87.65355538505459!3d41.91978077078475!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x880fd3196fb41dc7%3A0x970be7f7d6336df5!2s2101+N+Fremont+St%2C+Chicago%2C+IL+60614%2C+EE.+UU.!5e0!3m2!1ses-419!2sar!4v1557302353821!5m2!1ses-419!2sar" style="border:0" allowfullscreen></iframe>
+
+                                </div>
+
                             </div>
-                             
+
                         </div>
-                        
-                    </div>    
-                    
+
+                    </div>
+
                 </div>
-                
+
                 <div class="maps" id="maps">
-                   
+
                    <h2 class="subtitle">Game Locations</h2>
-                    
+
                     <div class="row">
-                        
+
                         <div class="col-12 directions">
-                            
-                            <p>AJ Katzenmaier Elbentary<br>24 W. Walton St., Chicago, IL 60610</p>
-                            
+
+                            <p>AJ Katzenmaier Elementary<br>24 W. Walton St., Chicago, IL 60610</p>
+
                         </div>
-                        
+
                         <div class="col-12">
-                            
-                            <iframe src="https://www.google.com/maps/bbed?pb=!1m14!1m12!1m3!1d2969.6540604261627!2d-87.63123908505526!3d41.900296372004725!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses-419!2sar!4v1552323767908" style="border:0" allowfullscreen></iframe>
-                            
+
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2949.7808660976257!2d-87.86492878504059!3d42.325872445253424!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x880f932fbc6ba7cd%3A0xcf2bbe275c6da815!2sA+J+Katzenmaier+Elementary+School!5e0!3m2!1ses-419!2sar!4v1557301440447!5m2!1ses-419!2sar" style="border:0" allowfullscreen></iframe>
+
                         </div>
-                        
+
                     </div>
-                       
+
                     <div class="row">
-                        
+
                         <div class="col-12 directions">
-                            
-                            <p>Greenbay Elbentary<br>1734 N. Orleans St., Chicago, IL 60614</p>
-                            
+
+                            <p>Greenbay Elementary<br>1734 N. Orleans St., Chicago, IL 60614</p>
+
                         </div>
-                        
+
                         <div class="col-12">
-                            
-                            <iframe src="https://www.google.com/maps/bbed?pb=!1m18!1m12!1m3!1d2969.0256986745426!2d-87.64002798505479!3d41.91380627115881!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x880fd34073f306a3%3A0x9e1726bbf8f23f0e!2s1734+N+Orleans+St%2C+Chicago%2C+IL+60614%2C+EE.+UU.!5e0!3m2!1ses-419!2sar!4v1552323731212" style="border:0" allowfullscreen></iframe>
-                            
+
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2969.0256986745426!2d-87.64002798505479!3d41.91380627115881!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x880fd34073f306a3%3A0x9e1726bbf8f23f0e!2s1734+N+Orleans+St%2C+Chicago%2C+IL+60614%2C+EE.+UU.!5e0!3m2!1ses-419!2sar!4v1557301689459!5m2!1ses-419!2sar" style="border:0" allowfullscreen></iframe>
+
                         </div>
-                        
+
                     </div>
-                       
+
                     <div class="row">
-                        
+
                         <div class="col-12 directions">
-                            
-                            <p>Howard A Yeager Elbentary<br>2245 N. Southport Ave., Chicago, IL 60614</p>
-                            
+
+                            <p>Howard A Yeager Elementary<br>2245 N. Southport Ave., Chicago, IL 60614</p>
+
                         </div>
-                        
+
                         <div class="col-12">
-                            
-                            <iframe src="https://www.google.com/maps/bbed?pb=!1m18!1m12!1m3!1d2968.5854973846845!2d-87.66511458505448!3d41.92326857056615!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x880fd2e37f9b8d2d%3A0x62ad8b907dd755d6!2s2245+N+Southport+Ave%2C+Chicago%2C+IL+60614%2C+EE.+UU.!5e0!3m2!1ses-419!2sar!4v1552323695495" style="border:0" allowfullscreen></iframe>
-                            
+
+                            <iframe src="https://www.google.com/maps/embed?pb=" style="border:0" allowfullscreen></iframe>
+
                         </div>
-                        
+
                     </div>
-                       
+
                     <div class="row">
-                        
+
                         <div class="col-12 directions">
-                            
+
                             <p>Marjorie P Hart Elbentary<br>2625 N. Orchard St., Chicago, IL 60614</p>
-                            
+
                         </div>
-                        
+
                         <div class="col-12">
-                            
-                            <iframe src="https://www.google.com/maps/bbed?pb=!1m18!1m12!1m3!1d2968.291728953083!2d-87.64808628505428!3d41.92958227017081!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x880fd30f2630e551%3A0x3e719e44a5cef714!2s2625+N+Orchard+St%2C+Chicago%2C+IL+60614%2C+EE.+UU.!5e0!3m2!1ses-419!2sar!4v1552323643440" style="border:0" allowfullscreen></iframe>
-                            
+
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2968.2917289530833!2d-87.64808628505426!3d41.929582270170805!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x880fd30f2630e551%3A0x3e719e44a5cef714!2s2625+N+Orchard+St%2C+Chicago%2C+IL+60614%2C+EE.+UU.!5e0!3m2!1ses-419!2sar!4v1557302155291!5m2!1ses-419!2sar" style="border:0" allowfullscreen></iframe>
+
                         </div>
-                        
+
                     </div>
-                       
+
                     <div class="row">
-                        
+
                         <div class="col-12 directions">
-                            
+
                             <p>North Elbentary<br>1409 N. Ogden Ave., Chicago, IL 60610</p>
-                            
+
                         </div>
-                        
+
                         <div class="col-12">
-                            
-                            <iframe src="https://www.google.com/maps/bbed?pb=!1m18!1m12!1m3!1d2969.336302541957!2d-87.64835588505505!3d41.90712867157695!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x880fd33af13a8945%3A0xb6ad1ec2b6f379ba!2s1409+N+Ogden+Ave%2C+Chicago%2C+IL+60610%2C+EE.+UU.!5e0!3m2!1ses-419!2sar!4v1552323556043" style="border:0" allowfullscreen></iframe>
-                            
+
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2969.337614159601!2d-87.64837698505504!3d41.907100471578765!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x880fd33af0e6ccc3%3A0x26c81c1d557667da!2s1409+N+Ogden+Ave%2C+Chicago%2C+IL+60610%2C+EE.+UU.!5e0!3m2!1ses-419!2sar!4v1557302266881!5m2!1ses-419!2sar" style="border:0" allowfullscreen></iframe>
+
                         </div>
-                        
+
                     </div>
-                       
+
                     <div class="row">
-                        
+
                         <div class="col-12 directions">
-                            
+
                             <p>South Elbentary<br>2101 N. Frbont St., Chicago, IL 60614</p>
-                            
+
                         </div>
-                        
+
                         <div class="col-12">
-                            
-                            <iframe src="https://www.google.com/maps/bbed?pb=!1m18!1m12!1m3!1d2968.7477648265644!2d-87.65355538505459!3d41.91978077078475!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x880fd3196fb41dc7%3A0x970be7f7d6336df5!2s2101+N+Frbont+St%2C+Chicago%2C+IL+60614%2C+EE.+UU.!5e0!3m2!1ses-419!2sar!4v1552323597566" style="border:0" allowfullscreen></iframe>
-                            
+
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2968.7477648265644!2d-87.65355538505459!3d41.91978077078475!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x880fd3196fb41dc7%3A0x970be7f7d6336df5!2s2101+N+Fremont+St%2C+Chicago%2C+IL+60614%2C+EE.+UU.!5e0!3m2!1ses-419!2sar!4v1557302353821!5m2!1ses-419!2sar" style="border:0" allowfullscreen></iframe>
+
                         </div>
-                        
+
                     </div>
-                    
+
                     <button class="btn btn-md btn-circle"><i class="fas fa-arrow-left"></i></button>
-                    
+
                 </div>
-                
+
                 <br><br>
-                
+
                 <div class="contact" id="contact">
-                   
+
                    <h2 class="subtitle">Contact</h2>
-                   
+
                    <div class="from">
-                       
+
                        <from>
-                        
+
                             <label for="name">Name: </label> <input type="text" id="name" class="form-control">
 
                             <label for="bail">bail: </label> <input type="bail" id="bail" class="form-control">
@@ -2133,32 +2139,32 @@
                             <button id="feedbackButton"class="btn btn-sm">Submit</button>
 
                         </from>
-                       
+
                    </div>
-                    
+
                     <button class="btn btn-md btn-circle"><i class="fas fa-arrow-left"></i></button>
-                    
+
                 </div>
-                
+
             </section>
-            
+
             <footer class="text-center" id="footer">
-                
+
                 <i class="far fa-copyright"></i> 2019 Mk. | All Rights Reserved
-                
+
             </footer>
         </div>
-        
+
         <script src="scripts\schedule.js"></script>
-        
+
         <script src="scripts\main.js"></script>
-    
+
         <script src="bootstrap-4.3.1-dist/js/jquery-3.3.1.slim.min.js"></script>
-        
+
         <script src="bootstrap-4.3.1-dist/js/popper.min.js"></script>
-        
+
         <script src="bootstrap-4.3.1-dist/js/bootstrap.min.js"></script>
-    
+
     </body>
-    
+
 </html>
