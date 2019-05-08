@@ -33,65 +33,9 @@ footer{
     background-color: white;
 }
 
-.welcome{
+.welcome, .home, .u1, .u2, .u3, .u4, .u5, .u5, .contact, .maps{
 
     background-color: white;
-}
-
-.home{
-
-    background-color: white;
-}
-
-.u1{
-
-    background-color: white;
-
-}
-
-.u2{
-
-    background-color: white;
-}
-
-.u3{
-
-    background-color: white;
-}
-
-.u4{
-
-    background-color: white;
-}
-
-.u5{
-
-    background-color: white;
-}
-
-.u6{
-
-    background-color: white;
-}
-
-.contact{
-
-    background-color: white;
-}
-
-.maps{
-
-    background-color: white;
-}
-
-.panel{
-
-    background-color: #16a316;
-    margin: 4px 4px 4px 4px;
-    border: solid 1px;
-    border-radius: 7px 7px 7px 7px;
-    -moz-border-radius: 7px 7px 7px 7px;
-    -webkit-border-radius: 7px 7px 7px 7px;
 }
 
 button{
@@ -149,19 +93,13 @@ textarea {
     height: 90px;
 }
 
-.content-logo img{
-
-    width: 100%;
-    height: 100%;
-}
-
 .content-team{
 
     width: 70px;
     height: 75px;
     margin: 20px 20px 0px 10px
 }
-.content-team img{
+.content-team img, .content-logo img{
 
     width: 100%;
     height: 100%;
@@ -288,30 +226,21 @@ table{
     padding: 15px;
 }
 
-.schedule {
+.schedule, .matches {
 
     margin: 10px 5px 10px 15px;
 }
 
-.matches {
+.months, .directions {
 
-    margin: 10px 5px 10px 15px;
-}
-
-.months {
-
-    margin: 10px 0 10px 15px;
+    margin: 10px 0px 10px 15px;
 }
 
 .months ul{
 
-    margin: 10px 0 10px 20px;
+    margin: 10px 0px 10px 20px;
 }
 
-.directions {
-
-    margin: 10px 0 10px 15px;
-}
 
 #categoriesMenu ul{
 
@@ -562,26 +491,17 @@ table{
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
-  opacity: ;
+  margin: auto;
 }
 
-#u1, #u2, #u3, #u4, #u5, #u6, #teams, #calvary, #edmonton, #forge, #pacific, #york, #valour, #maps, #contact, #topHeader, #navBar, #scoreboard, #sliderImg, #schedule_home, #footer{
+#u1, #u2, #u3, #u4, #u5, #u6, #teams, #calvary, #edmonton, #forge, #pacific, #york, #valour, #maps, #contact, #topHeader, #navBar, #scoreboard, #sliderImg, #schedule_home, #footer, #matches{
 
     display: none;
 }
 
 #fullSchedule{
 
-    margin: 10px 0px 0px 30px;
-    border: 1px solid;
-    border-color: #ccc;
-}
-
-
-
-#fullInfo{
-
-    margin: 10px 0px 0px 10px;
+    margin: auto;
     border: 1px solid;
     border-color: #ccc;
 }
@@ -590,3 +510,8 @@ ul li{
 
     list-style: none;
 }
+
+#fullMatches, #u1, #u2, #u3, #u4, #u5, #u6, #teams, #maps, #contact{
+    
+    margin: 20px 0px 0px 0px;
+} 
