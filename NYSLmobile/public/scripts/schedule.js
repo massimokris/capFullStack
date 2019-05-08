@@ -1,19 +1,19 @@
 var data = {
-    
+
     "categories": [ "u1", "u2", "u3", "u4", "u5", "u6"],
-    
+
     "allgames": [
-        
+
         {"date": "9/01",
         "games": [
-        
+
             {
 
                 "categories": ["u1", "u4"],
-                "place": "AJ Katzenmaier",
+                "place": "AJ-Katzenmaier",
                 "time": "9:30 am"
             },
-            
+
             {
 
                 "categories": [ "u3", "u2"],
@@ -22,21 +22,21 @@ var data = {
             }
         ]
         },
-            
+
         {"date": "9/08",
             "games": [
 
                 {
 
                     "categories": [ "u5", "u6"],
-                    "place": "Howard A Yeager",
+                    "place": "Howard-Yeager",
                     "time": "9:30 am"
                 },
 
                 {
 
                     "categories": [ "u6", "u1"],
-                    "place": "Marjorie P Hart",
+                    "place": "Marjorie-Hart",
                     "time": "1:00 pm"
                 }
             ]
@@ -55,7 +55,7 @@ var data = {
                 {
 
                     "categories": [ "u3", "u5"],
-                    "place": "AJ Katzenmaier",
+                    "place": "AJ-Katzenmaier",
                     "time": "1:00 pm"
                 }
             ]
@@ -74,7 +74,7 @@ var data = {
                 {
 
                     "categories": [ "u2", "u6"],
-                    "place": "Howard A Yeager",
+                    "place": "Howard-Yeager",
                     "time": "1:00 pm"
                 }
             ]
@@ -97,7 +97,7 @@ var data = {
                 {
 
                     "categories": [ "u2", "u5"],
-                    "place": "Marjorie P Hart",
+                    "place": "Marjorie-Hart",
                     "time": "9:30 am"
                 },
 
@@ -116,7 +116,7 @@ var data = {
                 {
 
                     "categories": [ "u3", "u4"],
-                    "place": "Howard A Yeager",
+                    "place": "Howard-Yeager",
                     "time": "9:30 am"
                 },
 
@@ -142,7 +142,7 @@ var data = {
                 {
 
                     "categories": [ "u2", "u4"],
-                    "place": "Marjorie P Hart",
+                    "place": "Marjorie-Hart",
                     "time": "1:00 pm"
                 }
             ]
@@ -154,19 +154,19 @@ var data = {
                 {
 
                     "categories": [ "u3", "u1"],
-                    "place": "AJ Katzenmaier",
+                    "place": "AJ-Katzenmaier",
                     "time": "9:30 am"
                 },
 
                 {
 
                     "categories": [ "u5", "u6"],
-                    "place": "Howard A Yeager",
+                    "place": "Howard-Yeager",
                     "time": "1:00 pm"
                 }
             ]
         }
     ]
-    
-    
+
+
 }
