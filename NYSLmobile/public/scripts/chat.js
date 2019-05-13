@@ -60,7 +60,7 @@ function writeNewPost(uid, username, picture, title, body) {
  
   
   // Get a key for a new Post.
-  var newPostKey = firebase.database().ref().child('posts/' + matchId).push().key;
+  var newPostKey = firebase.database().ref().child('posts/').push().key;
     
     
     
@@ -81,7 +81,7 @@ function writeNewPost(uid, username, picture, title, body) {
   // Write the new post's data simultaneously in the posts list and the user's post list.
   var updates = {};
   updates['/posts/'+ matchId + '/' + newPostKey] = postData;
-  updates['/user-posts/'+ matchId + '/' + uid + '/' + newPostKey] = postData;
+  updates['/user-posts/'+ matchId + '/'+ uid + '/' + newPostKey] = postData;
 
   return firebase.database().ref().update(updates);
 }
@@ -206,7 +206,7 @@ function createPostElement(postId, title, text, author, authorId, authorPic) {
     
   // Listen for comments.
   // [START child_event_listener_recycler]
-  var commentsRef = firebase.database().ref('post-comments/'+ matchId+ '/' + postId);
+  var commentsRef = firebase.database().ref('post-comments/'+ postId);
   commentsRef.on('child_added', function(data) {
     addCommentElement(postElement, data.key, data.val().text, data.val().author);
   });
@@ -271,7 +271,7 @@ function createPostElement(postId, title, text, author, authorId, authorPic) {
   // Bind starring action.
   var onStarClicked = function() {
     var globalPostRef = firebase.database().ref('/posts/'+ matchId+ '/' + postId);
-    var userPostRef = firebase.database().ref('/user-posts/'+ matchId+ '/' + authorId + '/' + postId);
+    var userPostRef = firebase.database().ref('/user-posts/'+ authorId + '/' + postId);
     toggleStar(globalPostRef, uid);
     toggleStar(userPostRef, uid);
   };
@@ -301,7 +301,7 @@ function createPostElement(postId, title, text, author, authorId, authorPic) {
  * Writes a new comment for the given post.
  */
 function createNewComment(postId, username, uid, text) {
-  firebase.database().ref('post-comments/'+ matchId+ '/' + postId).push({
+  firebase.database().ref('post-comments/'+ postId).push({
     text: text,
     author: username,
     uid: uid
@@ -406,12 +406,12 @@ function deleteComment(postElement, id) {
 function startDatabaseQueries() {
   // [START my_top_posts_query]
   var myUserId = firebase.auth().currentUser.uid;
-  var topUserPostsRef = firebase.database().ref('user-posts/'+ matchId+ '/' + myUserId).orderByChild('starCount');
+  var topUserPostsRef = firebase.database().ref('user-posts/'+ myUserId + '/' + matchId + '/' ).orderByChild('starCount');
   // [END my_top_posts_query]
   // [START recent_posts_query]
-  var recentPostsRef = firebase.database().ref('posts'+ matchId).limitToLast(100);
+  var recentPostsRef = firebase.database().ref('posts/'+ matchId).limitToLast(100);
   // [END recent_posts_query]
-  var userPostsRef = firebase.database().ref('user-posts/'+ matchId+ '/' + myUserId);
+  var userPostsRef = firebase.database().ref('user-posts/' + myUserId + '/' + matchId + '/');
 
   var fetchPosts = function(postsRef, sectionElement) {
     postsRef.on('child_added', function(data) {
@@ -570,7 +570,10 @@ function showSection(sectionElement, buttonElement) {
 
 
 // Bindings on load.
-function chat () {
+function chat (event) {
+    
+    chatShow(event);
+    
   // Bind Sign in button.
   signInButton.addEventListener('click', function() {
     var provider = new firebase.auth.GoogleAuthProvider();
@@ -621,7 +624,4 @@ function chat () {
 function chatShow(event){
     
     matchId = event.target.id;
-    
-    chat();
-    
 }

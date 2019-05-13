@@ -303,7 +303,11 @@ function matchesList(){
 
                     '<li><a onclick=showMap("'+list[i].games[j].place+'");>'+list[i].games[j].place+"</a></li>"+
 
-                    "<li>"+list[i].games[j].time+"</li>"+"</ul>"
+                    "<li>"+list[i].games[j].time+"</li>"+
+                        
+                    '<li>'+'<a href="#chat"'+'id="'+list[i].games[j].id+'"'+'onclick="chat(event); showchatdiv();"'+'>Messages</a></li>'+    
+                    
+                    "</ul>"
                 }
             }
 
@@ -393,4 +397,9 @@ function showMap(string){
         break;
     }
 
+}
+
+function showchatdiv(){
+    
+    document.getElementById('chat').style.display="block";
 }
