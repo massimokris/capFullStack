@@ -406,12 +406,12 @@ function deleteComment(postElement, id) {
 function startDatabaseQueries() {
   // [START my_top_posts_query]
   var myUserId = firebase.auth().currentUser.uid;
-  var topUserPostsRef = firebase.database().ref('user-posts/'+ myUserId + '/' + matchId + '/' ).orderByChild('starCount');
+  var topUserPostsRef = firebase.database().ref('user-posts/'+ myUserId + '/' + matchId).orderByChild('starCount');
   // [END my_top_posts_query]
   // [START recent_posts_query]
   var recentPostsRef = firebase.database().ref('posts/'+ matchId).limitToLast(100);
   // [END recent_posts_query]
-  var userPostsRef = firebase.database().ref('user-posts/' + myUserId + '/' + matchId + '/');
+  var userPostsRef = firebase.database().ref('user-posts/' + myUserId + '/' + matchId);
 
   var fetchPosts = function(postsRef, sectionElement) {
     postsRef.on('child_added', function(data) {
@@ -494,7 +494,7 @@ var currentUID;
  */
 function onAuthStateChanged(user) {
   // We ignore token refresh events.
-  if (user && currentUID === user.uid) {
+  if (user && currentUID === user.uid ) {
     return;
   }
 
@@ -574,6 +574,7 @@ function chat (event) {
     
     chatShow(event);
     
+    onAuthStateChanged();
   // Bind Sign in button.
   signInButton.addEventListener('click', function() {
     var provider = new firebase.auth.GoogleAuthProvider();
